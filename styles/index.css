@@ -1,0 +1,50 @@
+body {
+  width: auto;
+  font-family: 'Mulish';
+  font-size: 14px;
+  line-height: 18px;
+}
+
+
+.navigation{
+  width: 100%;
+  text-align: center;
+  height: 238px;
+
+}
+
+#nav-list{
+ list-style-type: none;
+ margin-right: 8%;
+}
+
+#nav-list li{
+ display: inline;
+ font-size: 18px;
+ margin: 20px;
+ padding-right: 0px;
+ padding-top: 45px;
+ float: right;
+
+}
+#nav-list li a {
+color: #373F41;
+text-decoration: none;
+}
+
+#nav-list li a:hover {
+  color: #DA3738;
+}
+
+
+
+
+
+
+.logo-img{
+  float: left;
+  margin: 0px 15px 15px 0px;
+  padding-top: 45px;
+  padding-left: 8%;
+  padding-right: 22.4%;
+}
