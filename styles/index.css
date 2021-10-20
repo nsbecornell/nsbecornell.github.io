@@ -58,6 +58,11 @@ text-decoration: none;
 
   background-color: #eff7ef;
   width: 100%;
+
+  position: absolute;
+  top: 100vh;
+
+  padding: 3em 0;
 }
 
 .footer p {
@@ -76,17 +81,25 @@ small {
 .footer-links {
   display: flex;
   flex-direction: row;
-  justify-content: center;
+  justify-content: space-around;
+  align-items: center;
+  padding: 0;
 }
 
 .footer-links li {
   list-style: none;
 }
 
-.footer-links li:not(:last-child) {
-  margin-right: 2em;
+.footer-links li a {
+  text-align: center;
+
+}
+
+.footer-links li:not(:first-child) {
+  margin-left: 3em;
 }
 
 .footer-links i {
   color: #5A945E;
+  width: 12px;
 }
