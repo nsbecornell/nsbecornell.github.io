@@ -3,6 +3,8 @@ body {
   font-family: 'Mulish';
   font-size: 14px;
   line-height: 18px;
+  margin: 0;
+  padding: 0;
 }
 
 
@@ -47,4 +49,44 @@ text-decoration: none;
   padding-top: 45px;
   padding-left: 8%;
   padding-right: 22.4%;
+}
+
+.footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  background-color: #eff7ef;
+  width: 100%;
+}
+
+.footer p {
+  color: #373F41;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+small {
+  color: #737B7D;
+  font-size: 10px;
+  text-align: center;
+  width: 50ch;
+}
+
+.footer-links {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.footer-links li {
+  list-style: none;
+}
+
+.footer-links li:not(:last-child) {
+  margin-right: 2em;
+}
+
+.footer-links i {
+  color: #5A945E;
 }
