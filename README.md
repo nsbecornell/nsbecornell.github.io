@@ -1,7 +1,7 @@
 # nsbecornell.github.io
-Ibrahim - work on footer
+Ibrahim - work on logos
 
-Ayesha - work on nav bar
+Ayesha - work on rest of the home page
 
 styling is shared on figma
 
