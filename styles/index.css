@@ -68,7 +68,7 @@ body {
 }
 
 .member-infobox {
-  width: 240px;
+  width: 260px;
   margin: 0 auto;
 }
 
@@ -78,7 +78,9 @@ body {
 }
 
 .eboard img {
-  width: 240px;
+  object-fit: cover;
+  width: 260px;
+  height: 310px;
   margin: 36px 0;
 }
 
