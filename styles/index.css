@@ -44,8 +44,10 @@ body {
 }
 
 /* Sponsors section styles */
-/* TODO: Fix spacing between heading and images
-      Make images responsive */
+/* TODO: 
+    Fix spacing between heading and images
+    Fix spacing so that images are level
+    Make images responsive */
 .sponsors {
   display: flex;
   flex-direction: column;
@@ -57,7 +59,60 @@ body {
   font-size: 32px;
 }
 
+/* Leadership styles */
+/*  TODO:
+    Make sure heading isn't broken in smaller resolution once heading is responsive */
+
+.row-b-padding {
+  margin-bottom: 87px;
+}
+
+.member-infobox {
+  width: 240px;
+  margin: 0 auto;
+}
+
+.eboard-heading {
+  margin-bottom: 39px;
+  height: 80px;
+}
+
+.eboard img {
+  width: 240px;
+  margin: 36px 0;
+}
+
+h2 {
+  font-weight: bold;
+  font-size: 32px;
+  color: #373f41;
+}
+
+.position,
+.member-name {
+  font-weight: bold;
+}
+
+.position,
+.member-name,
+.member-email {
+  color: #737b7d;
+}
+
+.position {
+  font-size: 16px;
+}
+
+.member-name {
+  font-size: 24px;
+}
+
+.member-email {
+  font-size: 20px;
+}
+
 /* Footer styles */
+/* TODO: Ensure footer's non-absolute positioning doesn't mess it up */
 .footer {
   display: flex;
   flex-direction: column;
@@ -66,8 +121,8 @@ body {
   background-color: #eff7ef;
   width: 100%;
 
-  position: absolute;
-  top: 100vh;
+  /* position: absolute;
+  top: 100vh; */
 
   padding: 3em 0;
 }
