@@ -7,41 +7,32 @@ body {
   padding: 0;
 }
 
-.navigation {
-  width: 100%;
-  text-align: center;
-  height: 238px;
+
+.navbar {
+  margin-top: 2%;
+  margin-bottom: 2%;
 }
 
-#nav-list {
-  list-style-type: none;
-  margin-right: 8%;
-}
 
-#nav-list li {
-  display: inline;
-  font-size: 18px;
-  margin: 20px;
-  padding-right: 0px;
-  padding-top: 45px;
-  float: right;
-}
-#nav-list li a {
+.nav-link {
+  font-size: 16px;
   color: #373f41;
-  text-decoration: none;
+  margin-right: 10px;
 }
 
-#nav-list li a:hover {
-  color: #da3738;
+.navbar-nav {
+ margin-right: 3%;
 }
 
-.logo-img {
-  float: left;
-  margin: 0px 15px 15px 0px;
-  padding-top: 45px;
-  padding-left: 8%;
-  padding-right: 22.4%;
+.navbar-brand {
+  margin-left: 3%;
 }
+
+a.nav-link:hover { 
+color:#DA3738 !important;
+}
+
+
 
 /* Sponsors section styles */
 /* TODO: 
@@ -165,4 +156,27 @@ small {
 .footer-links i {
   color: #5a945e;
   width: 12px;
+}
+
+/* Media Queries*/
+
+
+@media  (max-width: 1024px) and (min-width: 814px) {
+  #nav-list li {
+    font-size: 1.0em;
+ }
+}
+
+@media  (max-width: 814px) and (min-width: 656px) {
+  #nav-list li {
+    font-size: 0.8em;
+
+ }
+}
+
+@media  (max-width: 656px) and (min-width: 600px) {
+  #nav-list li {
+    font-size: 0.7em;
+
+ }
 }
