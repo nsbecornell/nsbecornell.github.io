@@ -1,16 +1,22 @@
 body {
   width: auto;
   font-family: "Mulish";
-  font-size: 14px;
   line-height: 18px;
+  font-size: 15px;
   margin: 0;
   padding: 0;
+  color: #737B7D;
+}
+
+
+.container  {
+  width: 100%;
 }
 
 
 .navbar {
   margin-top: 2%;
-  margin-bottom: 2%;
+ 
 }
 
 
@@ -20,17 +26,70 @@ body {
   margin-right: 10px;
 }
 
-.navbar-nav {
- margin-right: 3%;
-}
-
-.navbar-brand {
-  margin-left: 3%;
-}
 
 a.nav-link:hover { 
 color:#DA3738 !important;
 }
+
+
+#main-section {
+  margin-top: 8%;
+  margin-bottom: 2%;
+
+}
+
+#main-section h1 {
+  color: #373F41;
+  font-weight: bold;
+  padding-bottom: 5%;
+  padding-top: 10%;
+}
+
+#main-section p {
+  color: #737B7D;
+  padding-bottom: 5%;
+  padding-right:12% ;
+ 
+}
+
+#left-half {
+  padding-left:20px;
+}
+
+
+#join  {
+ padding-bottom: 10px;
+}
+#learn  {
+  padding-bottom: 20px;
+}
+
+#join button {
+  width:80%;
+}
+
+#learn a {
+  width:80%;
+ }
+
+ .btn-success, .btn-success:hover, .btn-success:active, .btn-success:visited {
+  background-color: #5BB161 !important;
+   border-color: #5BB161 !important;
+}
+
+ .btn-outline-success:hover, .btn-outline-success:active, .btn-outline-success:visited {
+  background-color: #5BB161 !important;
+  border-color: #5BB161 !important;
+
+}
+
+
+
+
+
+
+
+
 
 
 
@@ -43,12 +102,34 @@ color:#DA3738 !important;
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin-bottom: 5%;
 }
 
-.sponsors p {
+.sponsors h2 {
   font-weight: bold;
-  font-size: 32px;
+  margin-top: 5%;
 }
+
+.sponsors p{
+  margin-top: 2%;
+}
+.sponsors a {
+  color: #5a945e;
+}
+
+
+.bootCols{
+  height:auto;
+  box-sizing:border-box;
+  padding:20px;
+
+}
+img {
+  width: 100%;
+}
+
+
+
 
 /* Leadership styles */
 /*  TODO:
@@ -158,25 +239,66 @@ small {
   width: 12px;
 }
 
+
+
+
+
 /* Media Queries*/
 
 
-@media  (max-width: 1024px) and (min-width: 814px) {
-  #nav-list li {
-    font-size: 1.0em;
- }
+@media (min-width: 768px) and (max-width: 991.98px) { 
+  #main-section p {
+    font-size: 12px;
+  }
+  #join button {
+    width:140px;
+  }
+
+  #join {
+    width:160px;
+  }
+
+  #learn a {
+    width:140px;
+  }
+
+  .btn-success {
+    font-size:12px;
+  }
+
+  .btn-outline-success {
+    font-size: 12px;
+  }
 }
 
-@media  (max-width: 814px) and (min-width: 656px) {
-  #nav-list li {
-    font-size: 0.8em;
+@media (max-width: 767.98px) { 
 
- }
-}
 
-@media  (max-width: 656px) and (min-width: 600px) {
-  #nav-list li {
-    font-size: 0.7em;
 
- }
+  #buttons {
+    text-align: center;
+    padding-bottom:2%;
+  }
+
+  #main-section p {
+    justify-content: center;
+    padding-left:15px;
+    padding-right:10px;
+  }
+
+  #main-section h1 {
+    padding-left:15px;
+    padding-right:10px;
+    padding-top: 0px;
+  }
+
+  .sponsors p {
+    margin-top: 10%;
+  }
+
+  
+
+  
+
+  
 }
