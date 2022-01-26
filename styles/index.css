@@ -32,6 +32,9 @@ color:#DA3738 !important;
 }
 
 
+/* HOME PAGE */
+
+
 #main-section {
   margin-top: 8%;
   margin-bottom: 2%;
@@ -83,50 +86,39 @@ color:#DA3738 !important;
 
 }
 
-
-
-
-
-
-
-
-
-
-
 /* Sponsors section styles */
-/* TODO: 
-    Fix spacing between heading and images
-    Fix spacing so that images are level
-    Make images responsive */
-.sponsors {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin-bottom: 5%;
-}
+    .sponsors {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin-bottom: 5%;
+    }
+    
+    .sponsors h2 {
+      font-weight: bold;
+      margin-top: 5%;
+    }
+    
+    .sponsors p{
+      margin-top: 2%;
+    }
+    .sponsors a {
+      color: #5a945e;
+    }
+    
+    
+    .bootCols{
+      height:auto;
+      box-sizing:border-box;
+      padding:20px;
+    
+    }
+    img {
+      width: 100%;
+    }
+    
 
-.sponsors h2 {
-  font-weight: bold;
-  margin-top: 5%;
-}
 
-.sponsors p{
-  margin-top: 2%;
-}
-.sponsors a {
-  color: #5a945e;
-}
-
-
-.bootCols{
-  height:auto;
-  box-sizing:border-box;
-  padding:20px;
-
-}
-img {
-  width: 100%;
-}
 
 
 
@@ -135,55 +127,45 @@ img {
 /*  TODO:
     Make sure heading isn't broken in smaller resolution once heading is responsive */
 
-.row-b-padding {
-  margin-bottom: 87px;
+.eboard-cols{
+  height:auto;
+  box-sizing:border-box;
+  padding:10px;
 }
 
-.member-infobox {
-  width: 260px;
-  margin: 0 auto;
+.eboard {
+  margin-bottom: 5%;
+  margin-top: 5%;
 }
 
-.eboard-heading {
-  margin-bottom: 39px;
-  height: 80px;
-}
-
-.eboard img {
-  object-fit: cover;
-  width: 260px;
-  height: 310px;
-  margin: 36px 0;
-}
-
-h2 {
-  font-weight: bold;
-  font-size: 32px;
-  color: #373f41;
-}
-
-.position,
-.member-name {
-  font-weight: bold;
-}
-
-.position,
-.member-name,
-.member-email {
-  color: #737b7d;
-}
 
 .position {
+  
+  color: #737b7d;
+  font-weight: bold;
+  text-align: center;
   font-size: 16px;
+
 }
 
 .member-name {
+  margin-top: 10%;
   font-size: 24px;
+  color: #737b7d;
+  font-weight: bold;
+  text-align: center;
+
 }
 
 .member-email {
   font-size: 20px;
+  color: #737b7d;
+  text-align: center;
+  margin-bottom: 10%;
 }
+
+
+
 
 /* Footer styles */
 /* TODO: Ensure footer's non-absolute positioning doesn't mess it up */
@@ -246,6 +228,24 @@ small {
 /* Media Queries*/
 
 
+@media (min-width: 1199.98px) and (max-width: 1399.98px) { 
+  .member-name{
+  font-size: 20px;
+  }
+  .member-email{
+    font-size: 18px;
+    }
+}
+@media (min-width: 991.98px) and (max-width: 1199.98px) { 
+  .member-name{
+    font-size: 18px;
+    }
+    .member-email{
+      font-size: 16px;
+      }
+}
+
+
 @media (min-width: 768px) and (max-width: 991.98px) { 
   #main-section p {
     font-size: 12px;
@@ -269,10 +269,19 @@ small {
   .btn-outline-success {
     font-size: 12px;
   }
+
+  .position{
+  font-size: 12px;
+  }
+  .member-name{
+    font-size: 15px;
+    }
+    .member-email{
+      font-size: 11px;
+      }
 }
 
 @media (max-width: 767.98px) { 
-
 
 
   #buttons {
@@ -297,8 +306,5 @@ small {
   }
 
   
-
-  
-
-  
 }
+
