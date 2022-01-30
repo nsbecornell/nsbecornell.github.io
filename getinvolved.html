@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+
 <html lang="en">
 
 <head>
@@ -24,6 +25,41 @@
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
     integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous" />
   <link href="https://fonts.googleapis.com/css?family=Mulish" rel="stylesheet" />
+
+
+
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+
+  <!--<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script> -->
+
+  <script type="text/javascript"> var submitted = false;</script>
+
+  <script type="text/javascript">
+
+    $(document).ready(function () {
+      $("#gform").submit(function (e) {
+        $(".form_view").hide();
+        $(".confirm").show();
+      });
+    });
+
+    $(document).ready(function () {
+      $("#gform2").submit(function (e) {
+        $(".form_view2").hide();
+        $(".confirm2").show();
+      });
+    });
+
+
+
+
+  </script>
+
+
+
+
+
+
 
 
 </head>
@@ -54,13 +90,164 @@
               <a class="nav-link" href="events.html">Events</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="getinvolved.html" style="color:#DA3738;">Get Involved</a>
+              <a class="nav-link" href="getinvolved.php" style="color:#DA3738;">Get Involved</a>
             </li>
 
           </ul>
         </div>
       </div>
     </nav>
+
+    <h2> Get Involved</h2>
+
+
+    <div class="students">
+
+      <h3>Students</h3>
+
+      <div class="form_view">
+        <p>Join our listserv to keep in touch with NSBE!</p>
+
+
+        <form name="gform" id="gform" enctype="text/plain"
+          action="https://docs.google.com/forms/d/e/1FAIpQLSd70Z7zxJp1njIi8mc3Jnehvd5aU-TEsiVqSRl6Po84_SA9Hg/formResponse?"
+          target="hidden_iframe" onsubmit="submitted=true;">
+
+          <div class="row">
+
+            <div class="col-md-6">
+
+              <label> Name: </label><br>
+              <input type="text" name="entry.1741026995" id="entry.1741026995" class="fname" required><br>
+
+            </div>
+
+            <div class="col-md-6">
+
+
+              <label> Netid:</label><br>
+              <input type="text" name="entry.1385742489" id="entry.1385742489" class="lname" required> <br>
+
+            </div>
+
+          </div>
+
+          <label>Cornell Email:</label><br>
+          <input type="text" name="entry.42104974" id="entry.42104974" class="netid" required> <br>
+          <br>
+
+          <input type="submit" value="Join List-Serv" id="join_button" class="btn btn-success">
+        </form>
+
+        <iframe name="hidden_iframe" id="hidden_iframe" style="display:none" onload="if(submitted) {}"></iframe>
+
+      </div>
+
+      <div class="confirm" style="display:none">
+        <p id="confirm_message"> Thank You For Completing this Form! Your response has been recorded and you will be
+          added to the List-Serv.</p>
+      </div>
+
+
+    </div>
+
+
+
+    <div class="corporate">
+      <h3>Corporate</h3>
+
+      <div class="form_view2">
+        <p>Fill out the form below if your organization would be interested in working with NSBE.</p>
+
+        <form name="gform2" id="gform2" enctype="text/plain"
+          action="https://docs.google.com/forms/d/e/1FAIpQLSfrRiRE2OAE9gqXIrpTKEISwDmXFQX9jUBeZnDGrjd54wVMAg/formResponse?"
+          target="hidden_iframe" onsubmit="submitted=true;">
+
+          <div class="row">
+
+            <div class="col-md-6">
+
+              <label> Full Name: </label><br>
+              <input type="text" name="entry.402298071" id="entry.402298071" class="fname" required><br>
+
+            </div>
+
+            <div class="col-md-6">
+
+
+              <label> Company:</label><br>
+              <input type="text" name="entry.1144444947" id="entry.1144444947" class="lname" required> <br>
+
+            </div>
+
+          </div>
+
+          <div class="row">
+
+            <div class="col-md-6">
+
+              <label> Email: </label><br>
+              <input type="text" name="entry.1709143875" id="entry.1709143875" class="fname" required><br>
+
+            </div>
+
+            <div class="col-md-6">
+
+
+              <label> Message:</label><br>
+              <input type="text" name="entry.1891372114" id="entry.1891372114" class="lname" required> <br>
+
+            </div>
+
+          </div>
+          <br>
+
+
+
+          <input type="submit" value="Work with NSBE" id="corporate_button" class="btn btn-success">
+        </form>
+
+        <iframe name="hidden_iframe" id="hidden_iframe" style="display:none" onload="if(submitted) {}"></iframe>
+
+      </div>
+
+      <div class="confirm2" style="display:none">
+        <p id="confirm_message"> Thank you for your interest working with NSBE! Your response has been recorded and a
+          member of our
+          executive board will be in touch shortly.</p>
+      </div>
+
+
+
+
+
+    </div>
+
+
+    <div class="donate">
+      <h3>Donate</h3>
+
+      <p> Contribute to the mission of NSBE by donating to help our members succeed. Your donations will be used to help
+        send current members to conferences, provide resources to help our students succeed academicially, and aid in
+        growing our community service efforts.
+
+        <br>
+      </p>
+
+
+      <a href="https://securelb.imodules.com/s/1717/giving/interior.aspx?sid=1717&gid=2&pgid=403&cid=1031&dids=238&bledit=1"
+        type="button" class="btn btn-success" id="donate_button"> Donate </a>
+
+
+
+
+
+    </div>
+
+
+
+
+
 
 
   </div>

@@ -135,7 +135,7 @@ color:#DA3738 !important;
 
 .eboard {
   margin-bottom: 5%;
-  margin-top: 5%;
+  margin-top: 2%;
 }
 
 
@@ -166,6 +166,85 @@ color:#DA3738 !important;
 
 
 
+/* Events Page */
+
+h2 { 
+  text-align: center;
+  margin-top: 0%;
+}
+.events-info {
+  font-size: 16px;
+  padding-left: 20px;
+  padding-right: 20px;
+  line-height: 22px;
+  margin-top: 2%;
+}
+
+/* Get Involved Page */
+
+.students {
+  padding-left: 15px;
+  padding-right: 25px;
+  padding-bottom: 50px ;
+}
+
+.corporate {
+  padding-left: 15px;
+  padding-right: 25px;
+  padding-bottom: 50px ;
+}
+
+.donate {
+  padding-left: 15px;
+  padding-right: 25px;
+  padding-bottom: 75px ;
+}
+
+#email {
+  margin-left: 10px;
+}
+
+.lname {
+  width: 100%;
+  margin-bottom: 5px;
+}
+
+.fname {
+  width: 100%;
+  margin-bottom: 5px;
+}
+
+.netid {
+  width: 100%;
+  
+}
+
+
+#confirm_message {
+  margin-top: 20px;
+  font-weight: bold;
+}
+
+label {
+  margin-bottom: 5px;
+}
+
+#donate_button {
+  width: 150px;
+ 
+}
+ #join_button {
+  width: 150px;
+
+ }
+
+ #corporate_button {
+  width: 150px;
+
+ }
+
+
+
 
 /* Footer styles */
 /* TODO: Ensure footer's non-absolute positioning doesn't mess it up */
@@ -173,7 +252,6 @@ color:#DA3738 !important;
   display: flex;
   flex-direction: column;
   align-items: center;
-
   background-color: #eff7ef;
   width: 100%;
 
