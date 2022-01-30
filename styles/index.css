@@ -8,6 +8,14 @@ body {
   color: #737B7D;
 }
 
+a[type='button'] {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+
+}
+
+
 
 .container  {
   width: 100%;
