@@ -5,28 +5,22 @@ body {
   font-size: 15px;
   margin: 0;
   padding: 0;
-  color: #737B7D;
+  color: #737b7d;
 }
 
-a[type='button'] {
+a[type="button"] {
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
-
 }
 
-
-
-.container  {
+.container {
   width: 100%;
 }
 
-
 .navbar {
   margin-top: 2%;
- 
 }
-
 
 .nav-link {
   font-size: 16px;
@@ -34,111 +28,101 @@ a[type='button'] {
   margin-right: 10px;
 }
 
-
-a.nav-link:hover { 
-color:#DA3738 !important;
+a.nav-link:hover {
+  color: #da3738 !important;
 }
 
-
 /* HOME PAGE */
-
 
 #main-section {
   margin-top: 8%;
   margin-bottom: 2%;
-
 }
 
 #main-section h1 {
-  color: #373F41;
+  color: #373f41;
   font-weight: bold;
   padding-bottom: 5%;
   padding-top: 10%;
 }
 
 #main-section p {
-  color: #737B7D;
+  color: #737b7d;
   padding-bottom: 5%;
-  padding-right:12% ;
- 
+  padding-right: 12%;
 }
 
 #left-half {
-  padding-left:20px;
+  padding-left: 20px;
 }
 
-
-#join  {
- padding-bottom: 10px;
+#join {
+  padding-bottom: 10px;
 }
-#learn  {
+#learn {
   padding-bottom: 20px;
 }
 
 #joinnnn {
-  width:80%;
+  width: 80%;
 }
 
 #learn a {
-  width:80%;
- }
-
- .btn-success, .btn-success:hover, .btn-success:active, .btn-success:visited {
-  background-color: #5BB161 !important;
-   border-color: #5BB161 !important;
+  width: 80%;
 }
 
- .btn-outline-success:hover, .btn-outline-success:active, .btn-outline-success:visited {
-  background-color: #5BB161 !important;
-  border-color: #5BB161 !important;
+.btn-success,
+.btn-success:hover,
+.btn-success:active,
+.btn-success:visited {
+  background-color: #5bb161 !important;
+  border-color: #5bb161 !important;
+}
 
+.btn-outline-success:hover,
+.btn-outline-success:active,
+.btn-outline-success:visited {
+  background-color: #5bb161 !important;
+  border-color: #5bb161 !important;
 }
 
 /* Sponsors section styles */
-    .sponsors {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      margin-bottom: 5%;
-    }
-    
-    .sponsors h2 {
-      font-weight: bold;
-      margin-top: 5%;
-    }
-    
-    .sponsors p{
-      margin-top: 2%;
-    }
-    .sponsors a {
-      color: #5a945e;
-    }
-    
-    
-    .bootCols{
-      height:auto;
-      box-sizing:border-box;
-      padding:20px;
-    
-    }
-    img {
-      width: 100%;
-    }
-    
+.sponsors {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 5%;
+}
 
+.sponsors h2 {
+  font-weight: bold;
+  margin-top: 5%;
+}
 
+.sponsors p {
+  margin-top: 2%;
+}
+.sponsors a {
+  color: #5a945e;
+}
 
-
-
+.bootCols {
+  height: auto;
+  box-sizing: border-box;
+  padding: 20px;
+}
+img {
+  width: 100%;
+}
 
 /* Leadership styles */
 /*  TODO:
     Make sure heading isn't broken in smaller resolution once heading is responsive */
 
-.eboard-cols{
-  height:auto;
-  box-sizing:border-box;
-  padding:10px;
+.eboard-cols {
+  height: auto;
+  box-sizing: border-box;
+  padding: 10px;
 }
 
 .eboard {
@@ -146,14 +130,11 @@ color:#DA3738 !important;
   margin-top: 2%;
 }
 
-
 .position {
-  
   color: #737b7d;
   font-weight: bold;
   text-align: center;
   font-size: 16px;
-
 }
 
 .member-name {
@@ -162,7 +143,6 @@ color:#DA3738 !important;
   color: #737b7d;
   font-weight: bold;
   text-align: center;
-
 }
 
 .member-email {
@@ -172,14 +152,15 @@ color:#DA3738 !important;
   margin-bottom: 10%;
 }
 
-
-
 /* Events Page */
 
-h2 { 
+h2 {
+  color: #373f41;
   text-align: center;
   margin-top: 0%;
+  font-weight: bold;
 }
+
 .events-info {
   font-size: 16px;
   padding-left: 20px;
@@ -193,19 +174,19 @@ h2 {
 .students {
   padding-left: 15px;
   padding-right: 25px;
-  padding-bottom: 50px ;
+  padding-bottom: 50px;
 }
 
 .corporate {
   padding-left: 15px;
   padding-right: 25px;
-  padding-bottom: 50px ;
+  padding-bottom: 50px;
 }
 
 .donate {
   padding-left: 15px;
   padding-right: 25px;
-  padding-bottom: 75px ;
+  padding-bottom: 75px;
 }
 
 #email {
@@ -224,9 +205,7 @@ h2 {
 
 .netid {
   width: 100%;
-  
 }
-
 
 #confirm_message {
   margin-top: 20px;
@@ -239,20 +218,50 @@ label {
 
 #donate_button {
   width: 150px;
- 
 }
- #join_button {
+#join_button {
   width: 150px;
+}
 
- }
-
- #corporate_button {
+#corporate_button {
   width: 150px;
+}
 
- }
+/* About page */
+/* TODO: Align correctly
+         Size sections and images properly
+         Add heading underline flair
+         Design responsively (I guess I'd just collapse the initiatives to )
+         Fix colors
+   */
 
+.about-section h3 {
+  font-weight: bold;
+}
 
+#academic-excellence {
+  border-bottom: 3px solid #da3738;
+}
 
+#community-service {
+  border-bottom: 3px solid #5bb161;
+}
+
+#professional-development {
+  border-bottom: 3px solid #ffe600;
+}
+
+.about-section h2 {
+  text-align: left;
+}
+
+.photos img {
+  width: 1160px;
+}
+
+.initiative img {
+  width: 180px;
+}
 
 /* Footer styles */
 /* TODO: Ensure footer's non-absolute positioning doesn't mess it up */
@@ -307,90 +316,79 @@ small {
   width: 12px;
 }
 
-
-
-
-
 /* Media Queries*/
 
-
-@media (min-width: 1199.98px) and (max-width: 1399.98px) { 
-  .member-name{
-  font-size: 20px;
+@media (min-width: 1199.98px) and (max-width: 1399.98px) {
+  .member-name {
+    font-size: 20px;
   }
-  .member-email{
+  .member-email {
     font-size: 18px;
-    }
+  }
 }
-@media (min-width: 991.98px) and (max-width: 1199.98px) { 
-  .member-name{
+@media (min-width: 991.98px) and (max-width: 1199.98px) {
+  .member-name {
     font-size: 18px;
-    }
-    .member-email{
-      font-size: 16px;
-      }
+  }
+  .member-email {
+    font-size: 16px;
+  }
 }
 
-
-@media (min-width: 768px) and (max-width: 991.98px) { 
+@media (min-width: 768px) and (max-width: 991.98px) {
   #main-section p {
     font-size: 12px;
   }
   #joinnnn {
-    width:140px;
+    width: 140px;
   }
 
   #join {
-    width:160px;
+    width: 160px;
   }
 
   #learn a {
-    width:140px;
+    width: 140px;
   }
 
   .btn-success {
-    font-size:12px;
+    font-size: 12px;
   }
 
   .btn-outline-success {
     font-size: 12px;
   }
 
-  .position{
-  font-size: 11px;
+  .position {
+    font-size: 11px;
   }
-  .member-name{
+  .member-name {
     font-size: 15px;
-    }
-    .member-email{
-      font-size: 11px;
-      }
+  }
+  .member-email {
+    font-size: 11px;
+  }
 }
 
-@media (max-width: 767.98px) { 
-
-
+@media (max-width: 767.98px) {
   #buttons {
     text-align: center;
-    padding-bottom:2%;
+    padding-bottom: 2%;
   }
 
   #main-section p {
     justify-content: center;
-    padding-left:15px;
-    padding-right:10px;
+    padding-left: 15px;
+    padding-right: 10px;
   }
 
   #main-section h1 {
-    padding-left:15px;
-    padding-right:10px;
+    padding-left: 15px;
+    padding-right: 10px;
     padding-top: 0px;
   }
 
   .sponsors p {
     margin-top: 10%;
   }
-
-  
 }
-
