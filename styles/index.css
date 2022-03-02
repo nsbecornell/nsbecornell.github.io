@@ -2,7 +2,7 @@ body {
   width: auto;
   font-family: "Mulish";
   line-height: 18px;
-  font-size: 15px;
+  font-size: 16px;
   margin: 0;
   padding: 0;
   color: #737b7d;
@@ -228,15 +228,21 @@ label {
 }
 
 /* About page */
-/* TODO: Align correctly
-         Size sections and images properly
-         Add heading underline flair
-         Design responsively (I guess I'd just collapse the initiatives to )
-         Fix colors
-   */
+
+.about-section {
+  margin-bottom: 65px;
+}
+
+.about-section h2 {
+  margin-bottom: 40px;
+}
 
 .about-section h3 {
   font-weight: bold;
+}
+
+.about-section p {
+  margin-bottom: 30px;
 }
 
 #academic-excellence {
@@ -257,6 +263,17 @@ label {
 
 .photos img {
   width: 1160px;
+}
+
+.initiative {
+  margin-top: 56px;
+  margin-bottom: 56px;
+}
+
+.initiative h3 {
+  text-align: center;
+  margin-bottom: 30px;
+  padding-bottom: 20px;
 }
 
 .initiative img {
