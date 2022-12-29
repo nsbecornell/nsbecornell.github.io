@@ -125,7 +125,7 @@ img {
     Make sure heading isn't broken in smaller resolution once heading is responsive */
 
 .eboard-cols {
-  height: 350;
+  height: auto;
   box-sizing: border-box;
   padding: 10px;
 }
