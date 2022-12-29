@@ -157,6 +157,11 @@ img {
   margin-bottom: 10%;
 }
 
+.fitting-image {
+  width: 264px;
+  height: 400px;
+}
+
 /* Events Page */
 
 h2 {
