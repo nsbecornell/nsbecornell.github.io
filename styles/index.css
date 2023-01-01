@@ -59,6 +59,7 @@ a.nav-link:hover {
 #join {
   padding-bottom: 10px;
 }
+
 #learn {
   padding-bottom: 20px;
 }
@@ -102,6 +103,7 @@ a.nav-link:hover {
 .sponsors p {
   margin-top: 2%;
 }
+
 .sponsors a {
   color: #5a945e;
 }
@@ -224,6 +226,7 @@ label {
 #donate_button {
   width: 150px;
 }
+
 #join_button {
   width: 150px;
 }
@@ -344,14 +347,17 @@ small {
   .member-name {
     font-size: 20px;
   }
+
   .member-email {
     font-size: 18px;
   }
 }
+
 @media (min-width: 991.98px) and (max-width: 1199.98px) {
   .member-name {
     font-size: 18px;
   }
+
   .member-email {
     font-size: 16px;
   }
@@ -361,6 +367,7 @@ small {
   #main-section p {
     font-size: 12px;
   }
+
   #joinnnn {
     width: 140px;
   }
@@ -384,9 +391,11 @@ small {
   .position {
     font-size: 11px;
   }
+
   .member-name {
     font-size: 15px;
   }
+
   .member-email {
     font-size: 11px;
   }
