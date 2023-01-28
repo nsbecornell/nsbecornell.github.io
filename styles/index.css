@@ -114,6 +114,30 @@ a.nav-link:hover {
   padding: 20px;
 }
 
+.gold, .silver {
+  margin-bottom: 20px;
+}
+
+.gold, .silver, .bronze {
+  border: 5px solid;
+  border-radius: 10px;
+}
+
+.gold {
+  background-color: #f5f1d5;
+  border-color: #e5bd08;
+}
+
+.silver {
+  background-color: #e8f1f3;
+  border-color: #565b6e;
+}
+
+.bronze {
+  background-color: #fbdfcf;
+  border-color: #ba642e;
+}
+
 .row {
   justify-content: center;
 }
