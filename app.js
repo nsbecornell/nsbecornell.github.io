@@ -15,9 +15,9 @@ document.addEventListener('DOMContentLoaded', function () {
       var calendar = new FullCalendar.Calendar(calendarEl, {
         plugins: ['interaction', 'dayGrid'],
         header: {
-          left: 'prev,next today',
+          left: 'prev',
           center: 'title',
-          right: 'dayGridMonth,dayGridWeek,dayGridDay'
+          right: 'next'
         },
         displayEventTime: true,
         events: events
@@ -26,4 +26,14 @@ document.addEventListener('DOMContentLoaded', function () {
       calendar.render();
     })
     .catch(error => console.error(error));
+});
+
+// add the responsive classes after page initialization
+window.onload = function () {
+  $('.fc-toolbar.fc-header-toolbar').addClass('row col-lg-12');
+};
+
+// add the responsive classes when navigating with calendar buttons
+$(document).on('click', '.fc-button', function (e) {
+  $('.fc-toolbar.fc-header-toolbar').addClass('row col-lg-12');
 });
