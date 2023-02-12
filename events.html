@@ -14,7 +14,12 @@
     integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
     crossorigin="anonymous"></script>
 
-
+  <!-- Custom Calendar Dependencies -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fullcalendar/core@4.4.0/main.min.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fullcalendar/daygrid@4.4.0/main.min.css" />
+  <script src="https://cdn.jsdelivr.net/npm/@fullcalendar/core@4.4.0/main.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@fullcalendar/interaction@4.4.0/main.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@fullcalendar/daygrid@4.4.0/main.min.js"></script>
 
   <!-- Favicon -->
   <link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
@@ -69,18 +74,7 @@
       Check out the
       calendar below to see our schedule of events!</p>
 
-
-    <div class="calendar">
-
-
-    </div>
-
-    <iframe
-      src="https://calendar.google.com/calendar/embed?height=600&wkst=1&bgcolor=%23ffffff&ctz=America%2FNew_York&showDate=1&src=Y29ybmVsbG5zYmVAZ21haWwuY29t&src=ZW4udXNhI2hvbGlkYXlAZ3JvdXAudi5jYWxlbmRhci5nb29nbGUuY29t&color=%23039BE5&color=%230B8043"
-      style="border-width:0" width="800" height="600" frameborder="0" scrolling="no"></iframe>
-
-
-
+    <div id="calendar"></div>
 
   </div>
 
@@ -101,6 +95,9 @@
       </li>
     </ul>
   </div>
+  <script type="module" src="app.js"></script>
+
+
 </body>
 
 </html>

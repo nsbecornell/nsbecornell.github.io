@@ -114,11 +114,14 @@ a.nav-link:hover {
   padding: 20px;
 }
 
-.gold, .silver {
+.gold,
+.silver {
   margin-bottom: 20px;
 }
 
-.gold, .silver, .bronze {
+.gold,
+.silver,
+.bronze {
   border: 5px solid;
   border-radius: 10px;
 }
@@ -198,6 +201,10 @@ h2 {
   padding-right: 20px;
   line-height: 22px;
   margin-top: 2%;
+}
+
+#calendar {
+  margin: 5em 0;
 }
 
 /* Get Involved Page */
