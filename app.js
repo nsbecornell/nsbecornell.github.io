@@ -1,9 +1,7 @@
-import { API_KEY } from './config.js';
-
 document.addEventListener('DOMContentLoaded', function () {
   var calendarEl = document.getElementById('calendar');
 
-  fetch('https://www.googleapis.com/calendar/v3/calendars/cornellnsbe@gmail.com/events?key=' + API_KEY)
+  fetch('https://www.googleapis.com/calendar/v3/calendars/cornellnsbe@gmail.com/events?key=AIzaSyBHd2s6Rw3i2FhDUNtfjBWWTi1e7M3femc')
     .then(response => response.json())
     .then(data => {
 
