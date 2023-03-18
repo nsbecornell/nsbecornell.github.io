@@ -158,6 +158,14 @@ a.nav-link:hover {
   box-sizing: border-box;
   padding: 10px;
 }
+.eboard-cols img{
+  cursor: pointer;
+  transition: transform .2s;
+}
+
+.eboard-cols img:hover{
+  transform: scale(1.09);
+}
 
 .eboard {
   margin-bottom: 5%;
