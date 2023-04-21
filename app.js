@@ -5,7 +5,7 @@ document.addEventListener('DOMContentLoaded', function () {
     .then(response => response.json())
     .then(data => {
       // TODO: Descriptions, links, etc.
-      var events = data.items.filter(event=>event.status!="cancelled").map(event => ({
+      var events = data.items.filter(event => event.status != "cancelled").map(event => ({
         title: event.summary,
         start: event.start.dateTime || event.start.date,
         end: event.end.dateTime || event.end.date,

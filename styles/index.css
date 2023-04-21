@@ -158,12 +158,13 @@ a.nav-link:hover {
   box-sizing: border-box;
   padding: 10px;
 }
-.eboard-cols img{
+
+.eboard-cols img {
   cursor: pointer;
   transition: transform .2s;
 }
 
-.eboard-cols img:hover{
+.eboard-cols img:hover {
   transform: scale(1.09);
 }
 
@@ -223,11 +224,11 @@ h2 {
   padding-bottom: 50px;
 }
 
-.corporate {
+/* .corporate {
   padding-left: 15px;
   padding-right: 25px;
   padding-bottom: 50px;
-}
+} */
 
 .donate {
   padding-left: 15px;
@@ -326,6 +327,206 @@ label {
 .initiative img {
   width: 180px;
 }
+
+/* Get Involved Style */
+.centered-text {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 30vh;
+}
+
+.centered-text h2 {
+  font-size: 2rem;
+  text-align: center;
+  width: 35ch;
+}
+
+.green-text {
+  color: #5BB161;
+}
+
+.grid-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: flex-start;
+  margin-top: 50px;
+}
+
+.grid-item {
+  flex: 1 0 25%;
+  /* reduce the flex-basis to fit more items horizontally */
+  min-width: 250px;
+  /* reduce the minimum width to fit more items horizontally */
+  margin: 20px;
+  display: flex;
+  align-items: center;
+  text-align: left;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.grid-item img {
+  height: 100px;
+  width: 100px;
+  object-fit: contain;
+  object-position: center;
+  margin-right: 20px;
+  margin-bottom: 10px;
+}
+
+.grid-item .text-container {
+  max-width: 250px;
+  text-align: center;
+}
+
+.grid-item h3 {
+  font-size: 24px;
+  margin: 0;
+  margin-bottom: 10px;
+}
+
+
+.form-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  margin-top: 50px;
+}
+
+.form-item {
+  flex: 1 0 40%;
+  min-width: 300px;
+  margin: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.form-item label {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.form-item input,
+.form-item textarea {
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box;
+  margin-bottom: 20px;
+  resize: vertical;
+  min-height: 50px;
+  max-height: 150px;
+}
+
+.form-submit {
+  width: 100%;
+  margin-top: 20px;
+}
+
+.form-submit button,
+.form-submit a {
+  width: 100%;
+}
+
+.corporate-form h2,
+.corporate-form p,
+.corporate-form .container {
+  margin: 0 0 2rem 0;
+}
+
+
+.corporate-form p {
+  text-align: center;
+}
+
+::-webkit-input-placeholder {
+  /* WebKit browsers */
+  color: transparent;
+}
+
+:-moz-placeholder {
+  /* Mozilla Firefox 4 to 18 */
+  color: transparent;
+}
+
+::-moz-placeholder {
+  /* Mozilla Firefox 19+ */
+  color: transparent;
+}
+
+:-ms-input-placeholder {
+  /* Internet Explorer 10+ */
+  color: transparent;
+}
+
+.work-with-us {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+  text-align: center;
+}
+
+.work-with-us h2 {
+  margin: 0 0 2rem 0;
+}
+
+.work-with-us p {
+  margin: 0 0 2rem 0;
+  width: 70%;
+}
+
+.work-with-us .button-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.work-with-us .button-container .btn {
+  width: 200px;
+  height: 60px;
+  margin: 1rem;
+  padding: 0.5rem 1rem;
+}
+
+.btn {
+  display: inline-block;
+  font-weight: 400;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: middle;
+  user-select: none;
+  /* border: 1px solid transparent; */
+  padding: 15px 20px;
+  font-size: 16px;
+  line-height: 1.5;
+  border-radius: 5px;
+  transition: all 0.3s;
+  margin: 10px;
+  width: 250px;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.btn-large {
+  width: 70%;
+  height: 100%;
+  padding: 20px 15px;
+  font-size: 18px;
+  text-align: center;
+}
+
 
 /* Footer styles */
 /* TODO: Ensure footer's non-absolute positioning doesn't mess it up */

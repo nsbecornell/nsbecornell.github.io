@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>Cornell NSBE</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous" />
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+    crossorigin="anonymous"></script>
+
+
+  <script src="https://apis.google.com/js/platform.js?onload=renderButton" async defer></script>
+  <meta name="google-signin-client_id" content="AIzaSyBHd2s6Rw3i2FhDUNtfjBWWTi1e7M3femc.apps.googleusercontent.com">
+
+
+  <!-- Favicon -->
+  <link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
+  <link rel="stylesheet" type="text/css" href="styles/index.css" />
+
+  <!-- Font  -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+    integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous" />
+  <link href="https://fonts.googleapis.com/css?family=Mulish" rel="stylesheet" />
+
+
+
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+  <!--<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script> -->
+
+  <script type="text/javascript"> var submitted = false;</script>
+
+  <script type="text/javascript">
+
+    $(document).ready(function () {
+      $('.form-container').submit(function (e) {
+        e.preventDefault(); // Prevent the form from submitting normally
+
+        // Get the form data
+        var formData = $(this).serialize();
+        console.log(formData);
+
+        // Submit the form data to the Google Form
+        $.ajax({
+          url: $(this).attr('action'),
+          type: $(this).attr('method'),
+          data: formData,
+          dataType: 'xml',
+          statusCode: {
+            0: function () {
+              // Success message
+              alert('Thank you for your submission!');
+            },
+            200: function () {
+              // Error message
+              alert('There was an error submitting your form. Please try again.');
+            }
+          }
+        });
+      });
+    });
+
+
+
+
+  </script>
+
+
+  <style>
+
+  </style>
+</head>
+
+<body>
+
+  <div class="corporate container">
+
+    <nav class="navbar navbar-expand-lg navbar-light">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="index.html"><img src="nsbe-cu logo.png" width="130"></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+          aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="aboutus.html">About Us</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="leadership.html">Leadership</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="events.html">Events</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
+                data-bs-toggle="dropdown" aria-expanded="false">
+                Get Involved
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                <li><a class="dropdown-item" href="corporate.html">Corporate</a></li>
+                <li><a class="dropdown-item" href="student.html">Student</a></li>
+                <li><a class="dropdown-item" href="alumni.html">Alumni</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <h2>Corporate</h2>
+
+    <div class="centered-text">
+      <h2>NSBE’s Mission: “To increase the number of <span class="green-text">culturally responsible</span> black
+        engineers who <span class="green-text">excel academically</span>, <span class="green-text">succeed
+          professionally</span>, and <span class="green-text">positively impact</span> the community.”</h2>
+    </div>
+
+    <h2>Benefits of a relationship with us</h2>
+
+    <div class="grid-container">
+      <div class="grid-item">
+        <img src="images/corporate/candidates.svg" alt="Placeholder Image">
+        <div class="text-container">
+          <h3>Diverse, talented candidates</h3>
+        </div>
+      </div>
+      <div class="grid-item">
+        <img src="images/corporate/cause.svg" alt="Placeholder Image">
+        <div class="text-container">
+          <h3>Contribute to a cause</h3>
+        </div>
+      </div>
+      <div class="grid-item">
+        <img src="images/corporate/brand.svg" alt="Placeholder Image">
+        <div class="text-container">
+          <h3>Brand visibility</h3>
+        </div>
+      </div>
+      <div class="grid-item">
+      </div>
+    </div>
+
+    <div class="corporate-form">
+      <h2>Work with us</h2>
+      <p>If your organization would be interested in working with NSBE, please fill out the form below.</p>
+
+      <div class="container">
+        <form class="form-container"
+          action="https://docs.google.com/forms/d/e/1FAIpQLSfaggD7nI3GILzTNo6L4Zj3_ZYFxlqUMZ_SOIVGfs7vPqlSWw/formResponse?"
+          method="POST">
+          <div class="form-item">
+            <label for="full-name">Full Name</label>
+            <input type="text" id="full-name" name="entry.1326701579" placeholder="Enter your full name" required>
+          </div>
+          <div class="form-item">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="entry.551171274" placeholder="Enter your email address" required>
+          </div>
+          <div class="form-item">
+            <label for="company">Company</label>
+            <input type="text" id="company" name="entry.258939846" placeholder="Enter your company name" required>
+          </div>
+          <div class="form-item">
+            <label for="message">Message</label>
+            <textarea id="message" name="entry.373944427" placeholder="Enter your message" required></textarea>
+          </div>
+          <input type="submit" value="Work with NSBE" class="btn btn-success btn-large btn-block"></input>
+        </form>
+      </div>
+
+      <!-- <div class="confirm2" style="display:none">
+        <p id="confirm_message"> Thank you for your interest working with NSBE! Your response has been recorded and a
+          member of our
+          executive board will be in touch shortly.</p>
+      </div> -->
+
+    </div>
+    <!-- 
+    <div class="work-with-us">
+      <h2>Become a sponsor</h2>
+
+      <a href="" type="button" class="btn btn-success btn-large">
+        Sponsor NSBE
+      </a>
+
+    </div> -->
+  </div>
+
+
+  <div class="footer">
+    <p>National Society of Black Engineers</p>
+    <small>Copyright © 2021. Cornell University National Society of Black
+      Engineers. All rights reserved.</small>
+    <ul class="footer-links">
+      <li>
+        <a href="https://www.facebook.com/NSBECornell/" target="_blank"><i class="fab fa-facebook-f"></i></a>
+      </li>
+      <li>
+        <a href="https://twitter.com/nsbeonthehill?lang=en" target="_blank"><i class="fab fa-twitter"></i></a>
+      </li>
+      <li>
+        <a href="https://www.instagram.com/nsbe_cu/?hl=en" target="_blank"><i class="fab fa-instagram"></i></a>
+      </li>
+    </ul>
+  </div>
+</body>
+
+</html>

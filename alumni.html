@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+
 <html lang="en">
 
 <head>
@@ -14,12 +15,7 @@
     integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
     crossorigin="anonymous"></script>
 
-  <!-- Custom Calendar Dependencies -->
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fullcalendar/core@4.4.0/main.min.css" />
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fullcalendar/daygrid@4.4.0/main.min.css" />
-  <script src="https://cdn.jsdelivr.net/npm/@fullcalendar/core@4.4.0/main.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/@fullcalendar/interaction@4.4.0/main.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/@fullcalendar/daygrid@4.4.0/main.min.js"></script>
+
 
   <!-- Favicon -->
   <link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
@@ -31,11 +27,48 @@
   <link href="https://fonts.googleapis.com/css?family=Mulish" rel="stylesheet" />
 
 
+
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+
+  <!--<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script> -->
+
+  <script type="text/javascript"> var submitted = false;</script>
+
+  <script type="text/javascript">
+
+    $(document).ready(function () {
+      $("#gform").submit(function (e) {
+        $(".form_view").hide();
+        $(".confirm").show();
+      });
+    });
+
+    $(document).ready(function () {
+      $("#gform2").submit(function (e) {
+        $(".form_view2").hide();
+        $(".confirm2").show();
+      });
+    });
+
+
+
+
+  </script>
+
+
+
+
+
+
+
+  <style>
+
+  </style>
 </head>
 
 <body>
 
-  <div class="container">
+  <div class="corporate container">
 
     <nav class="navbar navbar-expand-lg navbar-light">
       <div class="container-fluid">
@@ -74,15 +107,37 @@
       </div>
     </nav>
 
-    <h2>Events</h2>
+    <h2>Alumni</h2>
 
-    <p class="events-info">Our organization hosts a variety events throughout the acdemic year including but not limited
-      to: information sessions from corporate sponsors, general body meetings, social mixers, study jams, and panels.
-      Check out the
-      calendar below to see our schedule of events!</p>
+    <div class="centered-text">
+      <h2>NSBE’s Mission: “To increase the number of <span class="green-text">culturally responsible</span> black
+        engineers who <span class="green-text">excel academically</span>, <span class="green-text">succeed
+          professionally</span>, and <span class="green-text">positively impact</span> the community.”</h2>
+    </div>
 
-    <div id="calendar"></div>
+    <div class="work-with-us">
+      <h2>Help us pursue our mission</h2>
+      <p>Stay connected and help NSBE improve by doing the following:</p>
 
+      <div class="button-container">
+        <a href="#" type="button" class="btn btn-success">Join Our Newsletter</a>
+        <a href="https://www.linkedin.com/in/cornell-university-nsbe-chapter-12b53a254/" target="_blank" type="button"
+          class="btn btn-success">Follow us on LinkedIn</a>
+      </div>
+    </div>
+
+    <div class="work-with-us">
+      <h2>Donate</h2>
+      <p>Contribute to the mission of NSBE by donating to help our members succeed. Your donations will be used to help
+        send current members to conferences, provide resources to help our students succeed academicially, and aid in
+        growing our community service efforts.</p>
+
+      <a href="https://securelb.imodules.com/s/1717/giving/interior.aspx?sid=1717&gid=2&pgid=403&cid=1031&dids=238&bledit=1"
+        target="_blank" type="button" class="btn btn-success btn-large">
+        Donate
+      </a>
+
+    </div>
   </div>
 
 
@@ -102,9 +157,6 @@
       </li>
     </ul>
   </div>
-  <script type="module" src="app.js"></script>
-
-
 </body>
 
 </html>
