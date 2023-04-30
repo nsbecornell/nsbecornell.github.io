@@ -678,18 +678,3 @@ small {
     margin-top: 10%;
   }
 }
-
-.section {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-.mission-statement {
-  font-size: 14px;
-  /* change the font size to whatever works for you */
-  max-width: 80%;
-  /* set a maximum width to prevent the text from overflowing */
-  margin-top: 10px;
-  /* add some margin to separate it from the section title */
-}
