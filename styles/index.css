@@ -678,3 +678,32 @@ small {
     margin-top: 10%;
   }
 }
+
+.centered-test {
+  padding-top: 1%;
+  text-align: center;
+  margin: 0 auto;
+}
+
+.container-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 2%;
+  padding-bottom: 2%  ;
+}
+
+.green-button {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #4CAF50; /* Green color */
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: bold;
+  transition: background-color 0.3s ease; /* Smooth hover effect */
+}
+
+.green-button:hover {
+  background-color: #45a049; /* Darker green on hover */
+}
