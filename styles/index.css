@@ -342,6 +342,114 @@ label {
   width: 35ch;
 }
 
+/*points */
+  .points-text{
+    color: #373f41;
+    text-align: center;
+    margin-top: 3%;
+    font-weight: bold;
+  }
+  .centered-text-points  {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 10vh;
+    margin-bottom: 2%;
+  }
+  .points-box{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    height: 300px; /* Set the desired height for the container */
+    border: 1px solid #000; /* Add a border for visualization */
+    padding: 20px; /* Add padding for spacing */
+  }
+    .outer-box {
+      margin-left:25%;
+      display: flex;
+      align-items: flex-start;
+      padding: 20px; /* Add padding for spacing */
+  }
+
+  /* Style for the point value */
+  .point_1 {
+      margin-top:10px;
+      font-size: 1.5rem;  
+      color: #DB7416; /* Set the color to orange */
+      margin-right: 10px; /* Add margin to separate it from the description */
+      font-weight: bold;
+  }
+
+  .point_2 {
+    margin-top:10px;
+    font-size: 1.5rem;  
+    color: #AAC5C9; /* Set the color to orange */
+    margin-right: 10px; /* Add margin to separate it from the description */
+    font-weight: bold;
+  }
+
+  .point_3 {
+    margin-top:10px;
+    font-size: 1.5rem;  
+    color: #E9B01D; /* Set the color to orange */
+    margin-right: 10px; /* Add margin to separate it from the description */
+    font-weight: bold;
+  }
+
+  /* Style for the inner container */
+  .inner-box {
+      display: flex;
+      flex-direction: column;
+  }
+
+  /* Style for the individual descriptions (h4 elements) */
+  .points-item {
+    color: #373f41;
+    font-weight: bold;
+    margin: 5px 0; /* Add margin to separate items vertically */
+  }
+
+  .view-points-container {
+    margin-top: 2%;
+    display: flex;
+    flex-direction: column; /* Stack items vertically */
+    justify-content: center; /* Center vertically */
+    align-items: center; /* Center horizontally */
+    padding: 20px; /* Add padding for spacing */
+  }
+  .view-points-container h2,
+  .view-points-container p {
+    color: #373f41;
+    margin-bottom: 30px; /* Add margin to create a bigger gap between items */
+  }
+  .view-points-container p {
+    font-weight: 600;
+  }
+
+  #netid-input {
+      width: 100%;
+      margin-bottom: 10%;
+  }
+
+  .green-button {
+    margin-bottom: 3%;
+    display: block;
+    width: 100%; /* Take up the entire width of the container */
+    padding: 10px 20px;
+    background-color: #4CAF50; /* Green color */
+    color: white;
+    text-decoration: none;
+    border-radius: 2px;
+    font-weight: bold;
+    transition: background-color 0.3s ease; /* Smooth hover effect */
+  }
+  
+  .green-button:hover {
+    background-color: #45a049; /* Darker green on hover */
+  }
+
+ 
 /* Fix the autoscaling of nsbe statement -> alumni/student/corporate page */
 @media screen and (max-width: 600px) {
   .centered-text h2 {
@@ -707,3 +815,19 @@ small {
 .green-button:hover {
   background-color: #45a049; /* Darker green on hover */
 }
+
+
+.centered-test {
+  padding-top: 1%;
+  text-align: center;
+  margin: 0 auto;
+}
+
+.container-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 2%;
+  padding-bottom: 2%  ;
+}
+
