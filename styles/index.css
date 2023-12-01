@@ -161,7 +161,7 @@ a.nav-link:hover {
 
 .eboard-cols img {
   cursor: pointer;
-  transition: transform .2s;
+  transition: transform 0.2s;
 }
 
 .eboard-cols img:hover {
@@ -343,113 +343,125 @@ label {
 }
 
 /*points */
-  .points-text{
-    color: #373f41;
-    text-align: center;
-    margin-top: 3%;
-    font-weight: bold;
-  }
-  .centered-text-points  {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 10vh;
-    margin-bottom: 2%;
-  }
-  .points-box{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: flex-start;
-    height: 300px; /* Set the desired height for the container */
-    border: 1px solid #000; /* Add a border for visualization */
-    padding: 20px; /* Add padding for spacing */
-  }
-    .outer-box {
-      margin-left:25%;
-      display: flex;
-      align-items: flex-start;
-      padding: 20px; /* Add padding for spacing */
-  }
+.points-text {
+  color: #373f41;
+  text-align: center;
+  margin-top: 3%;
+  font-weight: bold;
+}
+.centered-text-points {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 10vh;
+  margin-bottom: 2%;
+}
+.points-box {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  height: 300px; /* Set the desired height for the container */
+  border: 1px solid #000; /* Add a border for visualization */
+  padding: 20px; /* Add padding for spacing */
+}
+.outer-box {
+  margin-left: 25%;
+  display: flex;
+  align-items: flex-start;
+  padding: 20px; /* Add padding for spacing */
+}
 
-  /* Style for the point value */
-  .point_1 {
-      margin-top:10px;
-      font-size: 1.5rem;  
-      color: #DB7416; /* Set the color to orange */
-      margin-right: 10px; /* Add margin to separate it from the description */
-      font-weight: bold;
-  }
+/* Style for the point value */
+.point_1 {
+  margin-top: 10px;
+  font-size: 1.5rem;
+  color: #db7416; /* Set the color to orange */
+  margin-right: 10px; /* Add margin to separate it from the description */
+  font-weight: bold;
+}
 
-  .point_2 {
-    margin-top:10px;
-    font-size: 1.5rem;  
-    color: #AAC5C9; /* Set the color to orange */
-    margin-right: 10px; /* Add margin to separate it from the description */
-    font-weight: bold;
-  }
+.point_2 {
+  margin-top: 10px;
+  font-size: 1.5rem;
+  color: #aac5c9; /* Set the color to orange */
+  margin-right: 10px; /* Add margin to separate it from the description */
+  font-weight: bold;
+}
 
-  .point_3 {
-    margin-top:10px;
-    font-size: 1.5rem;  
-    color: #E9B01D; /* Set the color to orange */
-    margin-right: 10px; /* Add margin to separate it from the description */
-    font-weight: bold;
-  }
+.point_3 {
+  margin-top: 10px;
+  font-size: 1.5rem;
+  color: #e9b01d; /* Set the color to orange */
+  margin-right: 10px; /* Add margin to separate it from the description */
+  font-weight: bold;
+}
 
-  /* Style for the inner container */
-  .inner-box {
-      display: flex;
-      flex-direction: column;
-  }
+/* Style for the inner container */
+.inner-box {
+  display: flex;
+  flex-direction: column;
+}
 
-  /* Style for the individual descriptions (h4 elements) */
-  .points-item {
-    color: #373f41;
-    font-weight: bold;
-    margin: 5px 0; /* Add margin to separate items vertically */
-  }
+/* Style for the individual descriptions (h4 elements) */
+.points-item {
+  color: #373f41;
+  font-weight: bold;
+  margin: 5px 0; /* Add margin to separate items vertically */
+}
 
-  .view-points-container {
-    margin-top: 2%;
-    display: flex;
-    flex-direction: column; /* Stack items vertically */
-    justify-content: center; /* Center vertically */
-    align-items: center; /* Center horizontally */
-    padding: 20px; /* Add padding for spacing */
-  }
-  .view-points-container h2,
-  .view-points-container p {
-    color: #373f41;
-    margin-bottom: 30px; /* Add margin to create a bigger gap between items */
-  }
-  .view-points-container p {
-    font-weight: 600;
-  }
+.view-points-container {
+  margin-top: 2%;
+  display: flex;
+  flex-direction: column; /* Stack items vertically */
+  justify-content: center; /* Center vertically */
+  align-items: center; /* Center horizontally */
+  padding: 20px; /* Add padding for spacing */
+}
+.view-points-container h2,
+.view-points-container p {
+  color: #373f41;
+  margin-bottom: 30px; /* Add margin to create a bigger gap between items */
+}
+.view-points-container p {
+  font-weight: 600;
+}
 
-  #netid-input {
-      width: 100%;
-      margin-bottom: 10%;
-  }
+#netid-input {
+  width: 100%;
+  margin-bottom: 10%;
+}
 
-  .green-button {
-    margin-bottom: 3%;
-    display: block;
-    width: 100%; /* Take up the entire width of the container */
-    padding: 10px 20px;
-    background-color: #4CAF50; /* Green color */
-    color: white;
-    text-decoration: none;
-    border-radius: 2px;
-    font-weight: bold;
-    transition: background-color 0.3s ease; /* Smooth hover effect */
-  }
-  
-  .green-button:hover {
-    background-color: #45a049; /* Darker green on hover */
-  }
+.green-button {
+  margin-bottom: 3%;
+  display: block;
+  width: 100%; /* Take up the entire width of the container */
+  padding: 10px 20px;
+  background-color: #4caf50; /* Green color */
+  color: white;
+  text-decoration: none;
+  border-radius: 2px;
+  font-weight: bold;
+  transition: background-color 0.3s ease; /* Smooth hover effect */
+}
 
- 
+.green-button:hover {
+  background-color: #45a049; /* Darker green on hover */
+}
+
+.top-three-container {
+  display: flex;
+  flex-direction: column; /* Stack items vertically */
+  justify-content: center; /* Center vertically */
+  align-items: center; /* Center horizontally */
+  margin-bottom: 20px;
+}
+.top-three-container p {
+  color: #373f41;
+  font-weight: bold;
+  margin: 5px 0; /* Add margin to separate items vertically */
+}
+
 /* Fix the autoscaling of nsbe statement -> alumni/student/corporate page */
 @media screen and (max-width: 600px) {
   .centered-text h2 {
@@ -465,7 +477,7 @@ label {
 }
 
 .green-text {
-  color: #5BB161;
+  color: #5bb161;
 }
 
 .grid-container {
@@ -508,7 +520,6 @@ label {
   margin: 0;
   margin-bottom: 10px;
 }
-
 
 .form-container {
   display: flex;
@@ -563,7 +574,6 @@ label {
   margin: 0 0 2rem 0;
 }
 
-
 .corporate-form p {
   text-align: center;
 }
@@ -605,7 +615,6 @@ label {
   margin: 0 0 2rem 0;
   width: 70%;
 }
-
 
 .work-with-us .button-container {
   display: flex;
@@ -649,7 +658,6 @@ label {
   font-size: 18px;
   text-align: center;
 }
-
 
 /* Footer styles */
 /* TODO: Ensure footer's non-absolute positioning doesn't mess it up */
@@ -798,13 +806,13 @@ small {
   justify-content: center;
   align-items: center;
   padding-top: 2%;
-  padding-bottom: 2%  ;
+  padding-bottom: 2%;
 }
 
 .green-button {
   display: inline-block;
   padding: 10px 20px;
-  background-color: #4CAF50; /* Green color */
+  background-color: #4caf50; /* Green color */
   color: white;
   text-decoration: none;
   border-radius: 5px;
@@ -815,7 +823,6 @@ small {
 .green-button:hover {
   background-color: #45a049; /* Darker green on hover */
 }
-
 
 .centered-test {
   padding-top: 1%;
@@ -828,6 +835,5 @@ small {
   justify-content: center;
   align-items: center;
   padding-top: 2%;
-  padding-bottom: 2%  ;
+  padding-bottom: 2%;
 }
-
