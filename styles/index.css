@@ -159,9 +159,24 @@ a.nav-link:hover {
   padding: 10px;
 }
 
+/* .eboard-cols img {
+  cursor: pointer;
+  transition: transform 0.2s;
+} */
+/* .eboard-cols img {
+  cursor: pointer;
+  transition: transform 0.2s;
+  max-width: 100%;
+  height: auto;
+} */
 .eboard-cols img {
   cursor: pointer;
   transition: transform 0.2s;
+  flex: 1; /* Allow items to grow and shrink equally */
+  width: 100%;
+  max-width: 100%; /* Ensure images don't exceed the container width */
+  height: 288px;
+  object-fit: cover; /* Ensures that the entire container is covered by the image */
 }
 
 .eboard-cols img:hover {
