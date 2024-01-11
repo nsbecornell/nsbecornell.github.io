@@ -886,3 +886,11 @@ small {
 .slider-nav a:hover {
   opacity: 1;
 }
+
+.description {
+  color: #373f41;
+}
+
+.description h3 {
+  font-weight: bold;
+}
