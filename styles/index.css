@@ -349,6 +349,7 @@ label {
   margin-top: 3%;
   font-weight: bold;
 }
+
 .centered-text-points {
   display: flex;
   justify-content: center;
@@ -356,44 +357,56 @@ label {
   height: 10vh;
   margin-bottom: 2%;
 }
+
 .points-box {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: flex-start;
-  height: 300px; /* Set the desired height for the container */
-  border: 1px solid #000; /* Add a border for visualization */
-  padding: 20px; /* Add padding for spacing */
+  height: 300px;
+  /* Set the desired height for the container */
+  border: 1px solid #000;
+  /* Add a border for visualization */
+  padding: 20px;
+  /* Add padding for spacing */
 }
+
 .outer-box {
   margin-left: 25%;
   display: flex;
   align-items: flex-start;
-  padding: 20px; /* Add padding for spacing */
+  padding: 20px;
+  /* Add padding for spacing */
 }
 
 /* Style for the point value */
 .point_1 {
   margin-top: 10px;
   font-size: 1.5rem;
-  color: #db7416; /* Set the color to orange */
-  margin-right: 10px; /* Add margin to separate it from the description */
+  color: #db7416;
+  /* Set the color to orange */
+  margin-right: 10px;
+  /* Add margin to separate it from the description */
   font-weight: bold;
 }
 
 .point_2 {
   margin-top: 10px;
   font-size: 1.5rem;
-  color: #aac5c9; /* Set the color to orange */
-  margin-right: 10px; /* Add margin to separate it from the description */
+  color: #aac5c9;
+  /* Set the color to orange */
+  margin-right: 10px;
+  /* Add margin to separate it from the description */
   font-weight: bold;
 }
 
 .point_3 {
   margin-top: 10px;
   font-size: 1.5rem;
-  color: #e9b01d; /* Set the color to orange */
-  margin-right: 10px; /* Add margin to separate it from the description */
+  color: #e9b01d;
+  /* Set the color to orange */
+  margin-right: 10px;
+  /* Add margin to separate it from the description */
   font-weight: bold;
 }
 
@@ -407,22 +420,30 @@ label {
 .points-item {
   color: #373f41;
   font-weight: bold;
-  margin: 5px 0; /* Add margin to separate items vertically */
+  margin: 5px 0;
+  /* Add margin to separate items vertically */
 }
 
 .view-points-container {
   margin-top: 2%;
   display: flex;
-  flex-direction: column; /* Stack items vertically */
-  justify-content: center; /* Center vertically */
-  align-items: center; /* Center horizontally */
-  padding: 20px; /* Add padding for spacing */
+  flex-direction: column;
+  /* Stack items vertically */
+  justify-content: center;
+  /* Center vertically */
+  align-items: center;
+  /* Center horizontally */
+  padding: 20px;
+  /* Add padding for spacing */
 }
+
 .view-points-container h2,
 .view-points-container p {
   color: #373f41;
-  margin-bottom: 30px; /* Add margin to create a bigger gap between items */
+  margin-bottom: 30px;
+  /* Add margin to create a bigger gap between items */
 }
+
 .view-points-container p {
   font-weight: 600;
 }
@@ -435,31 +456,40 @@ label {
 .green-button {
   margin-bottom: 3%;
   display: block;
-  width: 100%; /* Take up the entire width of the container */
+  width: 100%;
+  /* Take up the entire width of the container */
   padding: 10px 20px;
-  background-color: #4caf50; /* Green color */
+  background-color: #4caf50;
+  /* Green color */
   color: white;
   text-decoration: none;
   border-radius: 2px;
   font-weight: bold;
-  transition: background-color 0.3s ease; /* Smooth hover effect */
+  transition: background-color 0.3s ease;
+  /* Smooth hover effect */
 }
 
 .green-button:hover {
-  background-color: #45a049; /* Darker green on hover */
+  background-color: #45a049;
+  /* Darker green on hover */
 }
 
 .top-three-container {
   display: flex;
-  flex-direction: column; /* Stack items vertically */
-  justify-content: center; /* Center vertically */
-  align-items: center; /* Center horizontally */
+  flex-direction: column;
+  /* Stack items vertically */
+  justify-content: center;
+  /* Center vertically */
+  align-items: center;
+  /* Center horizontally */
   margin-bottom: 20px;
 }
+
 .top-three-container p {
   color: #373f41;
   font-weight: bold;
-  margin: 5px 0; /* Add margin to separate items vertically */
+  margin: 5px 0;
+  /* Add margin to separate items vertically */
 }
 
 /* Fix the autoscaling of nsbe statement -> alumni/student/corporate page */
@@ -812,16 +842,19 @@ small {
 .green-button {
   display: inline-block;
   padding: 10px 20px;
-  background-color: #4caf50; /* Green color */
+  background-color: #4caf50;
+  /* Green color */
   color: white;
   text-decoration: none;
   border-radius: 5px;
   font-weight: bold;
-  transition: background-color 0.3s ease; /* Smooth hover effect */
+  transition: background-color 0.3s ease;
+  /* Smooth hover effect */
 }
 
 .green-button:hover {
-  background-color: #45a049; /* Darker green on hover */
+  background-color: #45a049;
+  /* Darker green on hover */
 }
 
 .centered-test {
@@ -839,13 +872,20 @@ small {
 }
 
 .gallery_container {
-  padding: 2rem;
+  padding-bottom: 2rem;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  /* max-width: 2px; */
 }
 
 .slider-wrapper {
   position: relative;
   max-width: 48rem;
-  margin: 0 auto; /*Left and right margins are automatically set, allowing the slider to center itself horizontally*/
+  margin: 0 auto;
+  /*Left and right margins are automatically set, allowing the slider to center itself horizontally*/
+  padding-bottom: 1%;
 }
 
 .slider {
@@ -855,7 +895,6 @@ small {
   scroll-snap-type: x mandatory;
   scroll-behavior: smooth;
   box-shadow: 0 1.5rem 3rem -0.75rem hsla(0, 0%, 0%, 0.25);
-  border-radius: 0.5rem;
 }
 
 .slider img {
@@ -879,13 +918,27 @@ small {
   height: 0.5rem;
   border-radius: 50%;
   background-color: #ffffff;
-  opacity: 0.75;
+  opacity: 0.7;
   transition: opacity ease 250ms;
 }
 
-.slider-nav a:hover {
+/* .slider-bar {
+  width: 150px;
+  border: 15px solid black;
+  opacity: 0.8;
+  border-radius: 20px;
+  display: flex;
+  column-gap: 1rem;
+  position: absolute;
+  bottom: 1.25rem;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 1;
+} */
+
+/* .slider-nav a:hover {
   opacity: 1;
-}
+} */
 
 .description {
   color: #373f41;
@@ -893,4 +946,58 @@ small {
 
 .description h3 {
   font-weight: bold;
+}
+
+.image-block {
+  /* display: inline-block; Lines up each image block into one line */
+  border: 7px solid hsl(0, 0%, 65%);
+  margin: 10px;
+  width: 600px;
+  border-radius: 0.5rem;
+}
+
+.image-block .event_title {
+  color: #373f41;
+  font-size: 25px;
+  font-weight: bold;
+  padding: 10px;
+  text-align: center;
+  /* background-color: */
+}
+
+.image-block:hover {
+  border: 7px solid hsl(0, 0%, 75%);
+}
+
+.image-block img {
+  width: 100%;
+  height: auto;
+}
+
+.left-button,
+.right-button {
+  width: 25px;
+  height: 25px;
+  color: gray;
+  border-radius: 0.2rem;
+  position: absolute;
+  border: none;
+  opacity: 0.7;
+  font-weight: bold;
+}
+
+.left-button {
+  transform: translate(15px, 165px);
+}
+
+.left-button:hover {
+  opacity: 1;
+}
+
+.right-button {
+  transform: translate(550px, 165px);
+}
+
+.right-button:hover {
+  opacity: 1;
 }
