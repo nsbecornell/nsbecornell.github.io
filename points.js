@@ -6,6 +6,10 @@ async function loadPoints() {
 
   const url = `https://sheets.googleapis.com/v4/spreadsheets/${spreadsheetId}?includeGridData=true&key=${apiKey}`;
 
+  // Display loading spinner
+  const loadingSpinner = document.getElementById("loading-spinner");
+  loadingSpinner.style.display = "block";
+
   const options = {
     method: "GET",
     headers: {
@@ -40,6 +44,9 @@ async function loadPoints() {
     listItem.textContent = `${i + 1}. ${user.netId}: ${user.points} points`;
     topThreeContainer.appendChild(listItem);
   }
+
+  // Hide the loading spinner
+  loadingSpinner.style.display = "none";
 }
 
 // Automatically invoke the function when the page is loaded

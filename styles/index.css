@@ -159,9 +159,24 @@ a.nav-link:hover {
   padding: 10px;
 }
 
+/* .eboard-cols img {
+  cursor: pointer;
+  transition: transform 0.2s;
+} */
+/* .eboard-cols img {
+  cursor: pointer;
+  transition: transform 0.2s;
+  max-width: 100%;
+  height: auto;
+} */
 .eboard-cols img {
   cursor: pointer;
   transition: transform 0.2s;
+  flex: 1; /* Allow items to grow and shrink equally */
+  width: 100%;
+  max-width: 100%; /* Ensure images don't exceed the container width */
+  height: 288px;
+  object-fit: cover; /* Ensures that the entire container is covered by the image */
 }
 
 .eboard-cols img:hover {
@@ -474,6 +489,30 @@ label {
   /* Darker green on hover */
 }
 
+#loading-spinner {
+  display: none;
+  text-align: center;
+}
+
+.spinner {
+  border: 4px solid rgba(0, 0, 0, 0.1);
+  border-radius: 50%;
+  border-top: 4px solid #3498db;
+  width: 30px;
+  height: 30px;
+  animation: spin 1s linear infinite;
+  margin: 20px auto;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
 .top-three-container {
   display: flex;
   flex-direction: column;
@@ -723,6 +762,7 @@ small {
   justify-content: space-around;
   align-items: center;
   padding: 0;
+  margin-top: 10px;
 }
 
 .footer-links li {
