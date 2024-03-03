@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>Gallery Page</title>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous" />
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous">
+    </script>
+
+  <!-- Favicon -->
+  <link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
+  <link rel="stylesheet" type="text/css" href="styles/index.css" />
+
+  <!-- Font  -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+    integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous" />
+  <link href="https://fonts.googleapis.com/css?family=Mulish" rel="stylesheet" />
+</head>
+
+<body>
+  <div class="container">
+    <nav class="navbar navbar-expand-lg navbar-light">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="index.html"><img src="nsbe-cu logo.png" width="130"></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+          aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="aboutus.html">About Us</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="leadership.html">Leadership</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="events.html">Events</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
+                data-bs-toggle="dropdown" aria-expanded="false">
+                Get Involved
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                <li><a class="dropdown-item" href="corporate.html">Corporate</a></li>
+                <li><a class="dropdown-item" href="student.html">Student</a></li>
+                <li><a class="dropdown-item" href="alumni.html">Alumni</a></li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="points.html">Points</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <h2>Gallery</h2>
+    <!--Brief introduction to webpage -->
+    <div class="description">
+      <h3>A Glimpse of Who We Are</h3>
+      <p>Here at Cornell, our NSBE chapter is always coming with something new to engage our black engineers! From crazy
+        events to casual hangouts, we've captured it all to give you a peek into the good times we've had. Take a look
+        at just some of the many pictures we've taken along the way!
+      </p>
+    </div>
+
+    <h3 style="text-align: center;"><u><b>Spring '24</u></b></h3>
+    <h4 style="text-align: center;">Coming Soon!</h4>
+    <hr>
+    <h3 style="text-align: center;"><b><u>Fall '23</u></b></h3>
+
+    <section class="gallery_container">
+      <div class="image-row">
+        <!-- Image Block displaying Sweet Tools for Success event -->
+        <div class="image-row">
+          <div class="image-block">
+            <div class="event_title">Sweet Tools for Success</div>
+            <div class="slider-wrapper" id="Sweettools">
+              <div class="slider">
+                <button class="left-button" onclick="changeImage('Sweettools', -1, 'Sweettools-slider')">&lt</button>
+                <button class="right-button" onclick="changeImage('Sweettools', 1, 'Sweettools-slider')">></button>
+                <img id="Sweettools-slider" src=./images/gallery-photos/sweettools/sweettools1.jpg
+                  alt="This image slider contains images of NSBE-CU's Sweet Tools for Success Event. The first image of this slider depicts one NSBE member handing another member a handful of sweets." />
+              </div>
+
+              <div class="slider-nav" id="Sweettools-nav">
+                <a style="opacity:1" id="Sweettools-1"></a>
+                <a id="Sweettools-2"></a>
+              </div>
+            </div>
+            <div class="description">
+              <b>5 Dec.</b> Serving as an opportunity to give NSBE-CU members a little tokens of support during finals
+              season, this event brought the spirit of giving to the NSBE-CU community.
+            </div>
+          </div>
+        </div>
+
+
+        <!-- Image Block displaying Hot Takes event -->
+        <div class="image-block">
+          <div class="event_title">Hot Takes Social</div>
+          <div class="slider-wrapper" id="Hot-Takes">
+            <div class="slider">
+              <script src="gallery.js"></script>
+              <button class="left-button" onclick="changeImage('Hot-Takes', -1, 'Hot-Takes-slider')">&lt</button>
+              <button class="right-button" onclick="changeImage('Hot-Takes', 1, 'Hot-Takes-slider')">></button>
+              <img id="Hot-Takes-slider" src=./images/gallery-photos/hot-takes/hottakes1.jpg
+                alt="This image slider contains images of NSBE-CU's Hot Takes Social event. The first image of this slider depicts several NSBE members sitting together in a small lecture hall, posing for a picture." />
+            </div>
+
+            <div class="slider-nav" id="Hot-Takes-nav">
+              <a style="opacity:1" id="Hot-Takes-1"></a>
+              <a id="Hot-Takes-2"></a>
+            </div>
+
+          </div>
+          <div class="description">
+            <b>30 Oct.</b> Serving as a perfect opportunity to destress during exam season, this event gave a platform
+            to many NSBE-CU members to voice their hottest, spiciest, most controversial takes!
+          </div>
+        </div>
+
+        <!-- Image Block displaying Space X Information Session event -->
+        <div class="image-block">
+          <div class="event_title">SpaceX Information Session</div>
+          <div class="slider-wrapper" id="SpaceX">
+            <div class="slider">
+              <button class="left-button" onclick="changeImage('SpaceX', -1, 'SpaceX-slider')">&lt</button>
+              <button class="right-button" onclick="changeImage('SpaceX', 1, 'SpaceX-slider')">></button>
+              <img id="SpaceX-slider" src=./images/gallery-photos/spacex/spacex-1.jpeg
+                alt="This image slider contains images of NSBE-CU's SpaceX Information Session. The first image of this slider displays an image, taken from the back of the lecture hall in which the event took place, of the congregation of Cornell students facing a panel of SpaceX recruiters." />
+
+              <div class="slider-nav" id="SpaceX-nav">
+                <a style="opacity:1" id="SpaceX-1"></a>
+                <a id="SpaceX-2"></a>
+                <a id="SpaceX-3"></a>
+                <a id="SpaceX-3"></a>
+              </div>
+
+            </div>
+          </div>
+          <div class="description">
+            <b>21 Sep.</b> This information session served to keep many of our engineers informed about the
+            opportunities present at SpaceX, as well as to provide an excellent environment for networking with
+            recruiters.
+          </div>
+        </div>
+
+        <!-- Image Block displaying Accenture Networking event -->
+        <div class="image-block">
+          <div class="event_title">Accenture Networking Dinner</div>
+          <div class="slider-wrapper" id="Accenture">
+            <div class="slider">
+              <script src="gallery.js"></script>
+              <button class="left-button" onclick="changeImage('Accenture', -1, 'Accenture-slider')">&lt</button>
+              <button class="right-button" onclick="changeImage('Accenture', 1, 'Accenture-slider')">></button>
+              <img id="Accenture-slider" src=./images/gallery-photos/accenture-dinner/accenture1.png
+                alt="This image slider contains images of NSBE-CU's Accenture Networking Dinner. The first image of this slider depicts the panel of four Cornell alumni that, at the time, worked for Accenture, before a projection of a slideshow presentation, as well as the back of the heads of a few NSBE members that are sitting before the panelists." />
+            </div>
+
+            <div class="slider-nav" id="Accenture-nav">
+              <a style="opacity:1" id="Accenture-1"></a>
+              <a id="Accenture-2"></a>
+              <a id="Accenture-3"></a>
+            </div>
+          </div>
+
+          <div class="description">
+            <b>5 Sep.</b> At this event, students had to opportunity to learn about the experiences of several Cornell
+            alumni working at Accenture, and to gain insight on taking steps to advance their own careers.
+          </div>
+        </div>
+
+        <!-- Image Block displaying NSBE 101 Session -->
+        <div class="image-block">
+          <div class="event_title">NSBE 101</div>
+          <div class="slider-wrapper" id="101">
+            <div class="slider">
+              <button class="left-button" onclick="changeImage('101', -1, '101-slider')">&lt</button>
+              <button class="right-button" onclick="changeImage('101', 1, '101-slider')">></button>
+              <img id="101-slider" src=./images/gallery-photos/nsbe101/nsbe101_1.JPG
+                alt="This image slider contains images of NSBE-CU's NSBE101 Information session. The first image of this slider depicts a NSBE-CU general body member, sitting amongst other students, who is speaking aloud using a microphone." />
+            </div>
+
+            <div class="slider-nav" id="101-nav">
+              <a style="opacity:1" id="101-1"></a>
+              <a id="101-2"></a>
+              <a id="101-3"></a>
+              <a id="101-4"></a>
+              <a id="101-5"></a>
+              <a id="101-6"></a>
+              <a id="101-7"></a>
+              <a id="101-8"></a>
+              <a id="101-9"></a>
+              <a id="101-10"></a>
+              <a id="101-11"></a>
+            </div>
+          </div>
+          <div class="description">
+            <b>25 Aug.</b> As NSBE-CU's first g-body meeting of the fall semester, this event served as an opportunity
+            for its members to learn more about the organization and about its plans for the upcoming year.
+          </div>
+        </div>
+      </div>
+
+
+      <div class="image-row">
+        <!-- Image Block displaying First Year Game Night event -->
+        <div class="image-block">
+          <div class="event_title">First-Year Game Night</div>
+          <div class="slider-wrapper" id="FYGN">
+            <div class="slider">
+              <button class="left-button" onclick="changeImage('FYGN', -1, 'FYGN-slider')">&lt</button>
+              <button class="right-button" onclick="changeImage('FYGN', 1, 'FYGN-slider')">></button>
+              <img id="FYGN-slider" src=./images/gallery-photos/first-year-game-night/FYGN-1.jpg
+                alt="This image slider contains images of NSBE-CU's First-Year Game Night event. The first image of this slider depicts several NSBE members sitting at a small table and talking amongst each other." />
+            </div>
+
+            <div class="slider-nav" id="FYGN-nav">
+              <a style="opacity:1" id="FYGN-1"></a>
+              <a id="FYGN-2"></a>
+              <a id="FYGN-3"></a>
+            </div>
+
+          </div>
+          <div class="description">
+            <b>17 Nov.</b> Serving as an opportunity for many first-years of the NSBE-CU g-body to destress during
+            prelim season, this game night event put the skills of many to the test!
+          </div>
+        </div>
+
+        <!-- Image Block displaying Fall Regional Conference Information Session -->
+        <div class="image-block">
+          <div class="event_title">FRC Information Session</div>
+          <div class="slider-wrapper" id="FRC">
+            <div class="slider">
+              <button class="left-button" onclick="changeImage('FRC', -1, 'FRC-slider')">&lt</button>
+              <button class="right-button" onclick="changeImage('FRC', 1, 'FRC-slider')">></button>
+              <img id="FRC-slider" src=./images/gallery-photos/conferenceinfo1.jpg
+                alt="This image slider contains images of NSBE-CU's Fall Regional Conference Information Session. The first image of this slider displays an image, taken from the back of the room in which the event was hosted, of the NSBE-CU members at the information session, all watching a projected slideshow presentation." />
+            </div>
+
+            <div class="slider-nav" id="FRC-nav">
+              <a style="opacity:1" id="FRC-1"></a>
+              <a id="FRC-2"></a>
+            </div>
+
+          </div>
+          <div class="description">
+            <b>22 Oct.</b> As NSBE's Fall Regional Conference rounded the corner, many students stayed informed about
+            the
+            networking opportunity through this information session.
+          </div>
+        </div>
+
+        <!-- Image Block displaying Welcome Back Barbeque event -->
+        <div class="image-block">
+          <div class="event_title">Welcome Back BBQ</div>
+          <div class="slider-wrapper" id="WBBBQ">
+            <div class="slider">
+              <button class="left-button" onclick="changeImage('WBBBQ', -1, 'WBBBQ-slider')">&lt</button>
+              <button class="right-button" onclick="changeImage('WBBBQ', 1, 'WBBBQ-slider')">></button>
+              <img id="WBBBQ-slider" src=./images/gallery-photos/welcomebackbbq/bbq1.jpg
+                alt="This image slider contains images of NSBE-CU's Welcome Back Barbeque. The first image of this slider displays several NSBE members speaking amongst each other within multiple groups, all standing in the field directly outside of a Cornell dorm." />
+            </div>
+
+            <div class="slider-nav" id="WBBBQ-nav">
+              <a style="opacity:1" id="WBBBQ-1"></a>
+              <a id="WBBBQ-2"></a>
+            </div>
+          </div>
+          <div class="description">
+            <b>9 Sep.</b> This event served as an excellent opportunity for the NSBE-CU g-body to not only get to meet
+            other NSBE members, but to also meet Cornellians in URMC and the National Society of Hispanic Professional
+            Engineers!
+          </div>
+        </div>
+
+        <!-- Image Block displaying Faculty Panel Q&A event -->
+        <div class="image-block">
+          <div class="event_title">Faculty Panel Q&A</div>
+          <div class="slider-wrapper" id="FacultyPanel">
+            <div class="slider">
+              <button class="left-button" onclick="changeImage('FacultyPanel', -1, 'FacultyPanel-slider')">&lt</button>
+              <button class="right-button" onclick="changeImage('FacultyPanel', 1, 'FacultyPanel-slider')">></button>
+              <img id="FacultyPanel-slider" src=./images/gallery-photos/faculty-panel/facultypanel1.jpg
+                alt="This image slider contains images of NSBE-CU's Faculty Panel Q&A Session. The first image of this slider displays an image, taken at the front of the room, of several NSBE students looking beyond the camera at a projected presentation, which the camera does not capture." />
+            </div>
+
+            <div class="slider-nav" id="FacultyPanel-nav">
+              <a style="opacity:1" id="FacultyPanel-1"></a>
+              <a id="FacultyPanel-2"></a>
+            </div>
+          </div>
+          <div class="description">
+            <b>29 Aug.</b> Through this event, students were able to seek advice from experienced professors about
+            various academic topics, such as improving performance in classes to doing well over the course of a
+            semester.
+          </div>
+        </div>
+
+        <!-- Image Block displaying Ice Cream Social event -->
+        <div class="image-block">
+          <div class="event_title">Ice Cream Social</div>
+          <div class="slider-wrapper" id="IceCreamSocial">
+            <div class="slider">
+              <button class="left-button" onclick="changeImage('IceCreamSocial', -1, 'IceCream-slider')">&lt</button>
+              <button class="right-button" onclick="changeImage('IceCreamSocial', 1, 'IceCream-slider')">></button>
+              <img id="IceCream-slider" src=./images/gallery-photos/ice-cream-social/icecream1.jpg
+                alt="This image slider contains images of NSBE-CU's Ice Cream Social event. The first image of this slider displays a group of students sitting at the Cornell Dairy Bar, sitting at several tables and conversing amongst each other." />
+
+              <div class="slider-nav" id="IceCreamSocial-nav">
+                <a style="opacity:1" id="IceCreamSocial-1"></a>
+                <a id="IceCreamSocial-2"></a>
+              </div>
+
+            </div>
+          </div>
+
+          <div class="description">
+            <b>19 Aug.</b>
+            This event served as an opportunity for students of all years, including the recently-arrived freshmen, to
+            meet, get to know each other, and enjoy some free ice cream!
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <div class="footer">
+      <p>National Society of Black Engineers</p>
+      <small>Copyright © 2021. Cornell University National Society of Black
+        Engineers. All rights reserved.</small>
+      <ul class="footer-links">
+        <li>
+          <a href="https://www.facebook.com/NSBECornell/" target="_blank"><i class="fab fa-facebook-f"></i></a>
+        </li>
+        <li>
+          <a href="https://twitter.com/nsbeonthehill?lang=en" target="_blank"><i class="fab fa-twitter"></i></a>
+        </li>
+        <li>
+          <a href="https://www.instagram.com/nsbe_cu/?hl=en" target="_blank"><i class="fab fa-instagram"></i></a>
+        </li>
+      </ul>
+    </div>
+</body>
+
+</html>
