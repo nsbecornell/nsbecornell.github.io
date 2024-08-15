@@ -1,4 +1,4 @@
-import { Container, Heading, Image, Text, Flex, Link, Spacer, HStack} from '@chakra-ui/react';
+import { Image, Flex, Link, Spacer, HStack} from '@chakra-ui/react';
 import NSBECULogo from '@/images/nsbe-cu logo.png'
 
 const NavigationBar = () => {
@@ -16,10 +16,10 @@ const NavigationBar = () => {
   return (
       <Flex as="nav" gap={10} my={15} mx={30}>
         {/* Consider fallback image*/}
-        <Image w={180} src={NSBECULogo.src} fallbackSrc="" alt="Image"/>
+        <Image w={180} src={NSBECULogo.src} fallbackSrc="" alt="Logo of Cornell University National Society of Black Engineers"/>
         <Spacer />
 
-        <HStack spacing={20}>
+        <HStack spacing={32}>
           <Link sx={linkStyles} href=''>About</Link>
           <Link sx={linkStyles} href=''>Leadership</Link>
           <Link sx={linkStyles} href=''>Events</Link>

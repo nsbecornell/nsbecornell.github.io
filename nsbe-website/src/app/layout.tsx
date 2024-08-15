@@ -5,6 +5,8 @@ import "./globals.css";
 
 // Components
 import NavigationBar from "@/components/NavigationBar";
+import Footer from "@/components/Footer";
+import { ChakraProvider, Container} from "@chakra-ui/react";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -21,8 +23,13 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={inter.className}>
-        <NavigationBar />
-        {children}
+        <Container backgroundColor="#1F1F1F">
+          {/* <ChakraProvider> */}
+              <NavigationBar />
+              {children}
+              <Footer />
+          {/* </ChakraProvider> */}
+        </Container>
         </body>
     </html>
   );
