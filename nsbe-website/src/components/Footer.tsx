@@ -13,7 +13,7 @@ const Footer = () => {
   }
 
   return (
-    <Center as="footer">
+    <Center as="footer" marginTop={25}>
       <Flex direction="column">
           <Center>
           <HStack>
