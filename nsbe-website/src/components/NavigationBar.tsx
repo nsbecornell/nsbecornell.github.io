@@ -16,12 +16,14 @@ const NavigationBar = () => {
   return (
       <Flex as="nav" gap={10} my={15} mx={30}>
         {/* Consider fallback image*/}
-        <Image w={180} src={NSBECULogo.src} fallbackSrc="" alt="Logo of Cornell University National Society of Black Engineers"/>
+        <Link href='/'>
+          <Image w={180} src={NSBECULogo.src} alt="Logo of Cornell University National Society of Black Engineers"/>
+        </Link>
         <Spacer />
 
         <HStack spacing={32}>
           <Link sx={linkStyles} href=''>About</Link>
-          <Link sx={linkStyles} href=''>Leadership</Link>
+          <Link sx={linkStyles} href='/leadership'>Leadership</Link>
           <Link sx={linkStyles} href=''>Events</Link>
           <Link sx={linkStyles} href=''>Points</Link>
           <Link sx={linkStyles} href=''>Gallery</Link>

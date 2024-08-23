@@ -33,7 +33,7 @@ export default function Home() {
     <main className={styles.main}>
       <Flex direction="column" align="center">
         <Center>
-          <Image h={425} opacity={0.75} src={GroupPhoto.src} fallbackSrc="" alt=""/>
+          <Image h={425} opacity={0.75} src={GroupPhoto.src} alt=""/>
           <Heading position="absolute" sx={headingStyling}>Black Engineers at Cornell University</Heading>
         </Center>
       </Flex>
@@ -66,7 +66,7 @@ export default function Home() {
       <Box as="section">
         <Heading sx={headingStyling}>Initiatives</Heading>
         <Flex justify="center" gap="10%">
-            <ImageContainer src={AcademicExcellence.src} fallbackSrc="" alt=""/>
+            <ImageContainer src={AcademicExcellence.src} alt=""/>
             <Flex direction='column' wrap='wrap' align='center' justify="center" >
               <Heading sx={headingStyling} marginBottom={0} fontSize={25}>Academic Excellence</Heading>
               <Text sx={textStyle} maxWidth={600} fontSize={20} fontWeight="bold">Our tutorial programs, or &apos;Study Jams&apos;, are held regularly throughout the school year, offering free tutoring and review sessions for general freshman and sophomore engineering courses and hosting post-exam celebrations. NSBE-CU facilitates academic excellence by rewarding deserving members with scholarships and providing mentorship and assistance to struggling students to help them reach their full academic potential.
@@ -80,11 +80,11 @@ export default function Home() {
               <Text sx={textStyle} maxWidth={600} fontSize={20} fontWeight="bold">NSBE-CU works with the Southside Community Center, Greater Ithaca Activities Center (GIAC), and the Ithaca Sciencecenter, providing tutoring and educational programs. NSBE-CU participates in the Fall Annual Into the Streets Program, a day of service dedicated to cleaning the local community. Last year NSBE-CU eclipsed 200 service hours.
               </Text>
             </Flex>
-            <ImageContainer src={CommunityService.src} fallbackSrc="" alt=""/>
+            <ImageContainer src={CommunityService.src} alt=""/>
         </Flex>
 
         <Flex justify='center' gap="10%">
-          <ImageContainer src={ProfessionalDevelopment.src} fallbackSrc="" alt=""/>
+          <ImageContainer src={ProfessionalDevelopment.src} alt=""/>
           <Flex direction='column' wrap='wrap' align='center' justify="center" >
             <Heading sx={headingStyling} marginBottom={0} fontSize={25}>Professional Development</Heading>
             {/* wordWrap="breakword" */}

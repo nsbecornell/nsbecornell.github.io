@@ -1,7 +1,7 @@
 // Chakra UI Components
 import { Flex, Image, Center } from '@chakra-ui/react'
 
-function ImageContainer(props: {src: string, fallbackSrc: string, alt: string}) {
+function ImageContainer(props: {src: string, alt: string}) {
   const boxStyling = {
     bg: "#2C2C2C",
     w: 300,
@@ -18,7 +18,7 @@ function ImageContainer(props: {src: string, fallbackSrc: string, alt: string}) 
   return (
     <Flex sx={boxStyling} justify="center">
       <Center>
-        <Image sx={imageStyling} src={props.src} fallbackSrc={props.fallbackSrc} alt={props.alt} />
+        <Image sx={imageStyling} src={props.src} alt={props.alt} />
       </Center>
     </Flex>
   );

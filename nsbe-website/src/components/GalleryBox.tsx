@@ -30,7 +30,7 @@ const GalleryBox = (props: {key: number, name: string, position: string, image: 
     <Flex direction='column' sx={boxStyling}>
       <Center h='inherit'>
         <VStack>
-        <Image borderRadius={12} width={250} h={250} objectFit="fill" src={props.image} fallbackSrc="" alt=""/>
+        <Image borderRadius={12} width={250} h={250} objectFit="fill" src={props.image} alt=""/>
         <VStack>
           <Text sx={textStyling} fontSize={12} as="span" className={styles.positionTitle}>{props.position}</Text>
           <Text sx={textStyling} fontSize={15} as="span" className={styles.memberName}>{props.name}</Text>
