@@ -4,15 +4,15 @@ import { Flex, Image, Center } from '@chakra-ui/react'
 function ImageContainer(props: {src: string, alt: string}) {
   const boxStyling = {
     bg: "#2C2C2C",
-    w: 300,
-    h: 300,
+    w: 275,
+    h: 275,
     borderRadius: 25,
     my: 15
   };
 
   const imageStyling = {
-    w: 250,
-    h: 250
+    w: 200,
+    h: 200
   }
 
   return (
