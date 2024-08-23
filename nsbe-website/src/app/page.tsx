@@ -3,13 +3,17 @@ import { Inter } from "next/font/google";
 
 
 // Chakra UI Imports
-import {Flex, Image, Box, Center, Text, Heading, HStack } from '@chakra-ui/react'
+import {Flex, Image, Box, Center, Text, Heading, HStack, Spacer } from '@chakra-ui/react'
 
 // Custom Imports
 import TextContainer from '@/components/TextContainer'
+import ImageContainer from '@/components/ImageContainer'
 
 // Image Imports
 import GroupPhoto from '@/images/groupNSBE.jpg'
+import AcademicExcellence from '@/images/initiatives/academic-excellence.png'
+import CommunityService from '@/images/initiatives/community-service.png'
+import ProfessionalDevelopment from '@/images/initiatives/professional-development.png'
 
 const inter = Inter({subsets: ['latin']})
 
@@ -51,6 +55,37 @@ export default function Home() {
               message="Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis rem facere esse nam eum hic corrupti asperiores dolorum, quam voluptatem, sunt commodi voluptatum nesciunt ipsum! Dolorum saepe quibusdam ipsa a!"
             />
           </HStack>
+        </Flex>
+      </Box>
+      <Box as="section">
+        <Heading sx={headingStyling}>Initiatives</Heading>
+        <Flex justify="center" gap="10%">
+            <ImageContainer src={AcademicExcellence.src} fallbackSrc="" alt=""/>
+            <Flex direction='column' wrap='wrap' align='center' justify="center" >
+              <Heading sx={headingStyling} marginBottom={0} fontSize={25}>Academic Excellence</Heading>
+              <Text sx={textStyle} maxWidth={600} fontSize={20} fontWeight="bold">Our tutorial programs, or 'Study Jams', are held regularly throughout the school year, offering free tutoring and review sessions for general freshman and sophomore engineering courses and hosting post-exam celebrations. NSBE-CU facilitates academic excellence by rewarding deserving members with scholarships and providing mentorship and assistance to struggling students to help them reach their full academic potential.
+              </Text>
+            </Flex>
+        </Flex>
+
+        <Flex justify='center' gap="10%">
+            <Flex direction='column' wrap='wrap' align='center' justify="center" >
+              <Heading sx={headingStyling} marginBottom={0} fontSize={25}>Community Service</Heading>
+              <Text sx={textStyle} maxWidth={600} fontSize={20} fontWeight="bold">NSBE-CU works with the Southside Community Center, Greater Ithaca Activities Center (GIAC), and the Ithaca Sciencecenter, providing tutoring and educational programs. NSBE-CU participates in the Fall Annual Into the Streets Program, a day of service dedicated to cleaning the local community. Last year NSBE-CU eclipsed 200 service hours.
+              </Text>
+            </Flex>
+            <ImageContainer src={CommunityService.src} fallbackSrc="" alt=""/>
+        </Flex>
+
+        <Flex justify='center' gap="10%">
+          <ImageContainer src={ProfessionalDevelopment.src} fallbackSrc="" alt=""/>
+          <Flex direction='column' wrap='wrap' align='center' justify="center" >
+            <Heading sx={headingStyling} marginBottom={0} fontSize={25}>Professional Development</Heading>
+            {/* wordWrap="breakword" */}
+            <Text sx={textStyle} maxWidth={600} fontSize={20} fontWeight="bold">
+              NSBE-CU focuses on recruiting members from all STEM backgrounds, with an emphasis on drawing members from the entering class. NSBE-CU’s community building activities, sponsored development programs, and leadership opportunities help recruit and retain members who go on to earn degrees in engineering, science and technology.
+            </Text>
+          </Flex>
         </Flex>
       </Box>
     </main>
