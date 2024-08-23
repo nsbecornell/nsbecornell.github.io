@@ -82,28 +82,28 @@ const Leadership = () => {
       members: [
         {
           id: 1,
-          name: "",
-          position: "",
+          name: "Rayanu Adam",
+          position: "Programs Chair",
           image: ""
         },
         {
           id: 2,
-          name: "",
-          position: "",
+          name: "Wesley DeCosta",
+          position: "Conference Planning Chair",
           image: ""
         },
         {
           id: 3,
-          name: "",
-          position: "",
+          name: "Reggie Harris",
+          position: "Membership Chair",
           image: ""
         },
-        {
-          id: 4,
-          name: "",
-          position: "",
-          image: ""
-        },
+        // {
+        //   id: 4,
+        //   name: "",
+        //   position: "",
+        //   image: ""
+        // },
       ]
     },
     {
@@ -123,14 +123,14 @@ const Leadership = () => {
         },
         {
           id: 3,
-          name: "",
-          position: "",
+          name: "Emma Brown",
+          position: "Secretary",
           image: ""
         },
         {
           id: 4,
-          name: "",
-          position: "",
+          name: "Tenny George",
+          position: "Treasurer",
           image: ""
         },
       ]
@@ -146,22 +146,22 @@ const Leadership = () => {
         },
         {
           id: 2,
-          name: "",
-          position: "",
+          name: "Mukami Gichoya",
+          position: "Pre-Collegiate Initiative Chair ",
           image: ""
         },
         {
           id: 3,
-          name: "",
-          position: "",
+          name: "Maguette Diop",
+          position: "Conference Planning Chair",
           image: ""
         },
-        {
-          id: 4,
-          name: "",
-          position: "",
-          image: ""
-        }
+        // {
+        //   id: 4,
+        //   name: "",
+        //   position: "",
+        //   image: ""
+        // }
       ]
     },
     {
@@ -267,7 +267,9 @@ const Leadership = () => {
 
   return (
     <main className={styles.main}>
-      <Image w={1248} h={675} objectFit="cover" src={Eboard.src} fallbackSrc="" alt="Group photo of the chapter's executive board of 2023-2024"/>
+      <Center>
+        <Image w={1248} h={675} objectFit="cover" src={Eboard.src} fallbackSrc="" alt="Group photo of the chapter's executive board of 2023-2024"/>
+      </Center>
       <Box as="section">
           <Heading color='white' fontSize={30}>The Executive Board</Heading>
           <Text sx={textStyle}>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse condimentum eget lacus gravida lacinia. Suspendisse viverra tellus a justo finibus, eu blandit purus egestas. Aliquam porttitor volutpat tellus eget scelerisque. In lobortis quis nisi vel malesuada. Quisque lectus est, suscipit ut sapien eu, pharetra accumsan mauris. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. In sagittis justo pulvinar urna posuere posuere. Integer dui magna, feugiat eu arcu et, placerat feugiat turpis. Praesent lacinia enim vel pretium cursus. Integer sodales turpis nibh, vehicula elementum magna iaculis id. Phasellus sapien libero, imperdiet sed faucibus vitae, feugiat vel nulla. Integer eleifend orci sit amet enim dignissim, vitae pharetra neque cursus.</Text>
