@@ -20,6 +20,7 @@ const GalleryBox = (props: {key: number, name: string, position: string, image: 
   const boxStyling = {
     bg: "#2C2C2C",
     mx: 12,
+    my: 10,
     borderRadius: 25,
     h: 350,
     w: 300

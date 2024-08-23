@@ -10,7 +10,8 @@ function GalleryRow( props : {title : string, members: {id: number, name: string
       <Center>
         <Heading as="h3" color="white" fontSize={25}>{props.title}</Heading>
       </Center>
-      <HStack>
+      <Center>
+      <Flex direction='row' wrap='wrap' justifyContent='center'>
         {
           props.members.map((member) => {
             return(
@@ -23,7 +24,8 @@ function GalleryRow( props : {title : string, members: {id: number, name: string
             );
           })
         }
-      </HStack>
+      </Flex>
+      </Center>
     </Flex>
   )
 }
