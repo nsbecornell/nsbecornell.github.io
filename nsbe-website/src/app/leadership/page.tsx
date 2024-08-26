@@ -1,7 +1,7 @@
 import styles from "@/app/page.module.css";
 
 // Chakra UI Imports
-import {Image, Text, Box, Heading, VStack, HStack, Center} from '@chakra-ui/react';
+import {Image, Text, Box, Heading, VStack, Center, UnorderedList, ListItem, Flex} from '@chakra-ui/react';
 
 import {
   Menu,
@@ -272,8 +272,36 @@ const Leadership = () => {
       </Center>
       <Box as="section">
           <Heading color='white' fontSize={30}>The Executive Board</Heading>
-          <Text sx={textStyle}>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse condimentum eget lacus gravida lacinia. Suspendisse viverra tellus a justo finibus, eu blandit purus egestas. Aliquam porttitor volutpat tellus eget scelerisque. In lobortis quis nisi vel malesuada. Quisque lectus est, suscipit ut sapien eu, pharetra accumsan mauris. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. In sagittis justo pulvinar urna posuere posuere. Integer dui magna, feugiat eu arcu et, placerat feugiat turpis. Praesent lacinia enim vel pretium cursus. Integer sodales turpis nibh, vehicula elementum magna iaculis id. Phasellus sapien libero, imperdiet sed faucibus vitae, feugiat vel nulla. Integer eleifend orci sit amet enim dignissim, vitae pharetra neque cursus.</Text>
-          <Text sx={textStyle}>Nullam commodo sapien quis malesuada posuere. Nunc laoreet ipsum risus, id sagittis tortor blandit nec. Vivamus sollicitudin nisl sed quam lacinia molestie. Etiam mauris arcu, sodales dapibus maximus quis, bibendum at dui. Phasellus vel ante eu lacus ultricies pellentesque sed non sapien. Maecenas placerat ut tortor vitae laoreet. Praesent sagittis orci turpis, et pulvinar ipsum auctor a. Fusce id consectetur turpis, a tempus nulla. Cras auctor tincidunt velit, lobortis dapibus tellus. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Curabitur molestie iaculis orci rhoncus imperdiet. Vestibulum ac nunc mattis, rutrum odio sed, suscipit arcu.</Text>
+          <Text sx={textStyle}>
+            The executive board of our NSBE chapter is the mover behind all that our chapter does. From planning events to promote the academic success of our chapter&apos;s general body members to coordinating with sponsors to ensure the professional development of our black engineers &mdash; our board works tirelessly to promote the mission and vision of the National Society of Black Engineers. Under the guidance of our president, the executive board also works to promote throughout the campus the chapter&apos;s own core values: Transparency, Dedication, and Support.
+          </Text>
+          <Center>
+            <Flex direction='column'>
+              <Text textAlign='center' color='white' fontWeight='bold' my={0}>Transparency</Text>
+              <Text sx={textStyle} maxW={650}>
+                We prioritize open and honest communication within our community. By being transparent, we build trust and ensure that all members are informed and aligned with our goals. Reliability is key; we hold ourselves accountable to each other and to the mission of our organization.
+              </Text>
+            </Flex>
+          </Center>
+          <Center>
+            <Flex direction='column'>
+              <Text textAlign='center' color='white' fontWeight='bold' my={0}>Dedication</Text>
+              <Text sx={textStyle} maxW={650}>
+                We are unwavering in our commitment to the mission of the National Society of Black Engineers. Our dedication drives us to excel academically, succeed professionally, and make a positive impact in our communities. Our belief in this mission inspires us in our efforts to uplift this generation of Black Engineers.
+              </Text>
+            </Flex>
+          </Center>
+          <Center>
+            <Flex direction='column'>
+              <Text textAlign='center' color='white' fontWeight='bold' my={0}>Support</Text>
+              <Text sx={textStyle} maxW={650}>
+                Our strength lies in our unity and our ability to support oen another. We forster an environment where members can lean one each other for guidance, encouragement, and resources. Together, we create a network of mentorship and collaboration that propels us all forward.
+              </Text>
+            </Flex>
+          </Center>
+          <Text sx={textStyle}>
+            Through promoting these values, our board enables itself to better relate to the community we pledge to support, and work towards the success our entire chapter.
+          </Text>
       </Box>
       <VStack>
         <VStack>
