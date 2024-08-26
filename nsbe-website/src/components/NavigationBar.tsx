@@ -27,7 +27,7 @@ const NavigationBar = () => {
           {/* <Link sx={linkStyles} href=''>Events</Link> */}
           {/* <Link sx={linkStyles} href=''>Points</Link> */}
           {/* <Link sx={linkStyles} href=''>Gallery</Link> */}
-          {/* <Link sx={linkStyles} href=''>Getting Involved</Link> */}
+          <Link sx={linkStyles} href='/getting-involved/students'>Getting Involved</Link>
         </HStack>
       </Flex>
   );
