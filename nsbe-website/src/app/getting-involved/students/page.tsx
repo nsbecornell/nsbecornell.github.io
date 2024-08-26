@@ -111,7 +111,7 @@ const Students = () => {
                 $90
               </Heading>
               <Text sx={boxTextStyle}>
-                Covers all of a student's registration for the Fall Regional Conference.
+                Covers all of a student&apos;s registration for the Fall Regional Conference.
               </Text>
             </Box>
             <Box sx={boxStyle}>
@@ -119,7 +119,7 @@ const Students = () => {
                 $150
               </Heading>
               <Text sx={boxTextStyle}>
-                Covers all of a student's registration for the Fall Regional Conference.
+                Covers all of a student&apos;s registration for the Fall Regional Conference.
               </Text>
             </Box>
             <Box sx={boxStyle}>
@@ -127,7 +127,7 @@ const Students = () => {
                 $200
               </Heading>
               <Text sx={boxTextStyle}>
-                Covers all of a student's registration for the Fall Regional Conference.
+                Covers all of a student&apos;s registration for the Fall Regional Conference.
               </Text>
             </Box>
             <Box sx={boxStyle}>
@@ -135,7 +135,7 @@ const Students = () => {
                 $500
               </Heading>
               <Text sx={boxTextStyle}>
-                Covers all of a student's registration for the Fall Regional Conference.
+                Covers all of a student&apos;s registration for the Fall Regional Conference.
               </Text>
             </Box>
           </Flex>
