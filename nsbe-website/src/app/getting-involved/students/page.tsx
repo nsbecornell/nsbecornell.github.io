@@ -48,8 +48,8 @@ const Students = () => {
     borderRadius: 15,
     bg: "#2C2C2C",
     borderWidth: 0,
-    w: "50%",
-    minWidth: "40%"
+    w: "40%",
+    minWidth: "35%"
   }
 
   const buttonTextStyle = {
