@@ -451,6 +451,15 @@ label {
   font-weight: bold;
 }
 
+.point_5 {
+  margin-top: 10px;
+  font-size: 1.5rem;
+  color: #5bb161;
+  margin-right: 10px;
+  /* Add margin to separate it from the description */
+  font-weight: bold;
+}
+
 /* Style for the inner container */
 .inner-box {
   display: flex;
