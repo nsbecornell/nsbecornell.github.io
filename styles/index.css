@@ -92,7 +92,7 @@ a.nav-link:hover {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-bottom: 5%;
+  margin-bottom: 500;
 }
 
 .sponsors h2 {
@@ -109,16 +109,28 @@ a.nav-link:hover {
 }
 
 .bootCols {
-  height: auto;
+  height: 200px; /* Set a fixed height */
+  width: 200px; /* Set a fixed width */
   box-sizing: border-box;
   padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-.gold,
-.silver {
-  margin-bottom: 20px;
+.bootCols img {
+  max-width: 100%; /* Ensure the image doesn't exceed the container width */
+  max-height: 100%; /* Ensure the image doesn't exceed the container height */
+  object-fit: contain; /* Ensure the image fits within the container without distortion */
 }
 
+.sponsor-logos img {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain; /* Ensure the image fits within the container without distortion */
+}
+
+.diamond,
 .gold,
 .silver,
 .bronze {
@@ -126,6 +138,10 @@ a.nav-link:hover {
   border-radius: 10px;
 }
 
+.diamond {
+  background-color: #e6f2ff;
+  border-color: #b3d9ff;
+}
 .gold {
   background-color: #f5f1d5;
   border-color: #e5bd08;
@@ -136,17 +152,27 @@ a.nav-link:hover {
   border-color: #565b6e;
 }
 
-.bronze {
-  background-color: #fbdfcf;
-  border-color: #ba642e;
-}
-
 .row {
-  justify-content: center;
+  display: flex; /* Use flexbox for vertical centering */
+  align-items: center; /* Vertically center the items within the row */
+  justify-content: center; /* Horizontally center the items within the row */
+  margin-bottom: 20px;
 }
 
 .sponsor-logos img {
   width: 100%;
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+  max-width: 200px;
+  max-height: 300px;
+  display: block;
+}
+
+.logos-container img {
+  max-height: 100%; /* Set maximum height of images relative to their container */
+  width: auto; /* Allow the width to adjust according to max-height */
+  object-fit: contain; /* Ensure the image fits within the container without distortion */
 }
 
 /* Leadership styles */
