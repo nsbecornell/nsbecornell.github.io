@@ -1,18 +1,18 @@
 // Chakra UI Components
 import { Flex, Image, Center } from '@chakra-ui/react'
 
-function ImageContainer(props: {src: string, alt: string}) {
+function ImageContainer(props: {src: string, alt: string, containerWidth: number, containerHeight: number, imageWidth: number, imageHeight: number}) {
   const boxStyling = {
     bg: "#2C2C2C",
-    w: 275,
-    h: 275,
+    w: props.containerWidth,
+    h: props.containerHeight,
     borderRadius: 25,
     my: 15
   };
 
   const imageStyling = {
-    w: 200,
-    h: 200
+    w: props.imageWidth,
+    h: props.imageHeight
   }
 
   return (
