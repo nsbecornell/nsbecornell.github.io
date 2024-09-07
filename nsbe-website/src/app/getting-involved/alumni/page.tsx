@@ -60,7 +60,7 @@ const Students = () => {
   return (
     <main className={styles.main}>
       <Flex direction="row">
-        <Flex direction="column">
+        <Flex direction="column" marginTop="5%">
           <Heading sx={headingStyle} textAlign='center'>Stay Connected!</Heading>
           <Button sx={buttonStyle}>
             <Heading sx={buttonTextStyle}>
@@ -74,7 +74,7 @@ const Students = () => {
           </Button>
         </Flex>
         <Spacer />
-        <VStack>
+        <VStack marginRight="6%">
           <Box as="section">
             <Flex direction="column" justify="center">
               <Heading sx={headingStyle} textAlign='center'>Donations Help Us Realize Our Initiatives</Heading>
