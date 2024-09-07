@@ -22,12 +22,13 @@ const NavigationBar = () => {
         <Spacer />
 
         <HStack spacing={32}>
-          <Link sx={linkStyles} href='/about'>About</Link>
+          <Link sx={linkStyles} href='/about-us'>About Us</Link>
           <Link sx={linkStyles} href='/leadership'>Leadership</Link>
           {/* <Link sx={linkStyles} href=''>Events</Link> */}
           {/* <Link sx={linkStyles} href=''>Points</Link> */}
           {/* <Link sx={linkStyles} href=''>Gallery</Link> */}
-          <Link sx={linkStyles} href='/getting-involved/students'>Getting Involved</Link>
+          <Link sx={linkStyles} href='/getting-involved/alumni'>Alumni</Link>
+          <Link sx={linkStyles} href='/getting-involved/students'>Students</Link>
         </HStack>
       </Flex>
   );
