@@ -29,6 +29,10 @@ export default function Home() {
     textIndent: "3%"
   };
 
+  const boxStyle = {
+    my: 25
+  };
+
   return (
     <main className={styles.main}>
       <Flex direction="column" align="center">
@@ -39,14 +43,14 @@ export default function Home() {
       </Flex>
 
 
-      <Box as="section" className={styles.introSection}>
+      <Box as="section" className={styles.introSection} sx={boxStyle}>
         <Heading sx={headingStyling}>Who We Are</Heading>
-        <Text sx={textStyle}>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse condimentum eget lacus gravida lacinia. Suspendisse viverra tellus a justo finibus, eu blandit purus egestas. Aliquam porttitor volutpat tellus eget scelerisque. In lobortis quis nisi vel malesuada. Quisque lectus est, suscipit ut sapien eu, pharetra accumsan mauris. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. In sagittis justo pulvinar urna posuere posuere. Integer dui magna, feugiat eu arcu et, placerat feugiat turpis. Praesent lacinia enim vel pretium cursus. Integer sodales turpis nibh, vehicula elementum magna iaculis id. Phasellus sapien libero, imperdiet sed faucibus vitae, feugiat vel nulla. Integer eleifend orci sit amet enim dignissim, vitae pharetra neque cursus.</Text>
-        <Text sx={textStyle}>Nullam commodo sapien quis malesuada posuere. Nunc laoreet ipsum risus, id sagittis tortor blandit nec. Vivamus sollicitudin nisl sed quam lacinia molestie. Etiam mauris arcu, sodales dapibus maximus quis, bibendum at dui. Phasellus vel ante eu lacus ultricies pellentesque sed non sapien. Maecenas placerat ut tortor vitae laoreet. Praesent sagittis orci turpis, et pulvinar ipsum auctor a. Fusce id consectetur turpis, a tempus nulla. Cras auctor tincidunt velit, lobortis dapibus tellus. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Curabitur molestie iaculis orci rhoncus imperdiet. Vestibulum ac nunc mattis, rutrum odio sed, suscipit arcu.</Text>
+        <Text sx={textStyle}>Our chapter is part of the National Society of Black Engineers (NSBE), an organization dedicated to increasing the number of culturally responsible Black engineers who excel academically, succeed professionally, and positively impact the community. As a chapter, we are committed to fostering an environment where members are supported in achieving academic excellence, while also providing opportunities for personal and professional growth. Through initiatives, workshops, and community outreach, we work to embody NSBE’s mission by creating a space for future Black engineers to thrive and lead.</Text>
+        <Text sx={textStyle}>We are more than just a student organization—we are a community that empowers its members to push boundaries and create meaningful change. By providing mentorship, leadership opportunities, and access to networking events, we ensure that our members are prepared to succeed both in and out of the classroom. Whether through participating in regional and national conferences, attending professional development events, or engaging in service projects, our chapter is dedicated to making a positive impact on campus and beyond. We welcome all students who share our passion for engineering excellence and making a lasting contribution to society.</Text>
       </Box>
 
 
-      <Box as="section" className={styles.valuesSection}>
+      <Box as="section" className={styles.valuesSection} sx={boxStyle}>
         <Heading sx={headingStyling}>What We Stand For</Heading>
         <Flex direction="column" align="center">
           <HStack spacing={150}>
@@ -63,7 +67,7 @@ export default function Home() {
       </Box>
 
 
-      <Box as="section">
+      <Box as="section" sx={boxStyle}>
         <Heading sx={headingStyling}>Initiatives</Heading>
         <Flex justify="center" gap="10%">
             <ImageContainer src={AcademicExcellence.src} alt=""/>
