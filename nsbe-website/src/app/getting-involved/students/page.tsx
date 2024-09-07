@@ -1,7 +1,7 @@
 import styles from "@/app/page.module.css";
 
 // Chakra UI Imports
-import { Box, Button, Flex, Heading, VStack, Spacer } from '@chakra-ui/react'
+import { Button, Flex, Heading, VStack, Spacer, Center} from '@chakra-ui/react'
 
 // Custom Imports
 import DescriptionSection from "@/components/DescriptionSection";
@@ -60,6 +60,22 @@ const Students = () => {
           <DescriptionSection image="" heading="Conferences" text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nisl leo, blandit at dictum nec, auctor id magna. Nam viverra sit amet purus nec luctus. Aliquam erat volutpat. Fusce auctor tincidunt lacus, quis rhoncus metus laoreet vitae. Sed faucibus nunc in egestas accumsan."/> 
         </VStack>
       </Flex>
+      <Center>
+        <Flex justifyContent='center' direction="column">
+          <Heading sx={headingStyle}>Executive Board Applications</Heading>
+          <Button sx={buttonStyle} w='fit-content'>
+            <Heading sx={buttonTextStyle} mx="2em">
+              General Executive Board Application
+            </Heading>
+          </Button>
+          <Button sx={buttonStyle} w='fit-content'>
+            <Heading sx={buttonTextStyle} mx="2em">
+              First-Year Representative Application
+            </Heading>
+          </Button>
+        </Flex>
+      </Center>
+      
     </main>
   )
 }
