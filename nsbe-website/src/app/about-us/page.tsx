@@ -7,6 +7,7 @@ import { Box, Image, Center, Heading, Text, Flex, VStack} from '@chakra-ui/react
 import GroupPhoto from '@/images/groupNSBE.jpg'
 import AcademicExcellence from '@/images/initiatives/academic-excellence.png'
 import ChicagoSix from '@/images/Chicago Six.jpg'
+import GroupNSBE101 from '@/images/groupNSBE101.jpg'
 
 function About() {
   const headingStyling = {
@@ -54,7 +55,7 @@ function About() {
         </Flex>
 
        <Flex justify="center" gap="10%">
-          <Image w={300} h={275} src={AcademicExcellence.src} alt=""/>
+          <Image borderRadius={25} h={275} src={GroupNSBE101.src} alt=""/>
           <Flex direction='column' wrap='wrap' align='center' justify="center" >
             <Heading sx={headingStyling} marginBottom={0} fontSize={25}>Present Day</Heading>
             <Text sx={textStyle} maxWidth={600} fontSize={20}>
