@@ -268,7 +268,7 @@ const Leadership = () => {
   return (
     <main className={styles.main}>
       <Center>
-        <Image w={1248} h={675} objectFit="cover" src={Eboard.src} fallbackSrc="" alt="Group photo of the chapter's executive board of 2023-2024"/>
+        <Image borderRadius={25} w={1248} h={675} objectFit="cover" src={Eboard.src} fallbackSrc="" alt="Group photo of the chapter's executive board of 2023-2024"/>
       </Center>
       <Box as="section">
           <Heading color='white' fontSize={30}>The Executive Board</Heading>
