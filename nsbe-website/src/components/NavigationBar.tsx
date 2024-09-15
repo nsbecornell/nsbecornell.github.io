@@ -29,6 +29,7 @@ const NavigationBar = () => {
           {/* <Link sx={linkStyles} href=''>Gallery</Link> */}
           <Link sx={linkStyles} href='/getting-involved/alumni'>Alumni</Link>
           <Link sx={linkStyles} href='/getting-involved/students'>Students</Link>
+          <Link sx={linkStyles} href='/getting-involved/corporate'>Corporate</Link>
         </HStack>
       </Flex>
   );
