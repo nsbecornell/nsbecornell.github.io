@@ -2,7 +2,7 @@ pointsData = [];
 
 async function loadPoints() {
   const apiKey = "AIzaSyBN2UN6x4LarJ8gY3CawcQr7V3gHjSRenk";
-  const spreadsheetId = "12GiBjbpGtlIA8_Wx1JI2HJyxV7ovoVP0YAtGhejDge8";
+  const spreadsheetId = "1XeOgI-GL3ZCD8aC8BAM0LvNUwKGzrEFr_jRaTOhh6xM";
 
   const url = `https://sheets.googleapis.com/v4/spreadsheets/${spreadsheetId}?includeGridData=true&key=${apiKey}`;
 
