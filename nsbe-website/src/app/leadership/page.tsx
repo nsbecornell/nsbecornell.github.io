@@ -15,11 +15,31 @@ import {
 } from '@chakra-ui/react'
 
 // Images
-import Eboard from '@/images/NSBE EBoard.jpg';
+// import Eboard from '@/images/eboard/2024-2025/2024-2025-eboard.JPG';
 import Erhunmwunse from '@/images/EEgaphona.jpg'
 import Ethan from '@/images/ESarpong.jpg'
 import Adigun from '@/images/AOlusola.jpg'
 import Ore from '@/images/OOlaore.jpg'
+
+import eboardPhoto from '@/images/eboard/2024-2025/2024-2025-eboard.jpg'
+import ChimdiAnude from '@/images/eboard/2024-2025/Chimdi Anude.jpeg'
+import MohamedKane from '@/images/eboard/2024-2025/Mohamed Kane.jpg'
+import AdigunOlusola from '@/images/eboard/2024-2025/Adigun Olusola.jpg'
+import KaylaStephenson from '@/images/eboard/2024-2025/Kayla Stephenson.jpeg'
+import TennyGeorge from '@/images/eboard/2024-2025/Tenny George.jpg'
+import EmmaBrown from '@/images/eboard/2024-2025/Emma Brown.jpg'
+import ChimdiEjiogu from '@/images/eboard/2024-2025/Chimdi Ejiogu.jpg'
+import SkaiNzeuton from '@/images/eboard/2024-2025/Skai Nzeuton.jpg'
+import IvieOsagie from '@/images/eboard/2024-2025/Ivie Osagie.jpg'
+import MukamiGichoya from '@/images/eboard/2024-2025/Mukami Gichoya.jpg'
+import LucyBazezy from '@/images/eboard/2024-2025/Lucy Bazezy.jpg'
+import JamisonTaylorJr from '@/images/eboard/2024-2025/Jamison Taylor, Jr.jpg'
+import AlexisSherman from '@/images/eboard/2024-2025/Alexis Sherman.jpeg'
+import ZenaPhillip from '@/images/eboard/2024-2025/Zena Phillip.jpeg'
+import MouhammadDia from '@/images/eboard/2024-2025/Mouhammad Dia.jpeg'
+import NathanielBanjo from '@/images/eboard/2024-2025/Nathaniel Banjo.jpg'
+import YodaheMaaza from '@/images/eboard/2024-2025/Yodahe Maaza.jpg'
+import MaguetteDiop from '@/images/eboard/2024-2025/Maguette Diop.jpg'
 
 // Custom Components
 import GalleryRow from '@/components/GalleryRow'
@@ -43,232 +63,177 @@ const Leadership = () => {
     image: string
   } 
 
-  type committee = {
-    name: string,
+  type year = {
+    year: string,
     members: member[]
   }
 
-  const executiveBoard: committee[] = [
-    {
-      name: "Presidential Suite",
-      members: [
-        {
-          id: 1,
-          name: "Chimdi Anude",
-          position: "President",
-          image: ""
-        },
-        {
-          id: 2,
-          name: "Mohammed Kane",
-          position: "Internal Vice President",
-          image: ""
-        },
-        {
-          id: 3,
-          name: "Adigun Olusola",
-          position: "External Co-Vice President",
-          image: Adigun.src
-        },
-        {
-          id: 4,
-          name: "Kayla Stephenson",
-          position: "External Co-Vice President",
-          image: ""
-        }
-    ]},
-    {
-      name: "Events Committee",
-      members: [
-        {
-          id: 1,
-          name: "Rayanu Adam",
-          position: "Programs Chair",
-          image: ""
-        },
-        {
-          id: 2,
-          name: "Wesley DeCosta",
-          position: "Conference Planning Chair",
-          image: ""
-        },
-        {
-          id: 3,
-          name: "Reggie Harris",
-          position: "Membership Chair",
-          image: ""
-        },
-        // {
-        //   id: 4,
-        //   name: "",
-        //   position: "",
-        //   image: ""
-        // },
-      ]
-    },
-    {
-      name: "Professional Development Committee",
-      members: [
-        {
-          id: 1,
-          name: "Adigun Olusola",
-          position: "External Co-Vice President",
-          image: ""
-        },
-        {
-          id: 2,
-          name: "Kayla Stephenson",
-          position: "External Co-Vice President",
-          image: ""
-        },
-        {
-          id: 3,
-          name: "Emma Brown",
-          position: "Secretary",
-          image: ""
-        },
-        {
-          id: 4,
-          name: "Tenny George",
-          position: "Treasurer",
-          image: ""
-        },
-      ]
-    },
-    {
-      name: "Community Service Committee",
-      members: [
-        {
-          id: 1,
-          name: "Davis Adams",
-          position: "Pre-Collegiate Initiatives Chair",
-          image: ""
-        },
-        {
-          id: 2,
-          name: "Mukami Gichoya",
-          position: "Pre-Collegiate Initiative Chair ",
-          image: ""
-        },
-        {
-          id: 3,
-          name: "Maguette Diop",
-          position: "Conference Planning Chair",
-          image: ""
-        },
-        // {
-        //   id: 4,
-        //   name: "",
-        //   position: "",
-        //   image: ""
-        // }
-      ]
-    },
-    {
-      name: "Academic Excellence Committee",
-      members: [
-        {
-          id: 1,
-          name: "Skai Nzeuton",
-          position: "Academic Excellence Co-Chair",
-          image: ""
-        },
-        {
-          id: 2,
-          name: "Ivie Osagie",
-          position: "Academic Excellence Co-Chair",
-          image: ""
-        },
-        {
-          id: 3,
-          name: "Promise Ekpo",
-          position: "Graduate Representative",
-          image: ""
-        },
-        {
-          id: 4,
-          name: "Jamison Taylor",
-          position: "Senator/Parliamentarian",
-          image: ""
-        }
-      ]
-    },
-    {
-      name: "Public Relations Committee",
-      members: [
-        {
-          id: 1,
-          name: "Hope Best",
-          position: "Publicity Chair",
-          image: ""
-        },
-        {
-          id: 2,
-          name: "Alexis Sherman",
-          position: "Historian/Senator",
-          image: ""
-        },
-        {
-          id: 3,
-          name: "Anthony Todd",
-          position: "Alumni Relations Chair",
-          image: ""
-        },
-        {
-          id: 4,
-          name: "Chimdi Ejiogu",
-          position: "Telecommunications Chair",
-          image: ""
-        },
-        {
-          id: 5,
-          name: "Lucy Bazezy",
-          position: "Publicity Chair",
-          image: ""
-        },
-        // {
-        //   id: 6,
-        //   name: "Mohammed Kane",
-        //   position: "Internal Vice President",
-        //   image: ""
-        // }
-      ]
-    },
-    // {
-    //   name: "First-Year Representatives",
-    //   members: [
-    //     {
-    //       id: 1,
-    //       name: "",
-    //       position: "",
-    //       image: ""
-    //     },
-    //     {
-    //       id: 2,
-    //       name: "",
-    //       position: "",
-    //       image: ""
-    //     },
-    //     {
-    //       id: 3,
-    //       name: "",
-    //       position: "",
-    //       image: ""
-    //     },
-    //     {
-    //       id: 4,
-    //       name: "",
-    //       position: "",
-    //       image: ""
-    //     }
-    //   ]
-    // }
-  ]
+  const eboard: year = {
+    year: "2024-2025",
+    members: [
+      {
+        id: 1,
+        name: "Chimdi Anude",
+        position: "President",
+        image: ChimdiAnude.src
+      },
+      {
+        id: 2,
+        name: "Mohamed Kane",
+        position: "Internal Vice President",
+        image: MohamedKane.src
+      },
+      {
+        id: 3,
+        name: "Adigun Olusola",
+        position: "External Co-Vice President",
+        image: AdigunOlusola.src
+      },
+      {
+        id: 4,
+        name: "Kayla Stephenson",
+        position: "External Co-Vice President",
+        image: KaylaStephenson.src
+      },
+      {
+        id: 5,
+        name: "Tenny George",
+        position: "Treasurer",
+        image: TennyGeorge.src
+      },
+      {
+        id: 6,
+        name: "Emma Brown",
+        position: "Secretary",
+        image: EmmaBrown.src
+      },
+      {
+        id: 7,
+        name: "Rayanu Adam",
+        position: "Programs Chair",
+        image: ""
+      },
+      {
+        id: 8,
+        name: "Chimdi Ejiogu",
+        position: "Telecommunications Chair",
+        image: ChimdiEjiogu.src
+      },
+      {
+        id: 9,
+        name: "Wesley DeCosta",
+        position: "Co-Conference Planning Chair",
+        image: ""
+      },
+      {
+        id: 10,
+        name: "Maguette Diop",
+        position: "Co-Conference Planning Chair",
+        image: MaguetteDiop.src
+      },
+      {
+        id: 11,
+        name: "Skai Nzeuton",
+        position: "Academic Excellence Co-Chair",
+        image: SkaiNzeuton.src
+      },
+      {
+        id: 12,
+        name: "Ivie Osagie",
+        position: "Academic Excellence Co-Chair",
+        image: IvieOsagie.src
+      },
+      {
+        id: 13,
+        name: "Davis Adams",
+        position: "Pre-Collegiate Initiatives Co-Chair",
+        image: ""
+      },
+      {
+        id: 14,
+        name: "Mukami Gichoya",
+        position: "Pre-Collegiate Initiatives Co-Chair",
+        image: MukamiGichoya.src
+      },
+      {
+        id: 15,
+        name: "Hope Best",
+        position: "Publicity Chair",
+        image: ""
+      },
+      {
+        id: 16,
+        name: "Lucy Bazezy",
+        position: "Publicity Chair",
+        image: LucyBazezy.src
+      },
+      {
+        id: 17,
+        name: "Promise Ekpo",
+        position: "Graduate Representative",
+        image: ""
+      },
+      {
+        id: 18,
+        name: "Jamison Taylor",
+        position: "Senator/Parliamentarian",
+        image: JamisonTaylorJr.src
+      },
+      {
+        id: 19,
+        name: "Alexis Sherman",
+        position: "Senator/Historian",
+        image: AlexisSherman.src
+      },
+      {
+        id: 20,
+        name: "Ethan Sarpong",
+        position: "Upstate Zone Chair",
+        image: ""
+      },
+      {
+        id: 21,
+        name: "Reggie Harris",
+        position: "Membership Chair",
+        image: ""
+      },
+      {
+        id: 22,
+        name: "Anthony Todd",
+        position: "Alumni Relations Chair",
+        image: ""
+      },
+      {
+        id: 23,
+        name: "Zena Phillip",
+        position: "Freshman Representative",
+        image: ZenaPhillip.src
+      },
+      {
+        id: 23,
+        name: "Mouhammad Dia",
+        position: "Freshman Representative",
+        image: MouhammadDia.src
+      },
+      {
+        id: 24,
+        name: "Nathaniel Banjo",
+        position: "Freshman Representative",
+        image: NathanielBanjo.src
+      },
+      {
+        id: 25,
+        name: "Yodahe Maaza",
+        position: "Freshman Representative",
+        image: YodaheMaaza.src
+      }
+    ]
+  }
 
   return (
     <main className={styles.main}>
       <Center>
-        <Image borderRadius={25} w={1248} h={675} objectFit="cover" src={Eboard.src} fallbackSrc="" alt="Group photo of the chapter's executive board of 2023-2024"/>
+        <Image borderRadius={25} w={1248} h={675} objectFit="cover" src={eboardPhoto.src} fallbackSrc="" alt="Group photo of the chapter's executive board of 2023-2024"/>
       </Center>
       <Box as="section">
           <Heading color='white' fontSize={30}>The Executive Board</Heading>
@@ -303,21 +268,25 @@ const Leadership = () => {
             Through promoting these values, our board enables itself to better relate to the community we pledge to support, and work towards the success our entire chapter.
           </Text>
       </Box>
-      <VStack>
-        <VStack>
+      <Flex flexDir="row" flexWrap="wrap" justify='center'>
+        
+
+      
+      {/* <VStack> */}
+        {/* <VStack> */}
           {
-            executiveBoard.map((committee) => {
+            eboard.members.map((member) => {
               return (
-                <GalleryRow 
-                  key={committee.name}
-                  title={committee.name}
-                  members={committee.members}
+                <GalleryRow
+                  key={member.id}
+                  member={member}
                 />
               );
             })
           }
-        </VStack>
-      </VStack>
+        {/* </VStack> */}
+      {/* </VStack> */}
+      </Flex>
 
     </main>
   );
