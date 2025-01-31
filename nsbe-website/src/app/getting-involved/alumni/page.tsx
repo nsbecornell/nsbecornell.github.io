@@ -1,7 +1,7 @@
 import styles from "@/app/page.module.css";
 
 // Chakra UI Imports
-import { Box, Button, Flex, Heading, VStack, Text, Spacer, Center } from '@chakra-ui/react'
+import { Link, Box, Button, Flex, Heading, VStack, Text, Spacer, Center, textDecoration } from '@chakra-ui/react'
 import { Butterfly_Kids } from "next/font/google";
 import { BorderWidth } from "react-bootstrap-icons";
 
@@ -54,24 +54,31 @@ const Students = () => {
 
   const buttonTextStyle = {
     color: "white",
-    fontSize: 20
+    fontSize: 20,
+    textDecoration: ""
   }
 
   return (
     <main className={styles.main}>
-      <Flex direction="row">
+      <Flex flexDir="row" flexWrap='wrap'>
         <Flex direction="column" marginTop="5%">
           <Heading sx={headingStyle} textAlign='center'>Stay Connected!</Heading>
-          <Button sx={buttonStyle}>
-            <Heading sx={buttonTextStyle}>
-              Join Our Newsletter
-            </Heading>
-          </Button>
-          <Button sx={buttonStyle}>
-            <Heading sx={buttonTextStyle}>
-              Join Follow Our LinkedIn
-            </Heading>
-          </Button>
+          <Link href="http://eepurl.com/ikM-wr" target="_blank" rel="noopener noreferrer">
+            <Button
+              sx={buttonStyle}
+              >
+                <Heading sx={buttonTextStyle}>
+                  Join Our Newsletter
+                </Heading>
+            </Button>
+          </Link>
+          <Link href="https://www.linkedin.com/in/cornell-university-nsbe-chapter-12b53a254/" target="_blank" rel="noopener noreferrer">
+            <Button sx={buttonStyle}>
+              <Heading sx={buttonTextStyle}>
+                Follow Our LinkedIn
+              </Heading>
+            </Button>
+          </Link>
         </Flex>
         <Spacer />
         <VStack marginRight="6%">
@@ -79,7 +86,7 @@ const Students = () => {
             <Flex direction="column" justify="center">
               <Heading sx={headingStyle} textAlign='center'>Donations Help Us Realize Our Initiatives</Heading>
               <Text maxW={750} sx={textStyle}>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse condimentum eget lacus gravida lacinia. Suspendisse viverra tellus a justo finibus, eu blandit purus egestas. Aliquam porttitor volutpat tellus eget scelerisque. In lobortis quis nisi vel malesuada. Quisque lectus est, suscipit ut sapien eu, pharetra accumsan mauris. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. In sagittis justo pulvinar urna posuere posuere. Integer dui magna, feugiat eu arcu et, placerat feugiat turpis. Praesent lacinia enim vel pretium cursus. Integer sodales turpis nibh, vehicula elementum magna iaculis id. Phasellus sapien libero, imperdiet sed faucibus vitae, feugiat vel nulla. Integer eleifend orci sit amet enim dignissim, vitae pharetra neque cursus.
+                Your support can make a lasting impact on the future of aspiring Black engineers at Cornell University. By donating to our NSBE chapter, you contribute to the mission of NSBE: to increase the number of culturally responsible Black engineers who excel academically, succeed professionally, and positively impact the community. Your generosity will directly support our initiatives in academic excellence, community service, and professional development, as well as help to send current members to NSBE conferences, provide essential resources for academic success, and expand our community service efforts. Together, we can empower the next generation of leaders and innovators. Join us in advancing this mission—your donation today will help our members achieve their goals and create a brighter future for all.
               </Text>
             </Flex>
           </Box>
@@ -139,11 +146,13 @@ const Students = () => {
               </Text>
             </Box>
           </Flex>
-          <Button marginTop="3%" sx={donateButtonStyle}>
-            <Heading color='white'>
-              Donate Today!
-            </Heading>
-          </Button>
+          <Link href="https://securelb.imodules.com/s/1717/giving/interior.aspx?sid=1717&gid=2&pgid=403&cid=1031&dids=238&bledit=1" target="_blank" rel="noopener noreferrer">
+            <Button marginTop="3%" sx={donateButtonStyle}>
+              <Heading color='white'>
+                Donate Today!
+              </Heading>
+            </Button>
+          </Link>
         </VStack>
       </Flex>
       
