@@ -24,7 +24,7 @@ function About() {
   return (
     <main className={styles.main}>
       <Center>
-          <Image h={425} src={GroupPhoto.src} alt=""/>
+          <Image h={425} src={GroupPhoto.src} alt="" borderRadius={25}/>
         </Center>
 
       <Box as="section" className={styles.introSection} mb={50}>
