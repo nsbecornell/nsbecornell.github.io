@@ -27,7 +27,7 @@ const Students = () => {
   
   return (
     <main className={styles.main}>
-      <Flex direction='row'>
+      <Flex direction='row' flexWrap='wrap'>
         <Flex direction='column' marginTop="5%">
           <Heading sx={headingStyle} textAlign='center'>Stay Connected!</Heading>
           <Link href="https://docs.google.com/forms/d/e/1FAIpQLSd70Z7zxJp1njIi8mc3Jnehvd5aU-TEsiVqSRl6Po84_SA9Hg/viewform" target="_blank" rel="noopener noreferrer">
@@ -62,10 +62,26 @@ const Students = () => {
         <Spacer />
         <VStack marginRight="6%">
           <Heading sx={headingStyle} marginBottom={0}>Benefits of NSBE Membership</Heading>
-          <DescriptionSection image="" heading="Network" text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nisl leo, blandit at dictum nec, auctor id magna. Nam viverra sit amet purus nec luctus. Aliquam erat volutpat. Fusce auctor tincidunt lacus, quis rhoncus metus laoreet vitae. Sed faucibus nunc in egestas accumsan."/>
-          <DescriptionSection image="" heading="Professional Development" text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nisl leo, blandit at dictum nec, auctor id magna. Nam viverra sit amet purus nec luctus. Aliquam erat volutpat. Fusce auctor tincidunt lacus, quis rhoncus metus laoreet vitae. Sed faucibus nunc in egestas accumsan."/>
-          <DescriptionSection image="" heading="Academic Excellence" text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nisl leo, blandit at dictum nec, auctor id magna. Nam viverra sit amet purus nec luctus. Aliquam erat volutpat. Fusce auctor tincidunt lacus, quis rhoncus metus laoreet vitae. Sed faucibus nunc in egestas accumsan."/>
-          <DescriptionSection image="" heading="Conferences" text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nisl leo, blandit at dictum nec, auctor id magna. Nam viverra sit amet purus nec luctus. Aliquam erat volutpat. Fusce auctor tincidunt lacus, quis rhoncus metus laoreet vitae. Sed faucibus nunc in egestas accumsan."/> 
+          <DescriptionSection
+            image=""
+            heading="Network"
+            text="Joining NSBE at Cornell connects you to a vast network of professionals, alumni, and peers, offering mentorship and career opportunities. This powerful network helps you build relationships and gain industry insights, ensuring your success in engineering and beyond."
+            />
+          <DescriptionSection
+            image=""
+            heading="Professional Development"
+            text="NSBE offers workshops, resume reviews, and career fairs to help you develop essential skills and confidence. Our programs prepare you to navigate the job market and grow as a leader in the engineering field."
+            />
+          <DescriptionSection
+            image=""
+            heading="Academic Excellence"
+            text="NSBE at Cornell supports your academic success through study groups, tutoring, and workshops. We provide the tools and resources to help you excel in the classroom and build a strong foundation for your engineering career."
+          />
+          <DescriptionSection
+            image=""
+            heading="Conferences"
+            text="Attending NSBE conferences connects you with industry leaders, cutting-edge technologies, and thousands of peers. Through workshops, career fairs, and competitions, you’ll gain insights, expand your network, and return inspired to make an impact in your academic and professional journey."
+          /> 
         </VStack>
       </Flex>
       <Center>
