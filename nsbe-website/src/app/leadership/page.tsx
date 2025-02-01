@@ -40,6 +40,15 @@ import MouhammadDia from '@/images/eboard/2024-2025/Mouhammad Dia.jpeg'
 import NathanielBanjo from '@/images/eboard/2024-2025/Nathaniel Banjo.jpg'
 import YodaheMaaza from '@/images/eboard/2024-2025/Yodahe Maaza.jpg'
 import MaguetteDiop from '@/images/eboard/2024-2025/Maguette Diop.jpg'
+import WesleyDeCosta from '@/images/eboard/2024-2025/Wesley DeCosta.jpg'
+import DavisAdams from '@/images/eboard/2024-2025/Davis Adams.jpg'
+import RayanuAdam from '@/images/eboard/2024-2025/Rayanu Adam.jpg'
+import HopeBest from '@/images/eboard/2024-2025/Hope Best.jpg'
+import PromiseEkpo from '@/images/eboard/2024-2025/Promise Ekpo.jpg'
+import ReggieHarris from '@/images/eboard/2024-2025/Reggie Harris.jpg'
+import AnthonyTodd from '@/images/eboard/2024-2025/Anthony Todd.jpg'
+
+
 
 // Custom Components
 import GalleryRow from '@/components/GalleryRow'
@@ -111,7 +120,7 @@ const Leadership = () => {
         id: 7,
         name: "Rayanu Adam",
         position: "Programs Chair",
-        image: ""
+        image: RayanuAdam.src
       },
       {
         id: 8,
@@ -123,7 +132,7 @@ const Leadership = () => {
         id: 9,
         name: "Wesley DeCosta",
         position: "Co-Conference Planning Chair",
-        image: ""
+        image: WesleyDeCosta.src
       },
       {
         id: 10,
@@ -147,7 +156,7 @@ const Leadership = () => {
         id: 13,
         name: "Davis Adams",
         position: "Pre-Collegiate Initiatives Co-Chair",
-        image: ""
+        image: DavisAdams.src
       },
       {
         id: 14,
@@ -159,7 +168,7 @@ const Leadership = () => {
         id: 15,
         name: "Hope Best",
         position: "Publicity Chair",
-        image: ""
+        image: HopeBest.src
       },
       {
         id: 16,
@@ -171,7 +180,7 @@ const Leadership = () => {
         id: 17,
         name: "Promise Ekpo",
         position: "Graduate Representative",
-        image: ""
+        image: PromiseEkpo.src
       },
       {
         id: 18,
@@ -195,13 +204,13 @@ const Leadership = () => {
         id: 21,
         name: "Reggie Harris",
         position: "Membership Chair",
-        image: ""
+        image: ReggieHarris.src
       },
       {
         id: 22,
         name: "Anthony Todd",
         position: "Alumni Relations Chair",
-        image: ""
+        image: AnthonyTodd.src
       },
       {
         id: 23,
