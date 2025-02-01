@@ -47,6 +47,7 @@ import HopeBest from '@/images/eboard/2024-2025/Hope Best.jpg'
 import PromiseEkpo from '@/images/eboard/2024-2025/Promise Ekpo.jpg'
 import ReggieHarris from '@/images/eboard/2024-2025/Reggie Harris.jpg'
 import AnthonyTodd from '@/images/eboard/2024-2025/Anthony Todd.jpg'
+import EthanSarpong from '@/images/eboard/2024-2025/Ethan Sarpong.jpg'
 
 
 
@@ -198,7 +199,7 @@ const Leadership = () => {
         id: 20,
         name: "Ethan Sarpong",
         position: "Upstate Zone Chair",
-        image: ""
+        image: EthanSarpong.src
       },
       {
         id: 21,
