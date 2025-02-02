@@ -19,8 +19,6 @@ import {
       Box
     } from "@chakra-ui/react";
 
-import Notification from '@/components/Notification'
-
 
 interface FormData {
     'fullName': string;  // Full Name
