@@ -254,7 +254,7 @@ const Leadership = () => {
   return (
     <main className={styles.main}>
       <Center>
-        <Image sx={{_hover: {transform: "scale(1.025)"}}} transition="transform 0.3s ease-in-out" borderRadius={25} w="75%" objectFit="cover" src={eboardPhoto.src} fallbackSrc="" alt="Group photo of the chapter's executive board of 2023-2024"/>
+        <Image sx={{_hover: {transform: "scale(1.025)"}}} transition="transform 0.3s ease-in-out" borderRadius={25} w="75%" objectFit="cover" src={eboardPhoto.src} alt="Group photo of the chapter's executive board of 2023-2024"/>
       </Center>
 
       <Box as="section" my={8}>
