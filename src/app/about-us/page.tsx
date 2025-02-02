@@ -7,7 +7,7 @@ import { Box, Image, Center, Heading, Text, Flex, VStack} from '@chakra-ui/react
 import GroupPhoto from '@/images/groupNSBE.jpg'
 import AcademicExcellence from '@/images/initiatives/academic-excellence.png'
 import ChicagoSix from '@/images/Chicago Six.jpg'
-import GroupNSBE101 from '@/images/groupNSBE101.jpg'
+import GroupNSBE101 from '../../images/groupNSBE101.jpg'
 import GivingDay from '@/images/Giving Day Image.png'
 
 function About() {
