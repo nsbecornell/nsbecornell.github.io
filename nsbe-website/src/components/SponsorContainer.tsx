@@ -22,6 +22,10 @@ function SponsorBox( {tier, sponsorList}: {tier: SponsorTier; sponsorList: {id: 
     my: 5,
     ...(tier === 'diamond' ? diamondStyling : goldStyling),
     minHeight: 150,
+    ":hover": {
+      transform: "scale(1.05)",
+    },
+    transition: "transform 0.3s ease-in-out, background-color 0.3s ease-in-out"
   }
 
   return (

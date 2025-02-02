@@ -1,3 +1,5 @@
+"use client";
+
 import styles from "@/app/page.module.css";
 
 // Chakra UI Components
@@ -6,6 +8,7 @@ import { Heading, Flex, Spacer, VStack } from '@chakra-ui/react';
 // Custom Components
 import SideContainer from '@/components/SideContainer'
 import SponsorContainer from '@/components/SponsorContainer'
+import CorporateForm from "@/components/CorporateForm";
 
 // Sponsor Logos
 import Corning from '@/images/sponsors/diamond-tier/corning.png'
@@ -96,7 +99,8 @@ const Corporate = () => {
             Our Sponsors
           </Heading>
           <SponsorContainer tier="diamond" sponsorList={diamondSponsors} />
-          <SponsorContainer tier="gold" sponsorList={goldSponsors} />          
+          <SponsorContainer tier="gold" sponsorList={goldSponsors} />  
+          <CorporateForm />    
         </VStack>
       </Flex>
       
