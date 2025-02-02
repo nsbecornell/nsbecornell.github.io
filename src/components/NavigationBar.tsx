@@ -1,5 +1,9 @@
 import { Image, Flex, Link, Spacer, HStack} from '@chakra-ui/react';
 import NSBECULogo from '@/images/nsbe-cu logo.png'
+import { useRouter } from 'next/router';
+
+const basePath = process.env.NEXT_PUBLIC_BASE_PATH || '';
+
 
 const NavigationBar = () => {
 
@@ -26,14 +30,14 @@ const NavigationBar = () => {
         <Spacer />
 
         <HStack spacing={14}>
-          <Link sx={linkStyles} href='/about-us'>About Us</Link>
-          <Link sx={linkStyles} href='/leadership'>Leadership</Link>
+          <Link sx={linkStyles} href={`${basePath}/about-us`}>About Us</Link>
+          <Link sx={linkStyles} href={`${basePath}/leadership`}>Leadership</Link>
           {/* <Link sx={linkStyles} href=''>Events</Link> */}
           {/* <Link sx={linkStyles} href=''>Points</Link> */}
           {/* <Link sx={linkStyles} href=''>Gallery</Link> */}
-          <Link sx={linkStyles} href='/getting-involved/alumni'>Alumni</Link>
-          <Link sx={linkStyles} href='/getting-involved/students'>Students</Link>
-          <Link sx={linkStyles} href='/getting-involved/corporate'>Corporate</Link>
+          <Link sx={linkStyles} href={`${basePath}/getting-involved/alumni`}>Alumni</Link>
+          <Link sx={linkStyles} href={`${basePath}/getting-involved/students`}>Students</Link>
+          <Link sx={linkStyles} href={`${basePath}/getting-involved/corporate`}>Corporate</Link>
         </HStack>
       </Flex>
   );
