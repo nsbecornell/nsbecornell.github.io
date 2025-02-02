@@ -17,11 +17,17 @@ const NavigationBar = () => {
     minWidth: "fit-content"
   }
 
+  const isProduction = process.env.NODE_ENV === 'production';
+
   return (
       <Flex as="nav" gap={10} my={10} mx="3.25%">
-        {/* Consider fallback image*/}
-        <Link href='/'>
-          <Image w="15%" minW='100px' src={NSBECULogo.src} alt="Logo of Cornell University National Society of Black Engineers"/>
+        <Link href={isProduction ? '/nsbecornell.github.io/' : '/'}>
+          <Image 
+            w="15%" 
+            minW="100px" 
+            src={NSBECULogo.src} 
+            alt="Logo of Cornell University National Society of Black Engineers"
+          />
         </Link>
         <Spacer />
 
