@@ -7,12 +7,23 @@ function ImageContainer(props: {src: string, alt: string, containerWidth: number
     w: props.containerWidth,
     h: props.containerHeight,
     borderRadius: 25,
-    my: 15
+    my: 15,
+    _hover: {
+      bg: "#3A3A3A",
+      transform: "scale(1.05)",
+    },
+    transition: "transform 0.3s ease-in-out, background-color 0.3s ease-in-out",
   };
 
   const imageStyling = {
     w: props.imageWidth,
-    h: props.imageHeight
+    h: props.imageHeight,
+    borderRadius: 10,
+    _hover: {
+      bg: "#3A3A3A",
+      transform: "scale(1.05)",
+    },
+    transition: "transform 0.3s ease-in-out, background-color 0.3s ease-in-out"
   }
 
   return (
