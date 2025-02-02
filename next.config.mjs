@@ -1,10 +1,10 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  output: "export",
-  basePath: '/nsbecornell.github.io', // Dynamically set basePath
-  assetPrefix: '/nsbecornell.github.io/', // Dynamically set assetPrefix
+  output: 'export',
+  basePath: '/nsbecornell.github.io', // Add this line
+  assetPrefix: '/nsbecornell.github.io/', // Add this line
   images: {
-    unoptimized: true,
+    unoptimized: true, // Required for "output: export"
   },
 };
 
