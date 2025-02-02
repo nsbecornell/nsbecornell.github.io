@@ -9,19 +9,23 @@ const NavigationBar = () => {
     fontSize: "20px",
     fontWeight: "bold",
     ':hover': {
-      color: "gray"
-    }
+      color: "gray",
+      transform: "scale(1.05)",
+      textDecoration: "none",
+    },
+    transition: "transform 0.3s ease-in-out, background-color 0.3s ease-in-out",
+    minWidth: "fit-content"
   }
 
   return (
-      <Flex as="nav" gap={10} my={15} mx={30}>
+      <Flex as="nav" gap={10} my={10} mx="3.25%">
         {/* Consider fallback image*/}
         <Link href='/'>
-          <Image w={180} src={NSBECULogo.src} alt="Logo of Cornell University National Society of Black Engineers"/>
+          <Image w="15%" minW='100px' src={NSBECULogo.src} alt="Logo of Cornell University National Society of Black Engineers"/>
         </Link>
         <Spacer />
 
-        <HStack spacing={32}>
+        <HStack spacing={14}>
           <Link sx={linkStyles} href='/about-us'>About Us</Link>
           <Link sx={linkStyles} href='/leadership'>Leadership</Link>
           {/* <Link sx={linkStyles} href=''>Events</Link> */}
