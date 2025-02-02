@@ -3,10 +3,11 @@
 import styles from "@/app/page.module.css";
 
 // Components
-import { Flex, Container, Grid, GridItem, VStack, Box, Center, Image, Text } from '@chakra-ui/react'
+import { Flex, Container, Grid, GridItem, VStack, Box, Center, Image, Text, transition } from '@chakra-ui/react'
 
 // Images
 import Erhunmwunse from '@/images/EEgaphona - Cropped.jpg';
+import { transform } from "next/dist/build/swc";
 
 const GalleryBox = (props: {key: number, name: string, position: string, image: string}) => {  
   const imageStyling = {
@@ -21,14 +22,16 @@ const GalleryBox = (props: {key: number, name: string, position: string, image: 
 
   const boxStyling = {
     bg: "#2C2C2C",
-    mx: 12,
-    my: 10,
+    mx: 8,
+    my: 5,
     borderRadius: 25,
     h: 350,
     w: 300,
     _hover: {
-      bg: "#3A3A3A"
-    }
+      bg: "#3A3A3A",
+      transform: "scale(1.05)",
+    },
+    transition: "transform 0.3s ease-in-out, background-color 0.3s ease-in-out",
   }
 
   function handleClick() {
@@ -48,7 +51,6 @@ const GalleryBox = (props: {key: number, name: string, position: string, image: 
           </VStack>
         </VStack>
       </Center>
-      
     </Flex>
   );
 }

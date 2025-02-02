@@ -49,21 +49,32 @@ import ReggieHarris from '@/images/eboard/2024-2025/Reggie Harris.jpg'
 import AnthonyTodd from '@/images/eboard/2024-2025/Anthony Todd.jpg'
 import EthanSarpong from '@/images/eboard/2024-2025/Ethan Sarpong.jpg'
 
-
-
 // Custom Components
-import GalleryRow from '@/components/GalleryRow'
+import GalleryBox from "@/components/GalleryBox";
 import { StaticImageData } from "next/image";
 
 const Leadership = () => {
   const textStyle = {
     color: "white",
-    fontSize: "17",
-    textIndent: "3%"
+    fontSize: "20",
+    textIndent: "3%",
+    lineHeight: 1.8
   };
 
-  const buttonStyling = {
-    
+  const headingStyling = {
+    fontWeight: "bold",
+    color: "white",
+    fontSize: "30",
+    my: 6,
+    textAlign: 'center'
+  };
+
+  const subHeadingStyling = {
+    textAlign: 'center',
+    color: 'white',
+    fontWeight: 'bold',
+    my: 0,
+    fontSize: "22"
   }
 
   type member = {
@@ -243,59 +254,53 @@ const Leadership = () => {
   return (
     <main className={styles.main}>
       <Center>
-        <Image borderRadius={25} w={1248} h={675} objectFit="cover" src={eboardPhoto.src} fallbackSrc="" alt="Group photo of the chapter's executive board of 2023-2024"/>
+        <Image sx={{_hover: {transform: "scale(1.025)"}}} transition="transform 0.3s ease-in-out" borderRadius={25} w="75%" objectFit="cover" src={eboardPhoto.src} fallbackSrc="" alt="Group photo of the chapter's executive board of 2023-2024"/>
       </Center>
-      <Box as="section">
-          <Heading color='white' fontSize={30}>The Executive Board</Heading>
+
+      <Box as="section" my={8}>
+          <Heading sx={headingStyling}>The Executive Board</Heading>
           <Text sx={textStyle}>
-            The executive board of our NSBE chapter is the mover behind all that our chapter does. From planning events to promote the academic success of our chapter&apos;s general body members to coordinating with sponsors to ensure the professional development of our black engineers &mdash; our board works tirelessly to promote the mission and vision of the National Society of Black Engineers. Under the guidance of our president, the executive board also works to promote throughout the campus the chapter&apos;s own core values: Transparency, Dedication, and Support.
+            The executive board of our NSBE chapter is the mover behind all that our chapter does. From planning events to promote the academic success of our chapter&apos;s general body members to coordinating with sponsors to ensure the professional development of our black engineers &mdash; our board works tirelessly to promote the mission and vision of the National Society of Black Engineers. Under the guidance of our president, <b>Chimdi Anude</b>, the executive board also works to promote throughout the campus the chapter&apos;s own core values: Transparency, Dedication, and Support.
           </Text>
-          <Center>
-            <Flex direction='column'>
-              <Text textAlign='center' color='white' fontWeight='bold' my={0}>Transparency</Text>
-              <Text sx={textStyle} maxW={650}>
-                We prioritize open and honest communication within our community. By being transparent, we build trust and ensure that all members are informed and aligned with our goals. Reliability is key; we hold ourselves accountable to each other and to the mission of our organization.
-              </Text>
-            </Flex>
-          </Center>
-          <Center>
-            <Flex direction='column'>
-              <Text textAlign='center' color='white' fontWeight='bold' my={0}>Dedication</Text>
-              <Text sx={textStyle} maxW={650}>
-                We are unwavering in our commitment to the mission of the National Society of Black Engineers. Our dedication drives us to excel academically, succeed professionally, and make a positive impact in our communities. Our belief in this mission inspires us in our efforts to uplift this generation of Black Engineers.
-              </Text>
-            </Flex>
-          </Center>
-          <Center>
-            <Flex direction='column'>
-              <Text textAlign='center' color='white' fontWeight='bold' my={0}>Support</Text>
-              <Text sx={textStyle} maxW={650}>
-                Our strength lies in our unity and our ability to support oen another. We forster an environment where members can lean one each other for guidance, encouragement, and resources. Together, we create a network of mentorship and collaboration that propels us all forward.
-              </Text>
-            </Flex>
-          </Center>
+          <Flex flexDir='row' flexWrap='wrap' justifyContent='center' gap="10%" my={3.5}>
+              <Flex direction='column' maxW="40%">
+                <Text sx={subHeadingStyling}>Transparency</Text>
+                <Text sx={textStyle} maxW={650}>
+                  We prioritize open and honest communication within our community. By being transparent, we build trust and ensure that all members are informed and aligned with our goals. Reliability is key; we hold ourselves accountable to each other and to the mission of our organization.
+                </Text>
+              </Flex>
+              <Flex direction='column' maxW="40%">
+                <Text sx={subHeadingStyling}>Dedication</Text>
+                <Text sx={textStyle} maxW={650}>
+                  We are unwavering in our commitment to the mission of the National Society of Black Engineers. Our dedication drives us to excel academically, succeed professionally, and make a positive impact in our communities. Our belief in this mission inspires us in our efforts to uplift this generation of Black Engineers.
+                </Text>
+              </Flex>
+              <Flex direction='column' maxW="40%">
+                <Text sx={subHeadingStyling}>Support</Text>
+                <Text sx={textStyle} maxW={650}>
+                  Our strength lies in our unity and our ability to support one another. We forster an environment where members can lean one each other for guidance, encouragement, and resources. Together, we create a network of mentorship and collaboration that propels us all forward.
+                </Text>
+              </Flex>
+            {/* </Center> */}
+          </Flex>
           <Text sx={textStyle}>
             Through promoting these values, our board enables itself to better relate to the community we pledge to support, and work towards the success our entire chapter.
           </Text>
       </Box>
-      <Flex flexDir="row" flexWrap="wrap" justify='center'>
-        
 
-      
-      {/* <VStack> */}
-        {/* <VStack> */}
-          {
-            eboard.members.map((member) => {
-              return (
-                <GalleryRow
-                  key={member.id}
-                  member={member}
-                />
-              );
-            })
-          }
-        {/* </VStack> */}
-      {/* </VStack> */}
+      <Flex flexDir="row" flexWrap="wrap" justify='center'>
+        {
+          eboard.members.map((member) => {
+            return (
+              <GalleryBox
+                key={member.id}
+                name={member.name}
+                position={member.position}
+                image={member.image}
+              />
+            );
+          })
+        }
       </Flex>
 
     </main>
