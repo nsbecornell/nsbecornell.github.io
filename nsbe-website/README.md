@@ -1,6 +1,24 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Cornell NSBE Website Redesign
+## Introduction
+This project was undertaken during the fall of 2024 after the newly-elected Cornell NSBE leadership called for a redesign of their website.  
 
-## Getting Started
+## Original Design
+The original design was implemented using HTML, CSS, and Javascript &mdash; all standard tools for the implementation of a website.
+
+## Changes Made
+The new design was implemented using React.js with Typescript, Chakra UI as the component library, and Next.js.
+
+## Installation and Setup
+
+To install this application, you must first ensure that your system:
+-  Already has Node.js, a Javascript runtime environment, installed
+    - If your system does not already have Node.js installed, you can download it [here](https://nodejs.org/en/download/package-manager)
+
+After having installed Node.js (or if you already had it installed), you can then fork the repository and clone it to your local machine. After having done so, you can open the forked repository in your IDE, and must then install node packages.
+- In order to install node packages, you must run ```npm i``` or ```npm install``` in the terminal in the appropriate directory
+
+## Usage Instructions
+This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app). Consult the [Next.js documentation](https://nextjs.org/docs) to learn more.
 
 First, run the development server:
 
@@ -15,22 +33,10 @@ bun dev
 ```
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Credits
+### 2024-2025
+- [Chimdi Ejiogu](https://github.com/cejiogu/), Telecommunications Chair
+- Nathaniel Banjo
+- Yodahe Maaza
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
-
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+## Getting Started
