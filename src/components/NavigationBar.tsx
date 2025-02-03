@@ -42,7 +42,7 @@ const NavigationBar = () => {
           <Link sx={linkStyles} href={`${basePath}/about-us`}>About Us</Link>
           <Link sx={linkStyles} href={`${basePath}/leadership`}>Leadership</Link>
           {/* <Link sx={linkStyles} href=''>Events</Link> */}
-          {/* <Link sx={linkStyles} href=''>Points</Link> */}
+          <Link sx={linkStyles} href={`${basePath}/points`}>Points</Link>
           {/* <Link sx={linkStyles} href=''>Gallery</Link> */}
           <Link sx={linkStyles} href={`${basePath}/getting-involved/alumni`}>Alumni</Link>
           <Link sx={linkStyles} href={`${basePath}/getting-involved/students`}>Students</Link>

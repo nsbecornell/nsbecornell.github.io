@@ -41,7 +41,6 @@ function CorporateForm() {
         fontSize: "17",
         textIndent: "3%",
         lineHeight: 1.8
-    
       };
 
     const buttonStyling = {

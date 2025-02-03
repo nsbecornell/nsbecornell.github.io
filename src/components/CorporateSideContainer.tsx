@@ -1,11 +1,5 @@
 import { Box, Flex, Text, Heading, Center, Image, VStack} from '@chakra-ui/react'
 
-import ImageContainer from '@/components/ImageContainer'
-
-import Brand from '@/images/corporate/brand.jpg'
-import Candidates from '@/images/corporate/candidates.jpg'
-import Cause from '@/images/corporate/cause.jpg'
-
 function SideContainer() {
   const boxStyling = {
     bg: "#2C2C2C",
