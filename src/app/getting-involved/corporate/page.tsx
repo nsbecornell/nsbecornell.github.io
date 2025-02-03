@@ -6,7 +6,7 @@ import styles from "@/app/page.module.css";
 import { Heading, Flex, Spacer, VStack } from '@chakra-ui/react';
 
 // Custom Components
-import SideContainer from '@/components/SideContainer'
+import SideContainer from '@/components/CorporateSideContainer'
 import SponsorContainer from '@/components/SponsorContainer'
 import CorporateForm from "@/components/CorporateForm";
 
