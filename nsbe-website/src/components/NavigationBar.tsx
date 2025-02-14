@@ -26,7 +26,7 @@ const NavigationBar = () => {
           <Link sx={linkStyles} href='/leadership'>Leadership</Link>
           {/* <Link sx={linkStyles} href=''>Events</Link> */}
           {/* <Link sx={linkStyles} href=''>Points</Link> */}
-          {/* <Link sx={linkStyles} href=''>Gallery</Link> */}
+          <Link sx={linkStyles} href='/gallery'>Gallery</Link>
           <Link sx={linkStyles} href='/getting-involved/alumni'>Alumni</Link>
           <Link sx={linkStyles} href='/getting-involved/students'>Students</Link>
           <Link sx={linkStyles} href='/getting-involved/corporate'>Corporate</Link>
