@@ -7,29 +7,37 @@ import { useState } from 'react';
 // Image Import
 import NSBEImage from '@/images/NSBE EBoard.jpg';
 import elev from '@/images/event_images/elevatorpitch.jpeg';
+import NSBE101 from '@/images/event_images/NSBE101.jpg';
+import recap from '@/images/event_images/recapinternship.jpg';
+import mixer from '@/images/event_images/majormixer.jpeg';
+import sarmy from '@/images/event_images/salvationarmy.jpeg';
+import spacex from '@/images/event_images/spacexsession.jpeg';
+import auxwars from '@/images/event_images/auxwars.jpeg';
+import familyfeud from '@/images/event_images/familyfeud.jpeg';
+import superbowl from '@/images/event_images/superbowl.jpeg';
 
 const Gallery = () => {
-  const [selectedSemester, setSelectedSemester] = useState("Spring '24");
+  const [selectedSemester, setSelectedSemester] = useState("Spring '25");
 
   const springEvents = [
-    { title: "Spring Event Title", img: NSBEImage.src },
-    { title: "Spring Event Title", img: NSBEImage.src },
-    { title: "Spring Event Title", img: NSBEImage.src },
+    { title: "Aux Wars", img: auxwars.src },
+    { title: "Family Feud", img: familyfeud.src },
+    { title: "Super Bowl Watchparty", img: superbowl.src },
     { title: "Spring Event Title", img: NSBEImage.src },
     { title: "Spring Event Title", img: NSBEImage.src },
     { title: "Spring Event Title", img: NSBEImage.src }
   ];
 
   const fallEvents = [
-    { title: "NSBE 101", img: NSBEImage.src },
+    { title: "NSBE 101", img: NSBE101.src },
     { title: "Elevator Pitch", img: elev.src },
-    { title: "Recapping the Internship", img: NSBEImage.src },
-    { title: "Major Mixer", img: NSBEImage.src },
-    { title: "Salvation Army September", img: NSBEImage.src },
-    { title: "SpaceX Info Session", img: NSBEImage.src }
+    { title: "Recapping the Internship", img: recap.src },
+    { title: "Major Mixer", img: mixer.src },
+    { title: "Salvation Army September", img: sarmy.src },
+    { title: "SpaceX Info Session", img: spacex.src }
   ];
 
-  const events = selectedSemester === "Spring '24" ? springEvents : fallEvents;
+  const events = selectedSemester === "Spring '25" ? springEvents : fallEvents;
 
   return (
     <main className={styles.main}>
@@ -50,12 +58,12 @@ const Gallery = () => {
           </MenuButton>
           <MenuList bg="#2D2D2D" borderColor="#3D3D3D">
             <MenuItem 
-              onClick={() => setSelectedSemester("Spring '24")}
+              onClick={() => setSelectedSemester("Spring '25")}
               bg="#2D2D2D"
               color="white"
               _hover={{ bg: "#3D3D3D" }}
             >
-              Spring '24
+              Spring '25
             </MenuItem>
             <MenuItem 
               onClick={() => setSelectedSemester("Fall '24")}
