@@ -90,14 +90,16 @@ function CorporateForm() {
     e.preventDefault();
     
     // The Google Form URL
-    const url = "https://docs.google.com/forms/d/e/1FAIpQLSci8IupI9sdITuE1Gx-j0dKEf-7val0iFethJ_0CjuieSEGng/formResponse";
+    const url = "https://docs.google.com/forms/d/e/1FAIpQLSeMrateY8Mtjs5KkgBda5q3xPLyt2QqbTKA90I4L0W--v3Qsw/formResponse";
 
     // Create form data
     const submissionData = new URLSearchParams();
-    // Use the state formData here, not the variable name
     
-    // data.append("entry.1679544528", ""); // Adding the hidden field
-    // data.append("source", url); // Adding source field like in jQuery version
+    submissionData.append("entry.994846533", formData.fullName);
+    submissionData.append("entry.207624367", formData.company);
+    submissionData.append("entry.147897350", formData.email);
+    submissionData.append("entry.691085242", formData.message);
+
 
     try {
         const response = await fetch(url, {
