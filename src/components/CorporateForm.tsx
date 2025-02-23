@@ -90,7 +90,7 @@ function CorporateForm() {
     e.preventDefault();
     
     // The Google Form URL
-    const url = "https://docs.google.com/forms/d/e/1FAIpQLScoQEBxcrlbshyMyqmSes-3g1sxA-azu_YhpTuxl9PA0xBomg/formResponse";
+    const url = "https://docs.google.com/forms/d/e/1FAIpQLSeMrateY8Mtjs5KkgBda5q3xPLyt2QqbTKA90I4L0W--v3Qsw/formResponse";
 
     // Create form data
     const submissionData = new URLSearchParams();
