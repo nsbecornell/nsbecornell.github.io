@@ -1,10 +1,13 @@
 import {Flex, HStack, Box, Center, Text, Heading, border } from '@chakra-ui/react'
 
-const TextContainer = (props: {title: string, message: string}) => {
+const TextContainer = (props: {
+  title: string,
+  message: string
+}) => {
   const boxStyling = {
     bg: "#2C2C2C",
     borderRadius: 23,
-    w: "50%",
+    w: "100%",
     _hover: {
       transform: "scale(1.05)",
     },
