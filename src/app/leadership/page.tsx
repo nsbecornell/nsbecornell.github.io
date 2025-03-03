@@ -3,24 +3,7 @@ import styles from "@/app/page.module.css";
 // Chakra UI Imports
 import {Image, Text, Box, Heading, VStack, Center, UnorderedList, ListItem, Flex} from '@chakra-ui/react';
 
-import {
-  Menu,
-  MenuButton,
-  MenuList,
-  MenuItem,
-  MenuItemOption,
-  MenuGroup,
-  MenuOptionGroup,
-  MenuDivider,
-} from '@chakra-ui/react'
-
 // Images
-// import Eboard from '@/images/eboard/2024-2025/2024-2025-eboard.JPG';
-import Erhunmwunse from '@/images/EEgaphona.jpg'
-import Ethan from '@/images/ESarpong.jpg'
-import Adigun from '@/images/AOlusola.jpg'
-import Ore from '@/images/OOlaore.jpg'
-
 import eboardPhoto from '@/images/eboard/2024-2025/2024-2025-eboard.jpg'
 import ChimdiAnude from '@/images/eboard/2024-2025/Chimdi Anude.jpeg'
 import MohamedKane from '@/images/eboard/2024-2025/Mohamed Kane.jpg'
@@ -51,7 +34,6 @@ import EthanSarpong from '@/images/eboard/2024-2025/Ethan Sarpong.jpg'
 
 // Custom Components
 import GalleryBox from "@/components/GalleryBox";
-import { StaticImageData } from "next/image";
 
 const Leadership = () => {
   const textStyle = {
@@ -254,7 +236,21 @@ const Leadership = () => {
   return (
     <main className={styles.main}>
       <Center>
-        <Image sx={{_hover: {transform: "scale(1.025)"}}} transition="transform 0.3s ease-in-out" borderRadius={25} w="75%" objectFit="cover" src={eboardPhoto.src} alt="Group photo of the chapter's executive board of 2023-2024"/>
+        <Image
+          sx={
+            {
+              _hover: {
+                transform: "scale(1.025)"
+                }
+              }
+            }
+          transition="transform 0.3s ease-in-out"
+          borderRadius={25}
+          w="75%"
+          objectFit="cover"
+          src={eboardPhoto.src}
+          alt="Group photo of the chapter's executive board of 2024-2025"
+        />
       </Center>
 
       <Box as="section" my={8}>
@@ -262,33 +258,68 @@ const Leadership = () => {
           <Text sx={textStyle}>
             The executive board of our NSBE chapter is the mover behind all that our chapter does. From planning events to promote the academic success of our chapter&apos;s general body members to coordinating with sponsors to ensure the professional development of our black engineers &mdash; our board works tirelessly to promote the mission and vision of the National Society of Black Engineers. Under the guidance of our president, <b>Chimdi Anude</b>, the executive board also works to promote throughout the campus the chapter&apos;s own core values: Transparency, Dedication, and Support.
           </Text>
-          <Flex flexDir='row' flexWrap='wrap' justifyContent='center' gap="10%" my={3.5}>
-              <Flex direction='column' maxW="40%">
+          <Flex
+            // flexDir='row'
+            align='center'
+            direction={
+              {
+                base: "column",
+                md: "row"
+              }
+            }
+            flexWrap='wrap'
+            justifyContent='center'
+            gap="10%"
+            my={3.5}
+          >
+              <Flex
+                direction='column'
+                // maxW="40%"
+              >
                 <Text sx={subHeadingStyling}>Transparency</Text>
-                <Text sx={textStyle} maxW={650}>
+                <Text
+                  sx={textStyle}
+                  maxW={650}
+                >
                   We prioritize open and honest communication within our community. By being transparent, we build trust and ensure that all members are informed and aligned with our goals. Reliability is key; we hold ourselves accountable to each other and to the mission of our organization.
                 </Text>
               </Flex>
-              <Flex direction='column' maxW="40%">
+
+              <Flex
+                direction='column'
+                // maxW="40%"
+              >
                 <Text sx={subHeadingStyling}>Dedication</Text>
-                <Text sx={textStyle} maxW={650}>
+                <Text
+                  sx={textStyle}
+                  maxW={650}
+                >
                   We are unwavering in our commitment to the mission of the National Society of Black Engineers. Our dedication drives us to excel academically, succeed professionally, and make a positive impact in our communities. Our belief in this mission inspires us in our efforts to uplift this generation of Black Engineers.
                 </Text>
               </Flex>
-              <Flex direction='column' maxW="40%">
+
+              <Flex
+                direction='column'
+                // maxW="40%"
+              >
                 <Text sx={subHeadingStyling}>Support</Text>
-                <Text sx={textStyle} maxW={650}>
+                <Text
+                  sx={textStyle}
+                  maxW={650}
+                  >
                   Our strength lies in our unity and our ability to support one another. We forster an environment where members can lean one each other for guidance, encouragement, and resources. Together, we create a network of mentorship and collaboration that propels us all forward.
                 </Text>
               </Flex>
-            {/* </Center> */}
           </Flex>
           <Text sx={textStyle}>
             Through promoting these values, our board enables itself to better relate to the community we pledge to support, and work towards the success our entire chapter.
           </Text>
       </Box>
 
-      <Flex flexDir="row" flexWrap="wrap" justify='center'>
+      <Flex
+        flexDir="row"
+        flexWrap="wrap"
+        justify='center'>
         {
           eboard.members.map((member) => {
             return (
