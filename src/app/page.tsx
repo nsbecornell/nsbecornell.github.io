@@ -58,7 +58,7 @@ export default function Home() {
             borderRadius={25}
             h='auto'
             maxH={425}
-            w={['90%', '80%', '100%']}
+            // w={['90%', '80%', '100%']}
             // h={425}
             opacity={0.75}
             src={GroupPhoto.src}
@@ -175,7 +175,8 @@ export default function Home() {
           <Flex
             justify='center'
             align="center"
-            gap="10%"
+            // gap="10%"
+            gap={{ base: "20px", md: "10%" }}
             sx={{
               _hover: {transform: "scale(1.025)"}
               }}
