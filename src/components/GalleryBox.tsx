@@ -3,18 +3,11 @@
 import styles from "@/app/page.module.css";
 
 // Components
-import { Flex, Container, Grid, GridItem, VStack, Box, Center, Image, Text, transition } from '@chakra-ui/react'
+import { Flex, VStack, Center, Image, Text } from '@chakra-ui/react'
 
 // Images
-import Erhunmwunse from '@/images/EEgaphona - Cropped.jpg';
-import { transform } from "next/dist/build/swc";
 
 const GalleryBox = (props: {key: number, name: string, position: string, image: string}) => {  
-  const imageStyling = {
-    // overflow: 'hidden',
-    borderRadius: 12
-  };
-
   const textStyling = {
     color: "white",
     fontWeight: "bold"
@@ -40,14 +33,42 @@ const GalleryBox = (props: {key: number, name: string, position: string, image: 
 
 
   return (
-    // Convert to GridRow component later, needs ChakraProvider
-    <Flex direction='column' sx={boxStyling} onClick={handleClick}>
-      <Center h='inherit'>
+    <Flex
+      direction='column'
+      sx={boxStyling}
+      onClick={handleClick}
+    >
+      <Center
+        h='inherit'
+      >
         <VStack>
-          <Image borderRadius={12} width={250} h={250} objectFit="fill" src={props.image} alt=""/>
-          <VStack marginTop="3%">
-            <Text sx={textStyling} fontSize={12} as="span" className={styles.positionTitle}>{props.position}</Text>
-            <Text sx={textStyling} fontSize={15} as="span" className={styles.memberName}>{props.name}</Text>
+          <Image
+            borderRadius={12}
+            width={250}
+            h={250}
+            objectFit="fill"
+            src={props.image}
+            alt=""
+          />
+          <VStack
+            marginTop="3%"
+          >
+            <Text
+              as="span"
+              sx={textStyling}
+              fontSize={12}
+              className={styles.positionTitle}
+            >
+              {props.position}
+            </Text>
+            <Text
+              as="span"
+              sx={textStyling}
+              fontSize={15}
+              className={styles.memberName}
+            >
+              {props.name}
+            </Text>
           </VStack>
         </VStack>
       </Center>
