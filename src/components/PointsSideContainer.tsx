@@ -3,7 +3,11 @@ import { Box, Flex, Text, Heading, Center, Image, VStack} from '@chakra-ui/react
 function PointsSideContainer() {
   const boxStyling = {
     bg: "#2C2C2C",
-    w: "30%",
+    // w: "30%",
+    w: {
+      base: "90%",
+      md: "30%"
+    },
     borderRadius: 15
   }
 
