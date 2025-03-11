@@ -9,13 +9,14 @@ const DescriptionSection = (props: {image: string; heading: string; text: string
     color: "white",
     fontSize: "20",
     lineHeight: 1.8,
-    maxWidth: 500
+    maxWidth: 500,
   };
 
   const headingStyling = {
     color: "white",
     fontSize: "30",
     my: 2,
+    textAlign: "center"
   };
 
   const boxStyling = {
@@ -26,7 +27,11 @@ const DescriptionSection = (props: {image: string; heading: string; text: string
   }
   
   return (
-    <Flex sx={boxStyling} direction='row' align='center'>
+    <Flex
+      sx={boxStyling}
+      direction={{ base: "column", md: "row" }}
+      align='center'
+    >
       <ImageContainer src={props.image} alt="" imageHeight={150} imageWidth={150} containerHeight={200} containerWidth={200}/>
       <Flex direction='column' marginLeft="5%">
         <Heading sx={headingStyling}>{props.heading}</Heading>

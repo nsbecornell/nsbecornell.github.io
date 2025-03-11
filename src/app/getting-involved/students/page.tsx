@@ -35,13 +35,24 @@ const Students = () => {
 
   const buttonTextStyle = {
     color: "white",
-    fontSize: 20,
+    fontSize: {
+      base: 25,
+      md: 20,
+    },
     mx: 20
   }
   
   return (
     <main className={styles.main}>
-      <Flex direction='row' flexWrap='nowrap'>
+      <Flex
+        direction={
+          {
+            base: "column-reverse",
+            md: "row"
+          }
+        }
+        flexWrap='nowrap'
+      >
         <Flex direction='column' margin="5%">
           <Heading sx={headingStyling} textAlign='center'>Stay Connected!</Heading>
           <Button sx={buttonStyle}>
