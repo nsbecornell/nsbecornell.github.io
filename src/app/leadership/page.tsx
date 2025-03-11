@@ -259,7 +259,6 @@ const Leadership = () => {
             The executive board of our NSBE chapter is the mover behind all that our chapter does. From planning events to promote the academic success of our chapter&apos;s general body members to coordinating with sponsors to ensure the professional development of our black engineers &mdash; our board works tirelessly to promote the mission and vision of the National Society of Black Engineers. Under the guidance of our president, <b>Chimdi Anude</b>, the executive board also works to promote throughout the campus the chapter&apos;s own core values: Transparency, Dedication, and Support.
           </Text>
           <Flex
-            // flexDir='row'
             align='center'
             direction={
               {
@@ -274,7 +273,12 @@ const Leadership = () => {
           >
               <Flex
                 direction='column'
-                // maxW="40%"
+                maxW={
+                  {
+                    base: "100%",
+                    md: "40%"
+                  }
+                }
               >
                 <Text sx={subHeadingStyling}>Transparency</Text>
                 <Text

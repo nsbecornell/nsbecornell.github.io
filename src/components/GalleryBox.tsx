@@ -18,8 +18,14 @@ const GalleryBox = (props: {key: number, name: string, position: string, image: 
     mx: 8,
     my: 5,
     borderRadius: 25,
-    h: 350,
-    w: 300,
+    h: {
+      base: 500,
+      md: 350
+    },
+    w: {
+      base: 450,
+      md: 300
+    },
     _hover: {
       bg: "#3A3A3A",
       transform: "scale(1.05)",
@@ -41,11 +47,22 @@ const GalleryBox = (props: {key: number, name: string, position: string, image: 
       <Center
         h='inherit'
       >
-        <VStack>
+        <VStack
+        >
           <Image
             borderRadius={12}
-            width={250}
-            h={250}
+            width={
+              {
+                base: 350,
+                md: 250
+              }
+            }
+            h={
+              {
+                base: 350,
+                md: 250
+              }
+            }
             objectFit="fill"
             src={props.image}
             alt=""
@@ -56,7 +73,12 @@ const GalleryBox = (props: {key: number, name: string, position: string, image: 
             <Text
               as="span"
               sx={textStyling}
-              fontSize={12}
+              fontSize={
+                {
+                  base: 17,
+                  md: 12,
+                }
+              }
               className={styles.positionTitle}
             >
               {props.position}
@@ -64,7 +86,12 @@ const GalleryBox = (props: {key: number, name: string, position: string, image: 
             <Text
               as="span"
               sx={textStyling}
-              fontSize={15}
+              fontSize={
+                {
+                  base: 20,
+                  md: 15,
+                }
+              }
               className={styles.memberName}
             >
               {props.name}
