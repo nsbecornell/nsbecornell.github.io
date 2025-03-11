@@ -9,13 +9,12 @@ const Alumni = () => {
     color: "white",
     fontSize: "30",
     my: 6,
-    textAlign: 'center'
+    textAlign: 'center',
   };
 
   const textStyle = {
     color: "white",
     fontSize: "20",
-    textIndent: "3%",
     lineHeight: 1.8
   };
 
@@ -32,7 +31,14 @@ const Alumni = () => {
     my: 5,
     borderRadius: 10,
     minH: 175,
-    w: "20%",
+    w: {
+      base: "40%",
+      md: "20%",
+    },
+    h: {
+      base: 200,
+      md: "20%"
+    },
     _hover: {
       bg: "#3A3A3A",
       transform: "scale(1.05)",
@@ -44,7 +50,10 @@ const Alumni = () => {
 
   const boxTextStyle = {
     color: "white",
-    fontSize: 14,
+    fontSize: {
+      base: 18,
+      md: 14
+    },
     textAlign: 'center'
   }
 
@@ -65,7 +74,6 @@ const Alumni = () => {
     bg: "#2C2C2C",
     borderWidth: 0,
     padding: 8,
-    mx: 30,
     my: 8,
     _hover: {
       bg: "#3A3A3A",
@@ -82,9 +90,27 @@ const Alumni = () => {
 
   return (
     <main className={styles.main}>
-      <Flex flexDir="row" flexWrap='nowrap'>
+      <Flex
+        flexDir={
+          {
+            base: "column-reverse",
+            md: "row"
+          }
+        }        
+        flexWrap='nowrap'
+        align={
+          {
+            base: "center",
+            md: "normal"
+          }
+        }
+      >
         <Flex direction="column" margin="5%">
-          <Heading sx={headingStyling} textAlign='center'>Stay Connected!</Heading>
+          <Heading
+            sx={headingStyling}
+          >
+            Stay Connected!
+          </Heading>
           <Link href="http://eepurl.com/ikM-wr" target="_blank" rel="noopener noreferrer">
             <Button
               sx={buttonStyle}
@@ -102,17 +128,31 @@ const Alumni = () => {
             </Button>
           </Link>
         </Flex>
-        <VStack marginRight="6%" flexGrow={1}>
+        <VStack
+          flexGrow={1}
+        >
           <Box as="section">
             <Flex direction="column" justify="center">
               <Heading sx={headingStyling} textAlign='center'>Donations Help Us Realize Our Initiatives</Heading>
               <Text sx={textStyle}>
-                Your support can make a lasting impact on the future of aspiring Black engineers at Cornell University. By donating to our NSBE chapter, you contribute to the mission of NSBE: to increase the number of culturally responsible Black engineers who excel academically, succeed professionally, and positively impact the community. Your generosity will directly support our initiatives in academic excellence, community service, and professional development, as well as help to send current members to NSBE conferences, provide essential resources for academic success, and expand our community service efforts. Together, we can empower the next generation of leaders and innovators. Join us in advancing this mission—your donation today will help our members achieve their goals and create a brighter future for all.
+                Support aspiring Black engineers at Cornell by donating to our NSBE chapter. Your contribution fuels academic excellence, professional development, and community service while helping members attend NSBE conferences and access essential resources. Empower the next generation—donate today!
               </Text>
             </Flex>
           </Box>
-          <Flex direction="row" wrap="wrap" justify='center'>
-            <Flex sx={boxStyle}>
+          <Flex
+            direction={
+              {
+                base: "row",
+                md: "row"
+              }
+            }            
+            wrap="wrap"
+            justify='center'
+            align='center'
+          >
+            <Flex
+              sx={boxStyle}
+            >
               <Heading sx={boxHeading}>
                 $15
               </Heading>
@@ -168,8 +208,13 @@ const Alumni = () => {
             </Flex>
           </Flex>
           <Link href="https://securelb.imodules.com/s/1717/giving/interior.aspx?sid=1717&gid=2&pgid=403&cid=1031&dids=238&bledit=1" target="_blank" rel="noopener noreferrer">
-            <Button marginTop="3%" sx={donateButtonStyle} w="100%">
-              <Heading color='white'>
+            <Button
+              marginTop="3%"
+              sx={donateButtonStyle}
+              w="100%"
+            >
+              <Heading
+                color='white'>
                 Donate Today!
               </Heading>
             </Button>
