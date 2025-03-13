@@ -91,7 +91,15 @@ const Corporate = () => {
 
   return (
     <main className={styles.main}>
-      <Flex direction="row" marginTop="1%">
+      <Flex
+        direction={
+          {
+            base: "column",
+            md: "row",
+          }
+        }
+        marginTop="1%"
+      >
         <SideContainer />
         <Spacer/>
         <VStack>

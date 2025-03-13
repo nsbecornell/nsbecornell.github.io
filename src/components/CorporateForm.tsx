@@ -173,16 +173,77 @@ function CorporateForm() {
                         my="3%"
                     >
                         <Grid
-                        templateColumns="repeat(2, 1fr)"
-                        templateRows="repeat(2, 1fr)"
-                        gap="0%"
-                        w="95%"
-                        marginBottom="1%"
-                        mx="3%"
+                            templateColumns={
+                                {
+                                    base: "repeat(1, 1fr)",
+                                    md: "repeat(2, 1fr)"
+                                }
+                            }
+                            templateRows={
+                                {
+                                    base: "repeat(4, 1fr)",
+                                    md: "repeat(2, 1fr)"
+                                }
+                            }
+                            gap="0%"
+                            w="95%"
+                            marginBottom="1%"
+                            mx="3%"
                         >
-                        {/* Full Name Field */}
-                        <GridItem w="100%" h="100%" alignContent='center' justifyContent='center'>
-                            <FormControl isRequired>
+                            {/* Full Name Field */}
+                            <GridItem
+                                w="100%"
+                                h="100%"
+                                display='flex'
+                                alignItems='center'
+                            >
+                                <FormControl isRequired>
+                                    <Input
+                                        sx={{
+                                        ...textStyling,
+                                        "::placeholder": {
+                                            color: "white",
+                                            opacity: 0.6,
+                                            position: "relative",
+                                            left: "3%",
+                                        },
+                                        _hover: {
+                                            bg: "#3A3A3A",
+                                            transform: "scale(1.05)",
+                                        },
+                                        transition: "transform 0.3s ease-in-out, background-color 0.3s ease-in-out",
+                                        }}
+                                        type="text"
+                                        id="full-name"
+                                        name="fullName"
+                                        value={formData.fullName}
+                                        onChange={handleChange}
+                                        placeholder="Full Name"
+                                        bg="#656565"
+                                        borderWidth={0}
+                                        borderRadius={6}
+                                        w={
+                                            {
+                                                base: '100%',
+                                                md: '90%'
+                                            }
+                                        }
+                                        padding="2%"
+                                        variant="subtle"
+                                        
+                                    />
+                                </FormControl>
+                            </GridItem>
+
+                            {/* Email Field */}
+                            <GridItem
+                                w="100%"
+                                h="100%"
+                                display='flex'
+                                alignItems='center'
+                                
+                            >
+                                <FormControl isRequired>
                                 <Input
                                     sx={{
                                     ...textStyling,
@@ -195,131 +256,122 @@ function CorporateForm() {
                                     _hover: {
                                         bg: "#3A3A3A",
                                         transform: "scale(1.05)",
-                                      },
-                                      transition: "transform 0.3s ease-in-out, background-color 0.3s ease-in-out",
+                                    },
+                                    transition: "transform 0.3s ease-in-out, background-color 0.3s ease-in-out",
                                     }}
-                                    type="text"
-                                    id="full-name"
-                                    name="fullName"
-                                    value={formData.fullName}
+                                    type="email"
+                                    id="email"
+                                    name="email"
+                                    value={formData.email}
                                     onChange={handleChange}
-                                    placeholder="Full Name"
+                                    placeholder="Email Address"
                                     bg="#656565"
                                     borderWidth={0}
                                     borderRadius={6}
-                                    w="90%"
+                                    w={
+                                        {
+                                            base: '100%',
+                                            md: '90%'
+                                        }
+                                    }
                                     padding="2%"
                                     variant="subtle"
                                 />
-                            </FormControl>
-                        </GridItem>
+                                </FormControl>
+                            </GridItem>
 
-                        {/* Email Field */}
-                        <GridItem w="100%" alignContent='center'>
-                            <FormControl isRequired>
-                            <Input
-                                sx={{
-                                ...textStyling,
-                                "::placeholder": {
-                                    color: "white",
-                                    opacity: 0.6,
-                                    position: "relative",
-                                    left: "3%",
-                                },
-                                _hover: {
-                                    bg: "#3A3A3A",
-                                    transform: "scale(1.05)",
-                                  },
-                                  transition: "transform 0.3s ease-in-out, background-color 0.3s ease-in-out",
-                                }}
-                                type="email"
-                                id="email"
-                                name="email"
-                                value={formData.email}
-                                onChange={handleChange}
-                                placeholder="Email Address"
-                                bg="#656565"
-                                borderWidth={0}
-                                borderRadius={6}
-                                w="90%"
-                                padding="2%"
-                                variant="subtle"
-                            />
-                            </FormControl>
-                        </GridItem>
+                            {/* Company Field */}
+                            <GridItem
+                                w="100%"
+                                h="100%"
+                                display='flex'
+                                alignItems='center'
+                            >
+                                <FormControl isRequired>
+                                <Input
+                                    sx={{
+                                    ...textStyling,
+                                    "::placeholder": {
+                                        color: "white",
+                                        opacity: 0.6,
+                                        position: "relative",
+                                        left: "3%",
+                                    },
+                                    _hover: {
+                                        bg: "#3A3A3A",
+                                        transform: "scale(1.05)",
+                                    },
+                                    transition: "transform 0.3s ease-in-out, background-color 0.3s ease-in-out",
+                                    }}
+                                    type="text"
+                                    id="company"
+                                    name="company"
+                                    value={formData.company}
+                                    onChange={handleChange}
+                                    placeholder="Company"
+                                    borderWidth={0}
+                                    borderRadius={6}
+                                    w={
+                                        {
+                                            base: '100%',
+                                            md: '90%'
+                                        }
+                                    }
+                                    padding="2%"
+                                    bg="#656565"
+                                    variant="subtle"
+                                />
+                                </FormControl>
+                            </GridItem>
 
-                        {/* Company Field */}
-                        <GridItem w="100%" alignContent="center">
-                            <FormControl isRequired>
-                            <Input
-                                sx={{
-                                ...textStyling,
-                                "::placeholder": {
-                                    color: "white",
-                                    opacity: 0.6,
-                                    position: "relative",
-                                    left: "3%",
-                                },
-                                _hover: {
-                                    bg: "#3A3A3A",
-                                    transform: "scale(1.05)",
-                                  },
-                                  transition: "transform 0.3s ease-in-out, background-color 0.3s ease-in-out",
-                                }}
-                                type="text"
-                                id="company"
-                                name="company"
-                                value={formData.company}
-                                onChange={handleChange}
-                                placeholder="Company"
-                                borderWidth={0}
-                                borderRadius={6}
-                                w="90%"
-                                padding="2%"
-                                bg="#656565"
-                                variant="subtle"
-                            />
-                            </FormControl>
-                        </GridItem>
-
-                        {/* Message Field */}
-                        <GridItem w="100%" alignContent='center'>
-                            <FormControl isRequired>
-                            <Textarea
-                                sx={{
-                                ...textStyling,
-                                "::placeholder": {
-                                    color: "white",
-                                    opacity: 0.6,
-                                    position: "relative",
-                                    left: "3%",
-                                },
-                                overflow: "hidden",
-                                resize: "vertical",
-                                _hover: {
-                                    bg: "#3A3A3A",
-                                    transform: "scale(1.05)",
-                                  },
-                                  transition: "transform 0.3s ease-in-out, background-color 0.3s ease-in-out",
-                                }}
-                                id="message"
-                                name="message"
-                                value={formData.message}
-                                onChange={handleChange}
-                                placeholder="Message"
-                                borderWidth={0}
-                                borderRadius={6}
-                                w="90%"
-                                h="50%"
-                                padding="2%"
-                                bg="#656565"
-                                variant="subtle"
-                                resize="vertical"
-                                minHeight={20}
-                                maxH={100}
-                            />
-                            </FormControl>
-                        </GridItem>
+                            {/* Message Field */}
+                            <GridItem
+                                w="100%"
+                                h="100%"
+                                display='flex'
+                                alignItems='center'
+                            >
+                                <FormControl isRequired>
+                                <Textarea
+                                    sx={{
+                                    ...textStyling,
+                                    "::placeholder": {
+                                        color: "white",
+                                        opacity: 0.6,
+                                        position: "relative",
+                                        left: "3%",
+                                    },
+                                    overflow: "hidden",
+                                    resize: "vertical",
+                                    _hover: {
+                                        bg: "#3A3A3A",
+                                        transform: "scale(1.05)",
+                                    },
+                                    transition: "transform 0.3s ease-in-out, background-color 0.3s ease-in-out",
+                                    }}
+                                    id="message"
+                                    name="message"
+                                    value={formData.message}
+                                    onChange={handleChange}
+                                    placeholder="Message"
+                                    borderWidth={0}
+                                    borderRadius={6}
+                                    w={
+                                        {
+                                            base: '100%',
+                                            md: '90%'
+                                        }
+                                    }
+                                    h="50%"
+                                    padding="2%"
+                                    bg="#656565"
+                                    variant="subtle"
+                                    resize="vertical"
+                                    minHeight={20}
+                                    maxH={100}
+                                />
+                                </FormControl>
+                            </GridItem>
                         </Grid>
                         <Button
                             type="submit"

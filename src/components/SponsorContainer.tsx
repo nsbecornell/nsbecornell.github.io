@@ -29,8 +29,16 @@ function SponsorBox( {tier, sponsorList}: {tier: SponsorTier; sponsorList: {id: 
   }
 
   return (
-    <Box sx={boxStyling}>
-      <Flex flexDirection='row' flexWrap='wrap' justify='center' alignItems='center' height='100%'>
+    <Box
+      sx={boxStyling}
+    >
+      <Flex
+        flexDirection='row'
+        flexWrap='wrap'
+        justify='center'
+        alignItems='center'
+        height='100%'
+      >
         {
           sponsorList.map((sponsor) => {
             return(
