@@ -7,14 +7,17 @@ const Alumni = () => {
   const headingStyling = {
     fontWeight: "bold",
     color: "white",
-    fontSize: "30",
+    fontSize: {
+      base: "27px",
+      md: "30"
+    },
     my: 6,
     textAlign: 'center',
   };
 
   const textStyle = {
     color: "white",
-    fontSize: "20",
+    fontSize: {base: "20px", md: "22px"},
     lineHeight: 1.8
   };
 
@@ -51,7 +54,7 @@ const Alumni = () => {
   const boxTextStyle = {
     color: "white",
     fontSize: {
-      base: 18,
+      base: 16,
       md: 14
     },
     textAlign: 'center'
@@ -84,7 +87,10 @@ const Alumni = () => {
 
   const buttonTextStyle = {
     color: "white",
-    fontSize: 20,
+    fontSize: {
+      base: 22,
+      md: 20,
+    },
     mx: 20
   }
 

@@ -15,7 +15,10 @@ const Students = () => {
   const headingStyling = {
     fontWeight: "bold",
     color: "white",
-    fontSize: "30",
+    fontSize: {
+      base: "27px",
+      md: "30"
+    },
     my: 6,
     textAlign: "center"
   };
@@ -36,7 +39,7 @@ const Students = () => {
   const buttonTextStyle = {
     color: "white",
     fontSize: {
-      base: 25,
+      base: 22,
       md: 20,
     },
     mx: 20
