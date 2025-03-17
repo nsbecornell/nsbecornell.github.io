@@ -1,59 +1,3 @@
-// 'use client';
-
-// import { Image, Flex, Link, Spacer, HStack} from '@chakra-ui/react';
-// import NSBECULogo from '@/images/nsbe-cu logo.png'
-// import {useState, useEffect} from 'react';
-
-// const NavigationBar = () => {
-
-//   const linkStyles = {
-//     color: "white",
-//     textDecoration: "none",
-//     fontSize: "20px",
-//     fontWeight: "bold",
-//     ':hover': {
-//       color: "gray",
-//       transform: "scale(1.05)",
-//       textDecoration: "none",
-//     },
-//     transition: "transform 0.3s ease-in-out, background-color 0.3s ease-in-out",
-//     minWidth: "fit-content"
-//   }
-
-//   const [basePath, setBasePath] = useState('');
-
-//   useEffect(() => {
-//     import('../../next.config.mjs')
-//       .then((config) => {
-//         setBasePath(config.default.basePath || '');
-//       })
-//       .catch((err) => console.error("Error loading config:", err));
-//   }, []);
-
-//   return (
-//       <Flex as="nav" gap={10} my={10} mx="3.25%">
-//         {/* Consider fallback image*/}
-//         <Link href={`${basePath}/`}>
-//           <Image w="15%" minW='100px' src={NSBECULogo.src} alt="Logo of Cornell University National Society of Black Engineers"/>
-//         </Link>
-//         <Spacer />
-
-//         <HStack spacing={14}>
-//           <Link sx={linkStyles} href={`${basePath}/about-us`}>About Us</Link>
-//           <Link sx={linkStyles} href={`${basePath}/leadership`}>Leadership</Link>
-//           {/* <Link sx={linkStyles} href=''>Events</Link> */}
-//           <Link sx={linkStyles} href={`${basePath}/points`}>Points</Link>
-//           {/* <Link sx={linkStyles} href=''>Gallery</Link> */}
-//           <Link sx={linkStyles} href={`${basePath}/getting-involved/alumni`}>Alumni</Link>
-//           <Link sx={linkStyles} href={`${basePath}/getting-involved/students`}>Students</Link>
-//           <Link sx={linkStyles} href={`${basePath}/getting-involved/corporate`}>Corporate</Link>
-//         </HStack>
-//       </Flex>
-//   );
-// }
-
-// export default NavigationBar;
-
 'use client';
 
 import { Image, Flex, Link, Spacer, HStack, IconButton, Menu, MenuButton, MenuList, MenuItem, useBreakpointValue } from '@chakra-ui/react';
@@ -107,14 +51,40 @@ const NavigationBar = () => {
   ];
 
   return (
-    <Flex as="nav" gap={{ base: 2, md: 10 }} my={10} mx={{ base: "5%", md: "3.25%" }} align="center">
+    <Flex
+      as="nav"
+      gap={
+        {
+          base: 2,
+          md: 10
+        }
+      }
+      my={10}
+      mx="5%"
+      align="center"
+    >
       <Link href={`${basePath}/`}>
-        <Image w={{ base: "75px", md: "15%" }} minW={{ base: "75px", md: "100px" }} src={NSBECULogo.src} alt="Logo of Cornell University National Society of Black Engineers" />
+        <Image 
+          w="22%"
+          minW={
+            {
+              base: "75px",
+              md: "100px"
+            }
+          }
+        src={NSBECULogo.src} alt="Logo of Cornell University National Society of Black Engineers" />
       </Link>
       <Spacer />
 
       {isDesktop ? (
-        <HStack spacing={{ md: 8, lg: 14 }}>
+        <HStack
+          spacing={
+            {
+              md: 8,
+              lg: 14
+            }
+          }
+        >
           {navLinks.map((link) => (
             <Link 
               key={link.path} 
@@ -131,7 +101,6 @@ const NavigationBar = () => {
           <MenuButton
             as={IconButton}
             aria-label="Navigation Menu"
-            // icon={Hamburger.src}
             icon={<HamburgerIcon />}
             variant="outline"
             color="white"
