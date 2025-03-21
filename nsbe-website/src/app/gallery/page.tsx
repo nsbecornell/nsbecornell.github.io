@@ -35,13 +35,13 @@ import superbowl2 from '@/images/event_images/superbowl/superbowl_2.jpeg';
 // Define types for our components
 interface EventSlideshowProps {
   images: string[];
-  alt?: string;
+  alt?: string[];
 }
 
 interface EventData {
   title: string;
   images: string[];
-  alt?: string;
+  alt?: string[];
 }
 
 // Arrow icons as SVG components
@@ -91,7 +91,7 @@ const EventSlideshow: React.FC<EventSlideshowProps> = ({ images, alt }) => {
         h="100%"
         objectFit="cover"
         src={images[currentIndex]}
-        alt={alt || "Event image"}
+        alt={(alt && alt[currentIndex]) || "Event image"}
         borderRadius="lg"
         transition="opacity 0.3s ease-in-out"
       />
@@ -170,32 +170,38 @@ const Gallery: React.FC = () => {
     { 
       title: "Aux Wars", 
       images: [auxwars.src, auxwars2.src, auxwars3.src],  // Add more images here when available
-      alt: "This image displays the host of the Aux Wars event presenting the winner with an Amazon echo speaker as the prize."
+      alt: ["The first image displays the host of the Aux Wars event presenting the winner with an Amazon echo speaker as the prize.", 
+        "The second image in the slider shows a group of members sitting around a table and smiling looking towards the camaera.", 
+        "The last image in this slider displays another group of NSBE members at the Aux Wars event sitting around a table while they eat. The members are looking at the camera and smiling."
+      ]
     },
     { 
       title: "Family Feud", 
       images: [familyfeud.src, familyfeud2.src, familyfeud3.src],  // Add more images here when available
-      alt: "This image displays several NSBE members in a lecture hall. Two groups of members are at the front participating in the Family Feud event with the answers from each group projected on a board behind them."
+      alt: ["This image displays several NSBE members in a lecture hall. Two groups of members are at the front participating in the Family Feud event with the answers from each group projected on a board behind them.", 
+      "The second image in this slider displays members participating in the family feud event at the front of a lecture hall with a board behind them showing a 20 second timer. A host and two other members are standing facing each other.", 
+    'The last image in this slider displays nsbe members sitting in the lecture hall watching the participants compete. Two members are looking towards the camera ans smiling.']
     },
     { 
       title: "Super Bowl Watchparty", 
       images: [superbowl.src, superbowl2.src],  // Add more images here when available
-      alt: "This is an image of a group of NSBE members standing and conversing in a lecture hall"
+      alt: ["This is an image of a group of NSBE members standing and conversing in a lecture hall", 
+      "The last image in this slider displays students sitting in a lecture hall watching a large screen inn front of them showing an advertisement during the superbowl."]
     },
     { 
       title: "Spring Event Title", 
       images: [NSBEImage.src],  // Add more images here when available
-      alt: "NSBE members"
+      alt: ["NSBE members"]
     },
     { 
       title: "Spring Event Title", 
       images: [NSBEImage.src],  // Add more images here when available
-      alt: "NSBE members"
+      alt: ["NSBE members"]
     },
     { 
       title: "Spring Event Title", 
       images: [NSBEImage.src],  // Add more images here when available
-      alt: "NSBE members"
+      alt: ["NSBE members"]
     }
   ];
  
@@ -203,32 +209,43 @@ const Gallery: React.FC = () => {
     { 
       title: "NSBE 101", 
       images: [NSBE101.src, NSBE1012.src, NSBE1013.src],  // Add more images here when available
-      alt: "This image displays a group of NSBE students at the NSBE 101 event sitting down and watching a presentation. Five members are in front of the group projecting the presentation on a screen."
+      alt: ["This image displays a group of NSBE students at the NSBE 101 event sitting down and watching a presentation. Five members are in front of the group projecting the presentation on a screen.",
+      "The second image in this slider displays a group of six members posing together smiling with their arms around each other.", 
+    "The last image in the slider for the NSBE 101 event displays a large group of members indoors holding papers for a competition. The winner raises her paper in the air enthusiastically."]
     },
     { 
       title: "Game Night", 
       images: [gamenight.src, gamenight2.src, gamenight3.src],  // Add more images here when available
-      alt: "This is an image from NSBE's elevator game night event displaying members seated around a table playing poker."
+      alt: ["This is an image from NSBE's elevator game night event displaying members seated around a table playing poker.",
+      "The second image in this slider displays a group of members sitting in chairs in a circle while one is standing in the middle. They are playing the game Mafia.", 
+    "The last image in this slider displays a group of NSBE members seated around a table playing a card game with 7 spoons layed out on the table. Three members are standing and spectating the game."]
     },
     { 
       title: "Recapping the Internship", 
       images: [recap.src, recap2.src],  // Add more images here when available
-      alt: "This is an image from NSBE's recapping the internship event displaying a group of 6 members looking at a crowd off camera with a large screen behind them showing an icebreaker question that reads 'what was your favorite corporate catchphrase'"
+      alt: ["This is an image from NSBE's recapping the internship event displaying a group of 6 members looking at a crowd off camera with a large screen behind them showing an icebreaker question that reads 'what was your favorite corporate catchphrase'",
+      "The second image in this slider shows the 6 panelists seated at the front of a lecture hall while the host is at the desk behind them. They are all facing the crowd in the seats."]
     },
     { 
       title: "Major Mixer", 
       images: [mixer.src, mixer2.src, mixer3.src],  // Add more images here when available
-      alt: "This is an image from NSBE's major mixer event displaying a group of members smiling and looking at the camera. Several are seated at a table and some are standing with hand signs that represent their major."
+      alt: ["This is an image from NSBE's major mixer event displaying a group of members smiling and looking at the camera. Several are seated at a table and some are standing with hand signs that represent their major.",
+      "The second image in this slider displays 3 students seated at a table all looking at a paper that contains a flowchart for the courses they should take each semester in the Operations Research in Engineering major.", 
+    "Th elast image in the slider shows a group of 9 members sitting at a table with laptops out. They are all looking towards the camera and smiling."]
     },
     { 
       title: "Salvation Army September", 
       images: [sarmy.src, sarmy2.src, sarmy3.src],  // Add more images here when available
-      alt: "This is an image from NSBE's salvation army event showing a three members smiling and looking at the camera behind a table with ACT prep books and various toiletries. They are standing in front of a shelf filled with non perishable food items."
+      alt: ["This is an image from NSBE's salvation army event showing a three members smiling and looking at the camera behind a table with ACT prep books and various toiletries. They are standing in front of a shelf filled with non perishable food items.", 
+      "The second image in this slider displays two members organizing a variety of canned goods on a shelf.", 
+    "The last image in the slider for the Salvation Army volunteering event shows 4 members posing and looking towards the camera."]
     },
     { 
       title: "SpaceX Info Session", 
       images: [spacex.src, spacex2.src, spacex3.src],  // Add more images here when available
-      alt: "This is an image from NSBE's spacex information session displaying a group of seven representatives from spacex standing at the front of the room with a presentation on the board behind them speaking to a crowd of NSBE members off camera. The board is showing different models of programs and spaceships developed by the spacex company."
+      alt: ["This is an image from NSBE's spacex information session displaying a group of seven representatives from spacex standing at the front of the room with a presentation on the board behind them speaking to a crowd of NSBE members off camera. The board is showing different models of programs and spaceships developed by the spacex company.", 
+      "The second image shows a mix of NSBE members and other students at Cornell sitting in a lecture hall paying attention to the presentation from the spacex representatives. Representatives are presenting from behind the camera.", 
+    "The last image in the slider shows 3 NSBE members seated at a table with a spacex representative having a conversation."]
     }
   ];
 
