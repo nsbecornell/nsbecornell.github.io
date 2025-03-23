@@ -3,8 +3,15 @@ import { Box, Flex, Text, Heading, Center, Image, VStack} from '@chakra-ui/react
 function SideContainer() {
   const boxStyling = {
     bg: "#2C2C2C",
-    w: "30%",
-    borderRadius: 15
+    w: {
+      base: "100%",
+      md: "30%"
+    },
+    borderRadius: 15,
+    marginBottom: {
+      base: 30,
+      md: 0
+    }
   }
 
   const textStyling = {

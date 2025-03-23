@@ -7,7 +7,17 @@ import PointsSideContainer from "@/components/PointsSideContainer";
 
 function Points() {
     return (
-        <Flex mx="2%">
+        <Flex
+            mx="2%"
+            direction={
+                {
+                    base: "column",
+                    md: "row"
+                }
+            }
+            align='center'
+            flexWrap='wrap'
+        >
             <PointsSideContainer />
             <PointsContainer />
         </Flex>

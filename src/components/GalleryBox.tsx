@@ -3,18 +3,11 @@
 import styles from "@/app/page.module.css";
 
 // Components
-import { Flex, Container, Grid, GridItem, VStack, Box, Center, Image, Text, transition } from '@chakra-ui/react'
+import { Flex, VStack, Center, Image, Text } from '@chakra-ui/react'
 
 // Images
-import Erhunmwunse from '@/images/EEgaphona - Cropped.jpg';
-import { transform } from "next/dist/build/swc";
 
 const GalleryBox = (props: {key: number, name: string, position: string, image: string}) => {  
-  const imageStyling = {
-    // overflow: 'hidden',
-    borderRadius: 12
-  };
-
   const textStyling = {
     color: "white",
     fontWeight: "bold"
@@ -25,8 +18,14 @@ const GalleryBox = (props: {key: number, name: string, position: string, image: 
     mx: 8,
     my: 5,
     borderRadius: 25,
-    h: 350,
-    w: 300,
+    h: {
+      base: 500,
+      md: 350
+    },
+    w: {
+      base: 450,
+      md: 300
+    },
     _hover: {
       bg: "#3A3A3A",
       transform: "scale(1.05)",
@@ -40,14 +39,63 @@ const GalleryBox = (props: {key: number, name: string, position: string, image: 
 
 
   return (
-    // Convert to GridRow component later, needs ChakraProvider
-    <Flex direction='column' sx={boxStyling} onClick={handleClick}>
-      <Center h='inherit'>
-        <VStack>
-          <Image borderRadius={12} width={250} h={250} objectFit="fill" src={props.image} alt=""/>
-          <VStack marginTop="3%">
-            <Text sx={textStyling} fontSize={12} as="span" className={styles.positionTitle}>{props.position}</Text>
-            <Text sx={textStyling} fontSize={15} as="span" className={styles.memberName}>{props.name}</Text>
+    <Flex
+      direction='column'
+      sx={boxStyling}
+      onClick={handleClick}
+    >
+      <Center
+        h='inherit'
+      >
+        <VStack
+        >
+          <Image
+            borderRadius={12}
+            width={
+              {
+                base: 350,
+                md: 250
+              }
+            }
+            h={
+              {
+                base: 350,
+                md: 250
+              }
+            }
+            objectFit="fill"
+            src={props.image}
+            alt=""
+          />
+          <VStack
+            marginTop="3%"
+          >
+            <Text
+              as="span"
+              sx={textStyling}
+              fontSize={
+                {
+                  base: 17,
+                  md: 12,
+                }
+              }
+              className={styles.positionTitle}
+            >
+              {props.position}
+            </Text>
+            <Text
+              as="span"
+              sx={textStyling}
+              fontSize={
+                {
+                  base: 20,
+                  md: 15,
+                }
+              }
+              className={styles.memberName}
+            >
+              {props.name}
+            </Text>
           </VStack>
         </VStack>
       </Center>
