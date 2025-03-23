@@ -7,14 +7,17 @@ import ImageContainer from './ImageContainer';
 const DescriptionSection = (props: {image: string; heading: string; text: string}) => {
   const textStyle = {
     color: "white",
-    fontSize: "20",
+    fontSize: {base: "20px", md: "22px"},
     lineHeight: 1.8,
     maxWidth: 500,
   };
 
   const headingStyling = {
     color: "white",
-    fontSize: "30",
+    fontSize: {
+      base: "25", 
+      md: "27"
+    },
     my: 2,
     textAlign: "center"
   };

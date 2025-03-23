@@ -15,15 +15,17 @@ function About() {
   const headingStyling = {
     fontWeight: "bold",
     color: "white",
-    fontSize: {base: "24px", md: "30"},
+    fontSize: {
+      base: "27px",
+      md: "30"
+    },
     my: {base: 4, md: 6},
     textAlign: 'center',
   };
 
   const textStyle = {
     color: "white",
-    fontSize: {base: "16px", md: "20px"},
-    textIndent: "3%",
+    fontSize: {base: "20px", md: "22px"},
     lineHeight: 1.8
   };
 
@@ -33,6 +35,21 @@ function About() {
     },
     transition: "transform 0.3s ease-in-out, background-color 0.3s ease-in-out",
   }
+
+  const subHeadingStyling = {
+    fontWeight: "bold",
+    color: "white",
+    fontSize: {
+      base: "25", 
+      md: "27"
+    },
+    my: {
+      base: 4, 
+      md: 6
+    },
+    textAlign: 'center',
+    marginBottom: 0,
+  }
   
   return (
     <main className={styles.main}>
@@ -40,17 +57,25 @@ function About() {
           <Image
             sx={
               {
-                _hover: {
-                  transform: "scale(1.025)"
-                  }
+              _hover: {
+                transform: "scale(1.025)"
                 }
               }
+            }
             transition="transform 0.3s ease-in-out"
-            h='auto'
-            maxH={425}
+            borderRadius={25}
+            h={
+              {
+                base: "300px",
+                md: 'auto'
+              }
+            }
+            w="100%"
             src={GroupPhoto.src}
+            objectFit="cover"
+            objectPosition='center'
             alt=""
-            borderRadius={25}/>
+          />
       </Center>
 
       <Box as="section" className={styles.introSection} my={8}>
@@ -64,7 +89,6 @@ function About() {
             <Flex
               justify="center"
               align='center'
-              // gap="10%"
               gap={
                 {
                   base: "20px",
@@ -104,9 +128,7 @@ function About() {
                 justify="center"
               >
                 <Heading
-                  sx={headingStyling}
-                  marginBottom={0}
-                  fontSize={25}
+                  sx={subHeadingStyling}
                 >
                   Founding of NSBE
                 </Heading>
@@ -124,7 +146,6 @@ function About() {
           <Flex
             justify="center"
             align='center'
-            // gap="10%"
             gap={
               {
                 base: "20px",
@@ -154,9 +175,7 @@ function About() {
                   justify="center"
                 >
                   <Heading
-                    sx={headingStyling}
-                    marginBottom={0}
-                    fontSize={25}
+                    sx={subHeadingStyling}
                   >
                     Chapter History
                   </Heading>
@@ -182,7 +201,6 @@ function About() {
           <Flex
             justify="center"
             align='center'
-            // gap="10%"
             gap={
               {
                 base: "20px",
@@ -220,9 +238,7 @@ function About() {
                 justify="center"
               >
                 <Heading
-                  sx={headingStyling}
-                  marginBottom={0}
-                  fontSize={25}
+                  sx={subHeadingStyling}
                 >
                   Present Day
                 </Heading>

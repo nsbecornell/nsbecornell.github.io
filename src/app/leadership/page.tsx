@@ -38,15 +38,17 @@ import GalleryBox from "@/components/GalleryBox";
 const Leadership = () => {
   const textStyle = {
     color: "white",
-    fontSize: "20",
-    textIndent: "3%",
+    fontSize: {base: "20px", md: "22px"},
     lineHeight: 1.8
   };
 
   const headingStyling = {
     fontWeight: "bold",
     color: "white",
-    fontSize: "30",
+    fontSize: {
+      base: "27px",
+      md: "30"
+    },
     my: 6,
     textAlign: 'center'
   };
@@ -246,8 +248,20 @@ const Leadership = () => {
             }
           transition="transform 0.3s ease-in-out"
           borderRadius={25}
-          w="75%"
+          h={
+            {
+              base: "300px",
+              md: 'auto'
+            }
+          }
+          w={
+            {
+              base: "100%",
+              md: "80%"
+            }
+          }
           objectFit="cover"
+          objectPosition='center'
           src={eboardPhoto.src}
           alt="Group photo of the chapter's executive board of 2024-2025"
         />

@@ -3,17 +3,20 @@ import { Box, Flex, Text, Heading, Center, Image, VStack} from '@chakra-ui/react
 function PointsSideContainer() {
   const boxStyling = {
     bg: "#2C2C2C",
-    // w: "30%",
     w: {
       base: "90%",
       md: "30%"
     },
-    borderRadius: 15
+    borderRadius: 15,
+    px: {
+      base: "3%",
+      md: "1%"
+    }
   }
 
   const textStyling = {
     color: "white",
-    fontSize: "20",
+    fontSize: {base: "20px", md: "22px"},
     lineHeight: 1.8
   };
 
@@ -45,10 +48,17 @@ function PointsSideContainer() {
           <Heading sx={headingStyling} textAlign='left' fontSize={22}>
             Points
           </Heading>
-          <VStack gap={6}>
-            <Flex align='center' justifyContent='center' w="100%">
+          <VStack
+            gap={6}
+            align="start"
+          >
+            <Flex
+              align='center'
+              // justifyContent='center'
+              w="100%"
+            >
               <Text sx={subheadingStyling} mx="2%" alignContent='center'>
-                1 Point
+                1 Point&nbsp;
               </Text>
               <Flex flexDir='column' w="100%">
                 <Text sx={textStyling} mx="2%">
@@ -60,7 +70,11 @@ function PointsSideContainer() {
               </Flex>
             </Flex>
 
-            <Flex align='center' justifyContent='center' w="100%">
+            <Flex
+              align='center'
+              // justifyContent='center'
+              w="100%"
+            >
               <Text sx={subheadingStyling} mx="2%" alignContent='center'>
                   2 Points
               </Text>
