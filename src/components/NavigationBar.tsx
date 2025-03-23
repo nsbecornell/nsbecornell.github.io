@@ -45,6 +45,7 @@ const NavigationBar = () => {
     { name: 'About Us', path: '/about-us' },
     { name: 'Leadership', path: '/leadership' },
     { name: 'Points', path: '/points' },
+    { name: 'Gallery', path: '/gallery'},
     { name: 'Alumni', path: '/getting-involved/alumni' },
     { name: 'Students', path: '/getting-involved/students' },
     { name: 'Corporate', path: '/getting-involved/corporate' }
