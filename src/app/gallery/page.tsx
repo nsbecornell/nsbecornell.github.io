@@ -292,6 +292,13 @@ const Gallery: React.FC = () => {
                 md: 400
               }
             }
+            _hover={
+              {
+                bg: "#3A3A3A",
+                transform: "scale(1.05)",
+              }
+            }
+            transition="transform 0.3s ease-in-out, background-color 0.3s ease-in-out"
           >
             <Heading 
               size="xl" 
@@ -302,6 +309,8 @@ const Gallery: React.FC = () => {
               fontSize="28px"
               letterSpacing="0.5px"
               fontFamily="Inter, sans-serif"
+              noOfLines={1}
+              wordBreak="break-all"
             >
               {event.title}
             </Heading>
