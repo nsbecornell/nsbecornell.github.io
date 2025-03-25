@@ -53,7 +53,7 @@ const GalleryBox = (props: {key: number, name: string, position: string, image: 
             borderRadius={12}
             width={
               {
-                base: 350,
+                base: 300,
                 md: 250
               }
             }
@@ -63,7 +63,7 @@ const GalleryBox = (props: {key: number, name: string, position: string, image: 
                 md: 250
               }
             }
-            objectFit="fill"
+            objectFit="cover"
             src={props.image}
             alt=""
           />
