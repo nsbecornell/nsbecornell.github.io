@@ -167,7 +167,7 @@ const Alumni = () => {
               </Text>
             </Flex>
             <Flex sx={boxStyle}>
-              <Heading sx={headingStyling}>$20</Heading>
+              <Heading sx={{...headingStyling, my: 3}}>$20</Heading>
               <Text sx={boxTextStyle}>
               Covers chapter dinner for one member at Regional or National competition.
               </Text>
