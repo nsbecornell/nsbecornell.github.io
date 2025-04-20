@@ -87,11 +87,13 @@ const Students = () => {
             </Link>
           </Button>
           <Divider orientation='horizontal' h={4} borderColor="#8D8D8D"/>
-          <Heading sx={{...headingStyling, fontSize: "25"}} opacity="0.8" textAlign='center'>Get Involved!</Heading>
-          <Button isDisabled sx={buttonStyle}>
-            <Heading sx={buttonTextStyle}>
-              Executive Board Application
-            </Heading>
+          <Heading sx={{...headingStyling, fontSize: "25"}} textAlign='center'>Get Involved!</Heading>
+          <Button sx={buttonStyle}>
+            <Link textAlign='center' href="https://forms.gle/4UMqKfppKEyFYSwM6" target="_blank" rel="noopener noreferrer">
+              <Heading sx={buttonTextStyle}>
+                Executive Board Application
+              </Heading>
+            </Link>
           </Button>
           <Button isDisabled sx={buttonStyle}>
             <Heading sx={buttonTextStyle}>
