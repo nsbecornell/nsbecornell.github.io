@@ -88,17 +88,26 @@ const Students = () => {
           </Button>
           <Divider orientation='horizontal' h={4} borderColor="#8D8D8D"/>
           <Heading sx={{...headingStyling, fontSize: "25"}} textAlign='center'>Get Involved!</Heading>
-          <Button sx={buttonStyle}>
-            <Link textAlign='center' href="https://forms.gle/4UMqKfppKEyFYSwM6" target="_blank" rel="noopener noreferrer">
+          <Button
+            isDisabled
+            sx={buttonStyle}
+          >
+            {/* <Link textAlign='center' href="" target="_blank" rel="noopener noreferrer"> */}
               <Heading sx={buttonTextStyle}>
                 Executive Board Application
               </Heading>
-            </Link>
+            {/* </Link> */}
           </Button>
-          <Button isDisabled sx={buttonStyle}>
-            <Heading sx={buttonTextStyle}>
-              First-Year Rep. Application
-            </Heading>
+
+          <Button
+            isDisabled
+            sx={buttonStyle}
+          >
+            {/* <Link textAlign='center' href="" target="_blank" rel="noopener noreferrer"> */}
+              <Heading sx={buttonTextStyle}>
+                First-Year Rep. Application
+              </Heading>
+            {/* </Link> */}
           </Button>
         </Flex>
         <VStack marginRight="6%" flexGrow={1}>

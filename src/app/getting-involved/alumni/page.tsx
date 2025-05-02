@@ -141,7 +141,7 @@ const Alumni = () => {
             <Flex direction="column" justify="center">
               <Heading sx={headingStyling} textAlign='center'>Donations Help Us Realize Our Initiatives</Heading>
               <Text sx={textStyle}>
-                Support aspiring Black engineers at Cornell by donating to our NSBE chapter. Your contribution fuels academic excellence, professional development, and community service while helping members attend NSBE conferences and access essential resources. Empower the next generation—donate today!
+                Support aspiring engineers at Cornell by donating to our NSBE chapter. Your contribution fuels academic excellence, professional development, and community service while helping members attend NSBE conferences and access essential resources. Empower the next generation—donate today!
               </Text>
             </Flex>
           </Box>

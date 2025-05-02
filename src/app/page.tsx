@@ -75,13 +75,13 @@ export default function Home() {
               }
             }
             w="100%"
-            opacity={0.75}
+            // opacity={0.75}
             src={GroupPhoto.src}
             objectFit="cover"
             objectPosition='center'
             alt=""
           />
-          <Heading
+          {/* <Heading
             position="absolute"
             sx= {
               {
@@ -95,7 +95,7 @@ export default function Home() {
             
             >
               Black Engineers at Cornell University
-            </Heading>
+            </Heading> */}
         </Center>
       </Flex>
 
@@ -117,9 +117,8 @@ export default function Home() {
         <Text
           sx={textStyle}
         >
-          Our chapter is part of the National Society of Black Engineers (NSBE), an organization dedicated to increasing the number of culturally responsible Black engineers who excel academically, succeed professionally, and positively impact the community. As a chapter, we are committed to fostering an environment where members are supported in achieving academic excellence, while also providing opportunities for personal and professional growth. Through initiatives, workshops, and community outreach, we work to embody NSBE’s mission by creating a space for future Black engineers to thrive and lead.
+          Our chapter is part of the National Society of Black Engineers (NSBE), an organization dedicated to increasing the number of culturally responsible Black engineers who excel academically, succeed professionally, and positively impact the community. As a chapter, we are committed to fostering an environment where <b>people of all identities</b> are supported in achieving academic excellence, while also providing opportunities for personal and professional growth. Through initiatives, workshops, and community outreach, we work to embody NSBE’s mission by creating a space for future engineers to thrive and lead.
         </Text>
-        {/* <Text sx={textStyle}>We are more than just a student organization—we are a community that empowers its members to push boundaries and create meaningful change. By providing mentorship, leadership opportunities, and access to networking events, we ensure that our members are prepared to succeed both in and out of the classroom. Whether through participating in regional and national conferences, attending professional development events, or engaging in service projects, our chapter is dedicated to making a positive impact on campus and beyond. We welcome all students who share our passion for engineering excellence and making a lasting contribution to society.</Text> */}
       </Box>
 
 
