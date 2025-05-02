@@ -80,7 +80,7 @@ function About() {
 
       <Box as="section" className={styles.introSection} my={8}>
         <Heading sx={headingStyling}>Our History</Heading>
-        <Text sx={textStyle}>The National Society of Black Engineers (NSBE) is a 501(c)(3) nonprofit organization dedicated to the academic and professional success of African-American engineering and technical students and professionals. NSBE offers its members leadership training, professional and academic development, mentoring opportunities, community service outreach programs, and scholarships. Founded in 1977, NSBE-CU is the premier organization for black students in the science, technology, engineering and mathematics (STEM) majors at Cornell University. NSBE-CU is a member of the national organization with affiliation to Region One, which serves the Northeastern United states and international chapters. Through the support of the national organization, the Cornell College of Engineering, and corporate sponsorship, NSBE-CU upholds our mission statement as well as the national directives.</Text>
+        <Text sx={textStyle}>The National Society of Black Engineers (NSBE) is a 501(c)(3) nonprofit organization dedicated to the academic and professional success of engineering and technical students and professionals. NSBE offers its members leadership training, professional and academic development, mentoring opportunities, community service outreach programs, and scholarships. Founded in 1977, NSBE-CU is the premier organization for black students in the science, technology, engineering and mathematics (STEM) majors at Cornell University. NSBE-CU is a member of the national organization with affiliation to Region One, which serves the Northeastern United states and international chapters. Through the support of the national organization, the Cornell College of Engineering, and corporate sponsorship, NSBE-CU upholds our mission statement as well as the national directives.</Text>
         <Text sx={textStyle}></Text>
       </Box>
 
@@ -185,7 +185,7 @@ function About() {
                     maxWidth={600}
                     fontSize={20}
                   >
-                    Founded in 1977, Cornell&apos;s National Society of Black Engineers (NSBE-CU) is the premier organization for Black students in the STEM majors at Cornell. Our mission: &quot;To increase the number of culturally responsible black engineers who excel academically, succeed professionally, and positively impact the community.&quot; Through the support of the national organization, Cornell&apos;s College of Engineering, Diversity Programs in Engineering, and corporate sponsorship, NSBE-CU upholds our mission statement and the national directives. 
+                    Founded in 1977, Cornell&apos;s National Society of Black Engineers (NSBE-CU) is the premier organization for Black students in the STEM majors at Cornell. Our mission: &quot;To increase the number of culturally responsible black engineers who excel academically, succeed professionally, and positively impact the community.&quot; Through the support of the national organization, Cornell&apos;s College of Engineering, Office of Inclusive Excellence, and corporate sponsorship, NSBE-CU upholds our mission statement and the national directives. 
                   </Text>
                 </Flex>
                 <Image

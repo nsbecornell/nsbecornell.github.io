@@ -270,7 +270,7 @@ const Leadership = () => {
       <Box as="section" my={8}>
           <Heading sx={headingStyling}>The Executive Board</Heading>
           <Text sx={textStyle}>
-            The executive board of our NSBE chapter is the mover behind all that our chapter does. From planning events to promote the academic success of our chapter&apos;s general body members to coordinating with sponsors to ensure the professional development of our black engineers &mdash; our board works tirelessly to promote the mission and vision of the National Society of Black Engineers. Under the guidance of our president, <b>Chimdi Anude</b>, the executive board also works to promote throughout the campus the chapter&apos;s own core values: Transparency, Dedication, and Support.
+            The executive board of our NSBE chapter is the mover behind all that our chapter does. From planning events to promote the academic success of our chapter&apos;s general body members to coordinating with sponsors to ensure the professional development of our engineers &mdash; our board works tirelessly to promote the mission and vision of the National Society of Black Engineers. Under the guidance of our president, <b>Chimdi Anude</b>, the executive board also works to promote throughout the campus the chapter&apos;s own core values: Transparency, Dedication, and Support.
           </Text>
           <Flex
             align='center'
@@ -312,7 +312,7 @@ const Leadership = () => {
                   sx={textStyle}
                   maxW={650}
                 >
-                  We are unwavering in our commitment to the mission of the National Society of Black Engineers. Our dedication drives us to excel academically, succeed professionally, and make a positive impact in our communities. Our belief in this mission inspires us in our efforts to uplift this generation of Black Engineers.
+                  We are unwavering in our commitment to the mission of the National Society of Black Engineers. Our dedication drives us to excel academically, succeed professionally, and make a positive impact in our communities. Our belief in this mission inspires us in our efforts to uplift this generation of engineers.
                 </Text>
               </Flex>
 
@@ -325,7 +325,7 @@ const Leadership = () => {
                   sx={textStyle}
                   maxW={650}
                   >
-                  Our strength lies in our unity and our ability to support one another. We forster an environment where members can lean one each other for guidance, encouragement, and resources. Together, we create a network of mentorship and collaboration that propels us all forward.
+                  Our strength lies in our unity and our ability to support one another. We foster an environment where members can lean one each other for guidance, encouragement, and resources. Together, we create a network of mentorship and collaboration that propels us all forward.
                 </Text>
               </Flex>
           </Flex>
