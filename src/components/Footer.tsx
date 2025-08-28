@@ -128,6 +128,35 @@ const Footer = () => {
         >
           © 2024 Cornell University National Society of Black Engineers. All rights reserved.
         </Text>
+
+        <Text
+  sx={textStyle}
+  textAlign={{
+    base: "center",
+    md: "inherit"
+  }}
+  mt={2}
+>
+  This organization is a registered student organization of Cornell University.
+</Text>
+
+{/* Equal Education & Employment Link */}
+<Text
+  sx={textStyle}
+  textAlign={{
+    base: "center",
+    md: "inherit"
+  }}
+  mt={1}
+>
+  <Link
+    href="https://hr.cornell.edu/about/workplace-rights/equal-education-and-employment"
+    isExternal
+    color="blue.300"
+  >
+    Equal Education & Employment
+  </Link>
+</Text>
       </Flex>
     </Center>
   );
