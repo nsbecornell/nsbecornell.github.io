@@ -14,12 +14,12 @@ const GalleryBox = (props: {key: number, name: string, position: string, image: 
   };
 
   const boxStyling = {
-    bg: "#767676ff",
+    bg: "#2C2C2C",
     mx: 8,
     my: 5,
-    borderRadius: 8,
+    borderRadius: 25,
     h: {
-      base: 750,
+      base: 500,
       md: 350
     },
     w: {
@@ -50,7 +50,7 @@ const GalleryBox = (props: {key: number, name: string, position: string, image: 
         <VStack
         >
           <Image
-            borderRadius={8}
+            borderRadius={12}
             width={
               {
                 base: 300,
@@ -59,7 +59,7 @@ const GalleryBox = (props: {key: number, name: string, position: string, image: 
             }
             h={
               {
-                base: 450,
+                base: 350,
                 md: 250
               }
             }
