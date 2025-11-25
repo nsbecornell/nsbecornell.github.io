@@ -53,7 +53,7 @@ interface PointsRecord {
     // Asynchronous function to load points
     async function loadPoints(): Promise<void> {
       const apiKey = "AIzaSyBN2UN6x4LarJ8gY3CawcQr7V3gHjSRenk";
-      const spreadsheetId = "1XeOgI-GL3ZCD8aC8BAM0LvNUwKGzrEFr_jRaTOhh6xM";
+      const spreadsheetId = "1uqimUkMNs_0DgZE66wz5Zbm1xmMGKVJ7ZL2qlcwJtFM";
   
       const url = `https://sheets.googleapis.com/v4/spreadsheets/${spreadsheetId}?includeGridData=true&key=${apiKey}`;
   

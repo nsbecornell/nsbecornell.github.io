@@ -4,33 +4,34 @@ import styles from "@/app/page.module.css";
 import {Image, Text, Box, Heading, VStack, Center, UnorderedList, ListItem, Flex} from '@chakra-ui/react';
 
 // Images
-import eboardPhoto from '@/images/eboard/2024-2025/2024-2025-eboard.jpg'
-import ChimdiAnude from '@/images/eboard/2024-2025/Chimdi Anude.jpeg'
-import MohamedKane from '@/images/eboard/2024-2025/Mohamed Kane.jpg'
-import AdigunOlusola from '@/images/eboard/2024-2025/Adigun Olusola.jpg'
-import KaylaStephenson from '@/images/eboard/2024-2025/Kayla Stephenson.jpeg'
-import TennyGeorge from '@/images/eboard/2024-2025/Tenny George.jpg'
-import EmmaBrown from '@/images/eboard/2024-2025/Emma Brown.jpg'
-import ChimdiEjiogu from '@/images/eboard/2024-2025/Chimdi Ejiogu.jpg'
-import SkaiNzeuton from '@/images/eboard/2024-2025/Skai Nzeuton.jpg'
-import IvieOsagie from '@/images/eboard/2024-2025/Ivie Osagie.jpg'
-import MukamiGichoya from '@/images/eboard/2024-2025/Mukami Gichoya.jpg'
-import LucyBazezy from '@/images/eboard/2024-2025/Lucy Bazezy.jpg'
-import JamisonTaylorJr from '@/images/eboard/2024-2025/Jamison Taylor, Jr.jpg'
-import AlexisSherman from '@/images/eboard/2024-2025/Alexis Sherman.jpeg'
-import ZenaPhillip from '@/images/eboard/2024-2025/Zena Phillip.jpeg'
-import MouhammadDia from '@/images/eboard/2024-2025/Mouhammad Dia.jpeg'
+import eboardPhoto from '@/images/eboard/2025-2026/wholeEboard.jpg'
+import TennyGeorge from '@/images/eboard/2025-2026/tenny_george.jpg'
+import IvieOsagie from '@/images/eboard/2025-2026/ivie.jpg'
+import LucyBazezy from '@/images/eboard/2025-2026/lucy_bazezy.jpeg'
+import MouhammadDia from '@/images/eboard/2025-2026/mouhammad_dia.jpg'
 import NathanielBanjo from '@/images/eboard/2024-2025/Nathaniel Banjo.jpg'
-import YodaheMaaza from '@/images/eboard/2024-2025/Yodahe Maaza.jpg'
-import MaguetteDiop from '@/images/eboard/2024-2025/Maguette Diop.jpg'
+import YodaheMaaza from '@/images/eboard/2025-2026/yodahe_maaza.jpg'
+import MaguetteDiop from '@/images/eboard/2025-2026/maguette_diop.jpg'
 import WesleyDeCosta from '@/images/eboard/2024-2025/Wesley DeCosta.jpg'
 import DavisAdams from '@/images/eboard/2024-2025/Davis Adams.jpg'
-import RayanuAdam from '@/images/eboard/2024-2025/Rayanu Adam.jpg'
-import HopeBest from '@/images/eboard/2024-2025/Hope Best.jpg'
-import PromiseEkpo from '@/images/eboard/2024-2025/Promise Ekpo.jpg'
-import ReggieHarris from '@/images/eboard/2024-2025/Reggie Harris.jpg'
-import AnthonyTodd from '@/images/eboard/2024-2025/Anthony Todd.jpg'
-import EthanSarpong from '@/images/eboard/2024-2025/Ethan Sarpong.jpg'
+import RayanuAdam from '@/images/eboard/2025-2026/rayanu.jpg'
+import ReggieHarris from '@/images/eboard/2025-2026/reggie_harris.jpg'
+import OliviaMurphy from '@/images/eboard/2025-2026/olivia.jpg'
+import OliviaTolliver from '@/images/eboard/2025-2026/olivia_t.jpg'
+import ModupeOgunmekan from '@/images/eboard/2025-2026/modupe.jpg'
+import MariamaBarry from '@/images/eboard/2025-2026/mariama.jpg'
+import ElomEskender from '@/images/eboard/2025-2026/elom.jpg'
+import LeticiaNhuale from '@/images/eboard/2025-2026/leticia.jpg'
+import KayaBeckles from '@/images/eboard/2025-2026/kaya_b.jpg'
+import MaliqBarnes from '@/images/eboard/2025-2026/maliq_barnes.jpg'
+import RichloveNkansah from '@/images/eboard/2025-2026/richlove.jpg'
+import ShaylaReid from '@/images/eboard/2025-2026/shayla.jpg'
+import WunmiAkingbola from '@/images/eboard/2025-2026/wunmi.jpg'
+import JoelleIyasele from '@/images/eboard/2025-2026/joelle_iyasele.jpg'
+import TaylorBoykeDarbouze from '@/images/eboard/2025-2026/taylor_.jpg'
+import JoannaSaintPierre from '@/images/eboard/2025-2026/joanna.jpg'
+
+
 
 // Custom Components
 import GalleryBox from "@/components/GalleryBox";
@@ -78,69 +79,69 @@ const Leadership = () => {
     members: [
       {
         id: 1,
-        name: "Chimdi Anude",
-        position: "President",
-        image: ChimdiAnude.src
-      },
-      {
-        id: 2,
-        name: "Mohamed Kane",
-        position: "Internal Vice President",
-        image: MohamedKane.src
-      },
-      {
-        id: 3,
-        name: "Adigun Olusola",
-        position: "External Co-Vice President",
-        image: AdigunOlusola.src
-      },
-      {
-        id: 4,
-        name: "Kayla Stephenson",
-        position: "External Co-Vice President",
-        image: KaylaStephenson.src
-      },
-      {
-        id: 5,
-        name: "Tenny George",
-        position: "Treasurer",
-        image: TennyGeorge.src
-      },
-      {
-        id: 6,
-        name: "Emma Brown",
-        position: "Secretary",
-        image: EmmaBrown.src
-      },
-      {
-        id: 7,
-        name: "Rayanu Adam",
-        position: "Programs Chair",
-        image: RayanuAdam.src
-      },
-      {
-        id: 8,
-        name: "Chimdi Ejiogu",
-        position: "Telecommunications Chair",
-        image: ChimdiEjiogu.src
-      },
-      {
-        id: 9,
-        name: "Wesley DeCosta",
-        position: "Co-Conference Planning Chair",
-        image: WesleyDeCosta.src
-      },
-      {
-        id: 10,
         name: "Maguette Diop",
-        position: "Co-Conference Planning Chair",
+        position: "President",
         image: MaguetteDiop.src
       },
       {
-        id: 11,
-        name: "Skai Nzeuton",
+        id: 2,
+        name: "Rayanu Adam",
+        position: "Internal Vice President",
+        image: RayanuAdam.src
+      },
+      {
+        id: 3,
+        name: "Wesley Decosta",
+        position: "External Co-Vice President",
+        image: WesleyDeCosta.src
+      },
+      {
+        id: 4,
+        name: "Ivie Osagie",
+        position: "External Co-Vice President",
+        image: IvieOsagie.src
+      },
+      {
+        id: 5,
+        name: "Davis Adams",
+        position: "Conference Planning Co-Chair",
+        image: DavisAdams.src
+      },
+      {
+        id: 6,
+        name: "Maliq Barnes",
+        position: "Junior Treasurer",
+        image: MaliqBarnes.src
+      },
+      {
+        id: 7,
+        name: "Nathanial Banjo",
         position: "Academic Excellence Co-Chair",
-        image: SkaiNzeuton.src
+        image: NathanielBanjo.src
+      },
+      {
+        id: 8,
+        name: "Lucy Bazezy",
+        position: "Telecommunications Chair",
+        image: LucyBazezy.src
+      },
+      {
+        id: 9,
+        name: "Taylor Bokye-Darbouze",
+        position: "Publicity Co-Chair",
+        image: TaylorBoykeDarbouze.src
+      },
+      {
+        id: 10,
+        name: "Kaya Beckles",
+        position: "PCI Co-Chair",
+        image: KayaBeckles.src
+      },
+      {
+        id: 11,
+        name: "Mouhammad Dia",
+        position: "Programs Co-Chair",
+        image: MouhammadDia.src
       },
       {
         id: 12,
@@ -150,88 +151,89 @@ const Leadership = () => {
       },
       {
         id: 13,
-        name: "Davis Adams",
-        position: "Pre-Collegiate Initiatives Co-Chair",
-        image: DavisAdams.src
+        name: "Tenny George",
+        position: "Senior Treasurer",
+        image: TennyGeorge.src
       },
       {
         id: 14,
-        name: "Mukami Gichoya",
-        position: "Pre-Collegiate Initiatives Co-Chair",
-        image: MukamiGichoya.src
-      },
-      {
-        id: 15,
-        name: "Hope Best",
-        position: "Publicity Chair",
-        image: HopeBest.src
-      },
-      {
-        id: 16,
-        name: "Lucy Bazezy",
-        position: "Publicity Chair",
-        image: LucyBazezy.src
-      },
-      {
-        id: 17,
-        name: "Promise Ekpo",
-        position: "Graduate Representative",
-        image: PromiseEkpo.src
-      },
-      {
-        id: 18,
-        name: "Jamison Taylor",
-        position: "Senator/Parliamentarian",
-        image: JamisonTaylorJr.src
-      },
-      {
-        id: 19,
-        name: "Alexis Sherman",
-        position: "Senator/Historian",
-        image: AlexisSherman.src
-      },
-      {
-        id: 20,
-        name: "Ethan Sarpong",
-        position: "Upstate Zone Chair",
-        image: EthanSarpong.src
-      },
-      {
-        id: 21,
         name: "Reggie Harris",
-        position: "Membership Chair",
+        position: "Programs Co-Chair",
         image: ReggieHarris.src
       },
       {
+        id: 15,
+        name: "Joelle Iyasele",
+        position: "Historian & Senator",
+        image: JoelleIyasele.src
+      },
+       {
+        id: 16,
+        name: "Yodahe Maaza",
+        position: "Publicity Co-Chair",
+        image: YodaheMaaza.src
+      },
+       {
+        id: 17,
+        name: "Olivia Murphy",
+        position: "Graduate Representative",
+        image: OliviaMurphy.src
+      },
+       {
+        id: 18,
+        name: "Richlove Nkansh",
+        position: "Secretary",
+        image: RichloveNkansah.src
+      },
+       {
+        id: 19,
+        name: "Modupe Ogunmekan",
+        position: "Scademic Excellence Co-Chair",
+        image: ModupeOgunmekan.src
+      },
+      {
+        id: 20,
+        name: "Shayla Reid",
+        position: "Senator",
+        image: ShaylaReid.src
+      },
+      {
+        id: 21,
+        name: "Joanna Saint-Pierre",
+        position: "Conference Planning Co-Chair",
+        image: JoannaSaintPierre.src
+      },
+      {
         id: 22,
-        name: "Anthony Todd",
-        position: "Alumni Relations Chair",
-        image: AnthonyTodd.src
+        name: "Olivia Tolliver",
+        position: "Membership Chair",
+        image: OliviaTolliver.src
       },
       {
         id: 23,
-        name: "Zena Phillip",
-        position: "Freshman Representative",
-        image: ZenaPhillip.src
-      },
-      {
-        id: 23,
-        name: "Mouhammad Dia",
-        position: "Freshman Representative",
-        image: MouhammadDia.src
+        name: "Wunmi Akingbola",
+        position: "PCI Co-Chair",
+        image: WunmiAkingbola.src
       },
       {
         id: 24,
-        name: "Nathaniel Banjo",
+        name: "Mariama Barry",
         position: "Freshman Representative",
-        image: NathanielBanjo.src
+        image: MariamaBarry.src
       },
       {
         id: 25,
-        name: "Yodahe Maaza",
+        name: "Elom Eskender",
         position: "Freshman Representative",
-        image: YodaheMaaza.src
+        image: ElomEskender.src
+      },
+      {
+        id: 26,
+        name: "Leticia Nhuale",
+        position: "Freshman Representative",
+        image: LeticiaNhuale.src
       }
+      
     ]
   }
 
@@ -267,68 +269,16 @@ const Leadership = () => {
         />
       </Center>
 
-      <Box as="section" my={8}>
+      <Box as="section" my={8} maxWidth={{ base: "90%", md: "80%" }} 
+    mx="auto"
+    px={{ base: 4, md: 0 }} >
           <Heading sx={headingStyling}>The Executive Board</Heading>
           <Text sx={textStyle}>
             The executive board of our NSBE chapter is the mover behind all that our chapter does. From planning events to promote the academic success of our chapter&apos;s general body members to coordinating with sponsors to ensure the professional development of our engineers &mdash; our board works tirelessly to promote the mission and vision of the National Society of Black Engineers. Under the guidance of our president, <b>Chimdi Anude</b>, the executive board also works to promote throughout the campus the chapter&apos;s own core values: Transparency, Dedication, and Support.
           </Text>
-          <Flex
-            align='center'
-            direction={
-              {
-                base: "column",
-                md: "row"
-              }
-            }
-            flexWrap='wrap'
-            justifyContent='center'
-            gap="10%"
-            my={3.5}
-          >
-              <Flex
-                direction='column'
-                maxW={
-                  {
-                    base: "100%",
-                    md: "40%"
-                  }
-                }
-              >
-                <Text sx={subHeadingStyling}>Transparency</Text>
-                <Text
-                  sx={textStyle}
-                  maxW={650}
-                >
-                  We prioritize open and honest communication within our community. By being transparent, we build trust and ensure that all members are informed and aligned with our goals. Reliability is key; we hold ourselves accountable to each other and to the mission of our organization.
-                </Text>
-              </Flex>
+    
+        
 
-              <Flex
-                direction='column'
-                // maxW="40%"
-              >
-                <Text sx={subHeadingStyling}>Dedication</Text>
-                <Text
-                  sx={textStyle}
-                  maxW={650}
-                >
-                  We are unwavering in our commitment to the mission of the National Society of Black Engineers. Our dedication drives us to excel academically, succeed professionally, and make a positive impact in our communities. Our belief in this mission inspires us in our efforts to uplift this generation of engineers.
-                </Text>
-              </Flex>
-
-              <Flex
-                direction='column'
-                // maxW="40%"
-              >
-                <Text sx={subHeadingStyling}>Support</Text>
-                <Text
-                  sx={textStyle}
-                  maxW={650}
-                  >
-                  Our strength lies in our unity and our ability to support one another. We foster an environment where members can lean one each other for guidance, encouragement, and resources. Together, we create a network of mentorship and collaboration that propels us all forward.
-                </Text>
-              </Flex>
-          </Flex>
           <Text sx={textStyle}>
             Through promoting these values, our board enables itself to better relate to the community we pledge to support, and work towards the success our entire chapter.
           </Text>
