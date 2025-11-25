@@ -17,7 +17,7 @@ const GalleryBox = (props: {key: number, name: string, position: string, image: 
     bg: "#2C2C2C",
     mx: 8,
     my: 5,
-    borderRadius: 25,
+    borderRadius: 8,
     h: {
       base: 500,
       md: 350
@@ -50,7 +50,7 @@ const GalleryBox = (props: {key: number, name: string, position: string, image: 
         <VStack
         >
           <Image
-            borderRadius={12}
+            borderRadius={8}
             width={
               {
                 base: 300,
