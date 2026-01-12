@@ -20,9 +20,9 @@ import mixer3 from '@/images/event_images/majormixer/majormixer_3.jpeg';
 import sarmy from '@/images/event_images/salvationarmy/salvationarmy.jpeg';
 import sarmy2 from '@/images/event_images/salvationarmy/salvationarmy_2.jpeg';
 import sarmy3 from '@/images/event_images/salvationarmy/salvationarmy_3.jpeg';
-import spacex from '@/images/event_images/spacex/spacexsession.jpeg';
-import spacex2 from '@/images/event_images/spacex/spacexsession_2.jpeg';
-import spacex3 from '@/images/event_images/spacex/spacexsession_3.jpeg';
+import sensata from '@/images/event_images/sensata/sensatasession.jpeg';
+import sensata2 from '@/images/event_images/sensata/sensatasession_2.jpeg';
+import sensata3 from '@/images/event_images/sensata/sensatasession_3.jpeg';
 import auxwars from '@/images/event_images/auxwars/auxwars.jpeg';
 import auxwars2 from '@/images/event_images/auxwars/auxwars_2.jpeg';
 import auxwars3 from '@/images/event_images/auxwars/auxwars_3.jpeg';
@@ -31,6 +31,58 @@ import familyfeud2 from '@/images/event_images/familyfeud/familyfeud_2.jpeg';
 import familyfeud3 from '@/images/event_images/familyfeud/familyfeud_3.jpeg';
 import superbowl from '@/images/event_images/superbowl/superbowl.jpeg';
 import superbowl2 from '@/images/event_images/superbowl/superbowl_2.jpeg';
+import icecream from '@/images/event_images/icecream/icecream.jpeg';
+import icecream2 from '@/images/event_images/icecream/icecream_2.jpeg';
+import icecream3 from '@/images/event_images/icecream/icecream_3.jpeg';
+import icecream4 from '@/images/event_images/icecream/icecream_4.jpeg';
+import icecream5 from '@/images/event_images/icecream/icecream_5.jpeg';
+import fzc from '@/images/event_images/fzc/fzc.jpg';
+import clubfest from '@/images/event_images/clubfest/clubfest.jpeg';
+import clubfest2 from '@/images/event_images/clubfest/clubfest_2.jpeg';
+import clubfest3 from '@/images/event_images/clubfest/clubfest_3.jpeg';
+import bbq from '@/images/event_images/bbq/bbq.jpg';
+import bbq2 from '@/images/event_images/bbq/bbq_2.jpg';
+import bbq3 from '@/images/event_images/bbq/bbq_3.jpg';
+import bbq4 from '@/images/event_images/bbq/bbq_4.jpg';
+import bbq5 from '@/images/event_images/bbq/bbq_5.jpg';
+import assistivetech from '@/images/event_images/assistivetech/assistivetech.jpeg';
+import assistivetech2 from '@/images/event_images/assistivetech/assistivetech_2.jpeg';
+import assistivetech3 from '@/images/event_images/assistivetech/assistivetech_3.jpeg';
+import artandcraft from '@/images/event_images/artandcraft/artandcraft.jpeg';
+import artandcraft2 from '@/images/event_images/artandcraft/artandcraft_2.jpeg';
+import accenture from '@/images/event_images/accenture/accenture.jpeg';
+import accenture2 from '@/images/event_images/accenture/accenture_2.jpeg';
+import chemtutor from '@/images/event_images/chemtutor/chemtutor.jpeg';
+import chemtutor2 from '@/images/event_images/chemtutor/chemtutor_2.jpeg';
+import startingstrong from '@/images/event_images/startingstrong/startingstrong.jpeg';
+import freshmen from '@/images/event_images/freshman/freshman.jpeg';
+import freshmen2 from '@/images/event_images/freshman/freshman_2.jpeg';
+import freshmen3 from '@/images/event_images/freshman/freshman_3.jpeg';
+import hottakes from '@/images/event_images/hottakes/hottakes_2.jpeg';
+import hottakes2 from '@/images/event_images/hottakes/hottakes.jpeg';
+import frc from '@/images/event_images/frc/frc.jpeg';
+import frc2 from '@/images/event_images/frc/frc_2.jpeg';
+import frc3 from '@/images/event_images/frc/frc_3.jpg';
+import bearstuffing from '@/images/event_images/bearstuffing/bearstuffing.jpeg';
+import ethics from '@/images/event_images/ethics/ethics.jpeg';
+import ethics2 from '@/images/event_images/ethics/ethics_2.jpeg';
+import corning from '@/images/event_images/corning/corning.jpeg';
+import corning2 from '@/images/event_images/corning/corning_2.jpeg';
+import corning3 from '@/images/event_images/corning/corning_3.jpeg';
+import research from '@/images/event_images/researchkickoff/researchkickoff.jpeg';
+import research2 from '@/images/event_images/researchkickoff/researchkickoff_2.jpeg';
+import bball from '@/images/event_images/bballtourney/bballtourney.jpeg';
+import bball2 from '@/images/event_images/bballtourney/bballtourney_2.jpeg';
+import bball3 from '@/images/event_images/bballtourney/bballtourney_3.jpeg';
+import bball4 from '@/images/event_images/bballtourney/bballtourney_4.jpeg';
+import nationals from '@/images/event_images/nationals/nationals.jpeg';
+import nationals2 from '@/images/event_images/nationals/nationals_2.jpeg';
+import nationals3 from '@/images/event_images/nationals/nationals_3.jpeg';
+import nationals4 from '@/images/event_images/nationals/nationals_4.jpeg';
+import nationals5 from '@/images/event_images/nationals/nationals_5.jpeg';
+import nationals6 from '@/images/event_images/nationals/nationals_6.jpeg';
+import bingo from '@/images/event_images/bingo/bingo.jpeg';
+import bingo2 from '@/images/event_images/bingo/bingo_2.jpeg'
 
 // Define types for our components
 interface EventSlideshowProps {
@@ -186,7 +238,55 @@ const Gallery: React.FC = () => {
       title: "Super Bowl Watchparty", 
       images: [superbowl.src, superbowl2.src],  // Add more images here when available
       alt: ["This is an image of a group of NSBE members standing and conversing in a lecture hall", 
-      "The last image in this slider displays students sitting in a lecture hall watching a large screen inn front of them showing an advertisement during the superbowl."]
+      "The last image in this slider displays students sitting in a lecture hall watching a large screen in front of them showing an advertisement during the superbowl."]
+    },
+    { 
+      title: "Corning Conference Prep", 
+      images: [corning.src, corning2.src, corning3.src],  // Add more images here when available
+      alt: ["The first image in this slider is of a mixed group of NSBE members and Corning employees standing behind a table with \"Corning\" written on it.", 
+      "The next image in this slider displays students students sitting and conversing with Corning employees one on one. There is a screen projected in the background showing tips and tricks for how to succeed at a career fair.",
+      "The last image displays a table with a blue table cloth that reads \"CORNING\". On the table are Corning branded merchandise including pens and notepads. Next to the table is a poster that shows corning engineers working."]
+    },
+    { 
+      title: "Engineering Ethics", 
+      images: [ethics.src, ethics2.src],  // Add more images here when available
+      alt: ["The fist image in this slider displays a group of NSBE members standing and smiling at the camera with a professor in a classroom.",
+        "The last image shows a group of members sitting down watching the professor present at the front of the room. There is a slide displayed on the screen next to the professor."
+      ]
+    },
+    { 
+      title: "Research Kickoff", 
+      images: [research.src, research2.src],  // Add more images here when available
+      alt: ["The first image displays a group of students watching a presentation from a researcher in a lecture hall. The students are sitting facing the front of the room and the researcher is describing a slide titled \"Who Am I\".",
+        "The last image in this slider shows 5 students and researchers sitting facing a group of other students watching them introduce themselves. Displayed on a board behing the presenters is a slide with headshots and a brief description of each one."
+      ]
+    },
+    { 
+      title: "Bingo", 
+      images: [bingo.src, bingo2.src],  // Add more images here when available
+      alt: ["The first image in this slider shows a stack of bingo cards and chalk that were used during the event next to an iPad.",
+        "The last image in this slider shows two NSBE members standing and conversing with each other. There is food on a table next to them and a third members is eating."
+      ]
+    },
+    { 
+      title: "Nationals 2025", 
+      images: [nationals.src, nationals2.src, nationals3.src, nationals4.src, nationals5.src, nationals6.src],  // Add more images here when available
+      alt: ["The first image in this slider displayes the NSBE chapter in formal attire standing and smiling looking at the camera at the NSBE TORCH Awards.",
+        "The second image in this slider displays 3 NSBE members and one parent smiling and looking at the camera.",
+        "The third image in this slider displays 9 Cornell Alumni who were NSBE members wearing semi formal attire.",
+        "The fourth image in this slider shows a group of 5 NSBE members in the city at night smiling and facing the camera.",
+        "The last image in this slider shows a group of NSBE membes and Cornell Engineering staff sitting at a circular table in a room eating together. There are members, staff, and alumni in the background."
+      ]
+    },
+    {
+      title: "Unity Basketball Tournament",
+      images: [bball2.src, bball.src, bball3.src, bball4.src],
+      alt: ["This is an image of Cornell NSBE and URMC members playing basketball. The ball is in the air under the basket and two players are reaching for it.",
+        "The second image in this slider displays 4 people on a court playing basket ball. A player wearing red is dribbling the ball down the court.",
+        "The third image in this slider displays two players on the court. One player wearing a Cornell sweatshirt is dribbling the ball down the court the other stands in front.",
+        "The last image in this slider shows a NSBE member sitting at a table selling concessions on the court."
+      ]
+
     }
   ];
  
@@ -226,11 +326,106 @@ const Gallery: React.FC = () => {
     "The last image in the slider for the Salvation Army volunteering event shows 4 members posing and looking towards the camera."]
     },
     { 
-      title: "SpaceX Info Session", 
-      images: [spacex.src, spacex2.src, spacex3.src],  // Add more images here when available
+      title: "Sensata Info Session", 
+      images: [sensata.src, sensata2.src, sensata3.src],  // Add more images here when available
       alt: ["This is an image from NSBE's spacex information session displaying a group of seven representatives from spacex standing at the front of the room with a presentation on the board behind them speaking to a crowd of NSBE members off camera. The board is showing different models of programs and spaceships developed by the spacex company.", 
       "The second image shows a mix of NSBE members and other students at Cornell sitting in a lecture hall paying attention to the presentation from the spacex representatives. Representatives are presenting from behind the camera.", 
     "The last image in the slider shows 3 NSBE members seated at a table with a spacex representative having a conversation."]
+    },
+    { 
+      title: "Ice Cream Social", 
+      images: [icecream.src, icecream2.src, icecream3.src, icecream4.src, icecream5.src],  // Add more images here when available
+      alt: ["The first image in this slider displays a group of 5 students sitting at a table looking towards the camera.",
+        "The second image shows a large group of NSBE members standing outside Cornell's Dairy Bar in the sun on a set of stairs smiling and looking at the camera.",
+        "The third image in this slider shows 4 male students inside the Dairy Bar standing and smiling at the camera.",
+        "The fourth image shows a grou of students inside the Dairy Bar conversing with each other. The photo is candid, some students are sitting while others are standing.",
+        "The last image displays 4 NSBE executive board members inside the building standing and looking at the camera."
+      ]
+    },
+    { 
+      title: "Fall Zone Conference", 
+      images: [fzc.src],  // Add more images here when available
+      alt: ["This is an image of NSBE members at Rochester Institute of Technology in business casual/formal attire on a set of red stairs standing and looking towards the camera."]
+    },
+    { 
+      title: "Club Fest", 
+      images: [clubfest.src, clubfest2.src, clubfest3.src],  // Add more images here when available
+      alt: ["The first image in this slider displays a poster board describing what Cornell NSBE does and why. The center of the board is titled \"Paving the Way for Black Engineers in STEM. Be Part of the Movement. On the table in front of the board are candies arranged to form the word \"NSBE\".",
+        "The next image in this slider is of 5 members standing in front of the table with the board and candies looking towards the camera and smiling.",
+        "The last image in this slider shows a stach of brochures titled \"NSBE AT CORNELL\" on a table with various typed of candy surrounding it."
+      ]
+    },
+    { 
+      title: "Welcome Back BBQ", 
+      images: [bbq.src, bbq2.src, bbq3.src, bbq4.src, bbq5.src],  // Add more images here when available
+      alt: ["This is an image of 5 students outside on the grass in front of a building playing spikeball.",
+        "This is an image of 3 members smiling looking at the camera raising one finger in the air.",
+        "This is an image of a large group of students on the grass outside arranged performing a group dance.",
+        "This is an image of a group of 5 NSBE members standing shoulder to shoulder outside smiling and looking at the camera.",
+        "This is an image of a large group of students on the grass outside in front of a building."
+      ]
+    },
+    { 
+      title: "NSBE X Cornell Assistive Technologies", 
+      images: [assistivetech.src, assistivetech2.src, assistivetech3.src],  // Add more images here when available
+      alt: ["The first image in this slider displays 3 female nsbe members smiling at the camera holding a stuffed animal.",
+        "The next image in this slider shows a modified stuffed animal for children with buttons on the paws to play music.",
+        "The last image in the slider is of 5 members standing and smiling at the camera holding the modifies stuffed animal from the previous image."
+      ]
+    },
+    { 
+      title: "Arts and Crafts", 
+      images: [artandcraft.src, artandcraft2.src],  // Add more images here when available
+      alt: ["The first image is of a NSBE members sitting and coloring in a drawing at a desk.",
+        "The last picture is of a small group of members, some sitting and some standing, drawing and coloring."
+      ]
+    },
+    { 
+      title: "Accenture Info Session", 
+      images: [accenture.src, accenture2.src],  // Add more images here when available
+      alt: ["The first image in this slider displays a group of members standing with Accenture representatives smiling and looking at the cameras.",
+        "The next image is of members serving food that was catered."
+      ]
+    },
+    { 
+      title: "Starting Off Strong", 
+      images: [startingstrong.src],  // Add more images here when available
+      alt: ["This is an image of members in a lecture hall studying together."]
+    },
+    { 
+      title: "Chem Tutoring", 
+      images: [chemtutor.src, chemtutor2.src],  // Add more images here when available
+      alt: ["This image shows a student working on Chemistry homework with a tutor looking over her shoulder.",
+        "The last image in this slider shows a group of students on laptops working on Chemistry homework with tutors."
+      ]
+    },
+    { 
+      title: "Freshmen Scavenger Hunt", 
+      images: [freshmen.src, freshmen2.src, freshmen3.src],  // Add more images here when available
+      alt: ["The first image in this slider is of 2 female members making a structure with uno cards.",
+        "The second image in this slider shows 2 freshman reading riddles to try and figure out the code to a padlock.", 
+        "The last image in the slider is of 4 freshman standing in front of a chalkboard with \"Let the Hunt Begin\" witten on it. They are holding locks and putting one finger in the air."
+      ]
+    },
+    { 
+      title: "Hot Takes", 
+      images: [hottakes.src, hottakes2.src],  // Add more images here when available
+      alt: ["The first image in this slider is of NSBE members in a room. 5 are standing and the rest are sitting. The ones standing are having a conversation.",
+        "The next image in this slider is of a larger group of members standing and facing the board at the front of the room."
+      ]
+    },
+    { 
+      title: "Fall Regional Conference", 
+      images: [frc.src, frc2.src, frc3.src],  // Add more images here when available
+      alt: ["The first image in this slider is of the CU NSBE chapter members wearing formal attire in a hotel lobby at the convention center.",
+        "This next image is of our two senators at the conference center looking at the camera, smiling, and holding up books titled \" 7 Habits of Highly Effective People\".",
+        "The last image in this slider displays a mixed group of NSBE members across the region having a conversatino with a presenter in a room."
+      ]
+    },
+    { 
+      title: "Bear Stuffing", 
+      images: [bearstuffing.src],  // Add more images here when available
+      alt: ["This is an image of 3 members sitting at a table looking at the camera and smiling. They are holding animals that they stuffed."]
     }
   ];
 
