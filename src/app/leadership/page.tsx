@@ -4,14 +4,14 @@ import styles from "@/app/page.module.css";
 import {Image, Text, Box, Heading, VStack, Center, UnorderedList, ListItem, Flex} from '@chakra-ui/react';
 
 // Images
-import eboardPhoto from '@/images/eboard/2025-2026/wholeEboard.jpg'
+import eboardPhoto from '@/images/eboard/2025-2026/full_group.jpg'
 import TennyGeorge from '@/images/eboard/2025-2026/tenny_george.jpg'
 import IvieOsagie from '@/images/eboard/2025-2026/ivie.jpg'
 import LucyBazezy from '@/images/eboard/2025-2026/lucy_bazezy.jpeg'
 import MouhammadDia from '@/images/eboard/2025-2026/mouhammad_dia.jpg'
 import NathanielBanjo from '@/images/eboard/2024-2025/Nathaniel Banjo.jpg'
 import YodaheMaaza from '@/images/eboard/2025-2026/yodahe_maaza.jpg'
-import MaguetteDiop from '@/images/eboard/2025-2026/maguette_diop.jpg'
+import MaguetteDiop from '@/images/eboard/2025-2026/maguette_new.jpg'
 import WesleyDeCosta from '@/images/eboard/2024-2025/Wesley DeCosta.jpg'
 import DavisAdams from '@/images/eboard/2024-2025/Davis Adams.jpg'
 import RayanuAdam from '@/images/eboard/2025-2026/rayanu.jpg'
@@ -77,162 +77,165 @@ const Leadership = () => {
   const eboard: year = {
     year: "2024-2025",
     members: [
-      {
-        id: 1,
-        name: "Maguette Diop",
-        position: "President",
-        image: MaguetteDiop.src
-      },
-      {
-        id: 2,
-        name: "Rayanu Adam",
-        position: "Internal Vice President",
-        image: RayanuAdam.src
-      },
-      {
-        id: 3,
-        name: "Wesley Decosta",
-        position: "External Co-Vice President",
-        image: WesleyDeCosta.src
-      },
-      {
-        id: 4,
-        name: "Ivie Osagie",
-        position: "External Co-Vice President",
-        image: IvieOsagie.src
-      },
-      {
-        id: 5,
-        name: "Davis Adams",
-        position: "Conference Planning Co-Chair",
-        image: DavisAdams.src
-      },
-      {
-        id: 6,
-        name: "Maliq Barnes",
-        position: "Junior Treasurer",
-        image: MaliqBarnes.src
-      },
-      {
-        id: 7,
-        name: "Nathanial Banjo",
-        position: "Academic Excellence Co-Chair",
-        image: NathanielBanjo.src
-      },
-      {
-        id: 8,
-        name: "Lucy Bazezy",
-        position: "Telecommunications Chair",
-        image: LucyBazezy.src
-      },
-      {
-        id: 9,
-        name: "Taylor Bokye-Darbouze",
-        position: "Publicity Co-Chair",
-        image: TaylorBoykeDarbouze.src
-      },
-      {
-        id: 10,
-        name: "Kaya Beckles",
-        position: "PCI Co-Chair",
-        image: KayaBeckles.src
-      },
-      {
-        id: 11,
-        name: "Mouhammad Dia",
-        position: "Programs Co-Chair",
-        image: MouhammadDia.src
-      },
-      {
-        id: 12,
-        name: "Ivie Osagie",
-        position: "Academic Excellence Co-Chair",
-        image: IvieOsagie.src
-      },
-      {
-        id: 13,
-        name: "Tenny George",
-        position: "Senior Treasurer",
-        image: TennyGeorge.src
-      },
-      {
-        id: 14,
-        name: "Reggie Harris",
-        position: "Programs Co-Chair",
-        image: ReggieHarris.src
-      },
-      {
-        id: 15,
-        name: "Joelle Iyasele",
-        position: "Historian & Senator",
-        image: JoelleIyasele.src
-      },
-       {
-        id: 16,
-        name: "Yodahe Maaza",
-        position: "Publicity Co-Chair",
-        image: YodaheMaaza.src
-      },
-       {
-        id: 17,
-        name: "Olivia Murphy",
-        position: "Graduate Representative",
-        image: OliviaMurphy.src
-      },
-       {
-        id: 18,
-        name: "Richlove Nkansh",
-        position: "Secretary",
-        image: RichloveNkansah.src
-      },
-       {
-        id: 19,
-        name: "Modupe Ogunmekan",
-        position: "Scademic Excellence Co-Chair",
-        image: ModupeOgunmekan.src
-      },
-      {
-        id: 20,
-        name: "Shayla Reid",
-        position: "Senator",
-        image: ShaylaReid.src
-      },
-      {
-        id: 21,
-        name: "Joanna Saint-Pierre",
-        position: "Conference Planning Co-Chair",
-        image: JoannaSaintPierre.src
-      },
-      {
-        id: 22,
-        name: "Olivia Tolliver",
-        position: "Membership Chair",
-        image: OliviaTolliver.src
-      },
-      {
-        id: 23,
-        name: "Wunmi Akingbola",
-        position: "PCI Co-Chair",
-        image: WunmiAkingbola.src
-      },
-      {
-        id: 24,
-        name: "Mariama Barry",
-        position: "Freshman Representative",
-        image: MariamaBarry.src
-      },
-      {
-        id: 25,
-        name: "Elom Eskender",
-        position: "Freshman Representative",
-        image: ElomEskender.src
-      },
-      {
-        id: 26,
-        name: "Leticia Nhuale",
-        position: "Freshman Representative",
-        image: LeticiaNhuale.src
-      }
+{
+    id: 1,
+    name: "Maguette Diop",
+    position: "President",
+    image: MaguetteDiop.src
+  },
+  {
+    id: 2,
+    name: "Rayanu Adam",
+    position: "Internal Vice President",
+    image: RayanuAdam.src
+  },
+  // External Co-Vice Presidents
+  {
+    id: 3,
+    name: "Wesley Decosta",
+    position: "External Co-Vice President",
+    image: WesleyDeCosta.src
+  },
+  {
+    id: 4,
+    name: "Ivie Osagie",
+    position: "External Co-Vice President",
+    image: IvieOsagie.src
+  },
+  // Treasurers
+  {
+    id: 13,
+    name: "Tenny George",
+    position: "Senior Treasurer",
+    image: TennyGeorge.src
+  },
+  {
+    id: 6,
+    name: "Maliq Barnes",
+    position: "Junior Treasurer",
+    image: MaliqBarnes.src
+  },
+  {
+    id: 18,
+    name: "Richlove Nkansh",
+    position: "Secretary",
+    image: RichloveNkansah.src
+  },
+  // Academic Excellence Co-Chairs
+  {
+    id: 7,
+    name: "Nathaniel Banjo",
+    position: "Academic Excellence Co-Chair",
+    image: NathanielBanjo.src
+  },
+  {
+    id: 19,
+    name: "Modupe Ogunmekan",
+    position: "Academic Excellence Co-Chair",
+    image: ModupeOgunmekan.src
+  },
+  // Programs Co-Chairs
+  {
+    id: 11,
+    name: "Mouhammad Dia",
+    position: "Programs Co-Chair",
+    image: MouhammadDia.src
+  },
+  {
+    id: 14,
+    name: "Reggie Harris",
+    position: "Programs Co-Chair",
+    image: ReggieHarris.src
+  },
+  // Conference Planning Co-Chairs
+  {
+    id: 5,
+    name: "Davis Adams",
+    position: "Conference Planning Co-Chair",
+    image: DavisAdams.src
+  },
+  {
+    id: 21,
+    name: "Joanna Saint-Pierre",
+    position: "Conference Planning Co-Chair",
+    image: JoannaSaintPierre.src
+  },
+  // PCI Co-Chairs
+  {
+    id: 10,
+    name: "Kaya Beckles",
+    position: "PCI Co-Chair",
+    image: KayaBeckles.src
+  },
+  {
+    id: 23,
+    name: "Wunmi Akingbola",
+    position: "PCI Co-Chair",
+    image: WunmiAkingbola.src
+  },
+  // Publicity Co-Chairs
+  {
+    id: 9,
+    name: "Tayler Bokye-Darbouze",
+    position: "Publicity Co-Chair",
+    image: TaylorBoykeDarbouze.src
+  },
+  {
+    id: 16,
+    name: "Yodahe Maaza",
+    position: "Publicity Co-Chair",
+    image: YodaheMaaza.src
+  },
+  // Single Chairs & Senators
+  {
+    id: 8,
+    name: "Lucy Bazezy",
+    position: "Telecommunications Chair",
+    image: LucyBazezy.src
+  },
+  {
+    id: 22,
+    name: "Olivia Tolliver",
+    position: "Membership Chair",
+    image: OliviaTolliver.src
+  },
+  {
+    id: 15,
+    name: "Joelle Iyasele",
+    position: "Historian & Senator",
+    image: JoelleIyasele.src
+  },
+  {
+    id: 20,
+    name: "Shayla Reid",
+    position: "Senator",
+    image: ShaylaReid.src
+  },
+  {
+    id: 17,
+    name: "Olivia Murphy",
+    position: "Graduate Representative",
+    image: OliviaMurphy.src
+  },
+  // Freshman Representatives
+  {
+    id: 24,
+    name: "Mariama Barry",
+    position: "Freshman Representative",
+    image: MariamaBarry.src
+  },
+  {
+    id: 25,
+    name: "Elom Eskender",
+    position: "Freshman Representative",
+    image: ElomEskender.src
+  },
+  {
+    id: 26,
+    name: "Leticia Nhuale",
+    position: "Freshman Representative",
+    image: LeticiaNhuale.src
+  }
       
     ]
   }
